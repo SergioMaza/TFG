@@ -4,20 +4,18 @@ services:
     build: ./frontend
     container_name: frontend_container
     env_file:
-      - ./frontend/.env.local
+      - ./frontend/.env
     volumes:
-      - ./frontend:/app # Para que funcione el hot reload
-      - /app/node_modules # Guada las dependencias para evitar errores
+      - ./frontend:/app
+      - /app/node_modules
     ports:
       - "5173:5173"
-    environment:
-      - CHOKIDAR_USEPOLLING=true # Para que funcione el hot reload en Windows
 
-  # API backend service
-  api: 
-    build: ./api
-    container_name: api_container
+  # Backend backend service
+  backend: 
+    build: ./backend
+    container_name: backend_container
     env_file:
-      - ./api/.env.local
+      - ./backend/.env
     ports:
       - "5000:5000"

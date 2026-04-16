@@ -1,0 +1,1054 @@
+{
+  "metrics": {
+    "sessions_this_month": 13,
+    "sessions_this_week": 5,
+    "most_trained_muscle": "Bench Press",
+    "upper_percentage": 40,
+    "lower_percentage": 60,
+    "avg_score": 79,
+    "score_change_weekly": 5
+  },
+  "exercises": [
+    {
+      "title": "Squat",
+      "img": "https://lh3.googleusercontent.com/aida-public/AB6AXuCk-7ltYEJvvOSb8nP7oC4f36mKn5ijE2l6VmT8_VThvp112yiI9j-99-itfkdszKiari2D2C7Y6KKUw4ZbLZ1QRXtDscWnbsTAm4kCeudA7aBKEmkKUbcCqLLV1VSvsWuRoameGRaRDv-A9fA4r1wx9wv_Hx3kN8sbnx0xyzN2YUBBYwoEW_DcyvRrTGIxp2p1BIDk3QnQJ7REswu_t--CqxmEc_oYWGVB2CgX3t7uLUt5vp9p27k5Xg7n4Bf6uEROpAgZDYEag3E",
+      "upper": false,
+      "thresholds": {
+        "velocity": { "min": 60, "max": 180, "idealLow": 90, "idealHigh": 140 },
+        "rom": { "min": 60, "max": 140, "idealLow": 100, "idealHigh": 125 },
+        "duration": {
+          "min": 0.8,
+          "max": 4.0,
+          "idealLow": 1.5,
+          "idealHigh": 2.8
+        }
+      },
+      "avg_score": 41,
+      "sessions": [
+        {
+          "sessionId": 1,
+          "videoUrl": "https://www.youtube.com/watch?v=AqfdLm_I9Ik",
+          "uploadedAt": "2026-04-01T12:51:00",
+          "score": 6,
+          "fatigue": 1.6,
+          "efficiency": 58.34,
+          "total_reps": 7,
+          "full_rom_reps": 7,
+          "rom_avg_deg": 112.6,
+          "rom_min_deg": 108.3,
+          "rom_max_deg": 116.5,
+          "avg_duration_s": 1.93,
+          "avg_velocity": 114.5,
+          "reps_detail": [
+            {
+              "rep": 1,
+              "full_rom": true,
+              "rom_deg": 108.3,
+              "duration_s": 1.97,
+              "velocity": 116.5
+            },
+            {
+              "rep": 2,
+              "full_rom": true,
+              "rom_deg": 113.2,
+              "duration_s": 2.0,
+              "velocity": 113.3
+            },
+            {
+              "rep": 3,
+              "full_rom": true,
+              "rom_deg": 116.5,
+              "duration_s": 1.87,
+              "velocity": 124.9
+            },
+            {
+              "rep": 4,
+              "full_rom": true,
+              "rom_deg": 109.9,
+              "duration_s": 1.93,
+              "velocity": 109.2
+            },
+            {
+              "rep": 5,
+              "full_rom": true,
+              "rom_deg": 114.9,
+              "duration_s": 1.9,
+              "velocity": 112.9
+            }
+          ]
+        },
+        {
+          "sessionId": 2,
+          "videoUrl": "https://www.youtube.com/watch?v=AqfdLm_I9Ik",
+          "uploadedAt": "2026-04-02T12:51:00",
+          "score": 23,
+          "fatigue": 1.6,
+          "efficiency": 58.34,
+          "total_reps": 7,
+          "full_rom_reps": 7,
+          "rom_avg_deg": 112.6,
+          "rom_min_deg": 108.3,
+          "rom_max_deg": 116.5,
+          "avg_duration_s": 1.93,
+          "avg_velocity": 114.5,
+          "reps_detail": [
+            {
+              "rep": 1,
+              "full_rom": true,
+              "rom_deg": 108.3,
+              "duration_s": 1.97,
+              "velocity": 116.5
+            },
+            {
+              "rep": 2,
+              "full_rom": true,
+              "rom_deg": 113.2,
+              "duration_s": 2.0,
+              "velocity": 113.3
+            },
+            {
+              "rep": 3,
+              "full_rom": true,
+              "rom_deg": 116.5,
+              "duration_s": 1.87,
+              "velocity": 124.9
+            },
+            {
+              "rep": 4,
+              "full_rom": true,
+              "rom_deg": 109.9,
+              "duration_s": 1.93,
+              "velocity": 109.2
+            },
+            {
+              "rep": 5,
+              "full_rom": true,
+              "rom_deg": 114.9,
+              "duration_s": 1.9,
+              "velocity": 112.9
+            }
+          ]
+        },
+        {
+          "sessionId": 3,
+          "videoUrl": "https://www.youtube.com/watch?v=AqfdLm_I9Ik",
+          "uploadedAt": "2026-04-03T12:51:00",
+          "score": 45,
+          "fatigue": 1.6,
+          "efficiency": 58.34,
+          "total_reps": 7,
+          "full_rom_reps": 7,
+          "rom_avg_deg": 112.6,
+          "rom_min_deg": 108.3,
+          "rom_max_deg": 116.5,
+          "avg_duration_s": 1.93,
+          "avg_velocity": 114.5,
+          "reps_detail": [
+            {
+              "rep": 1,
+              "full_rom": true,
+              "rom_deg": 108.3,
+              "duration_s": 1.97,
+              "velocity": 116.5
+            },
+            {
+              "rep": 2,
+              "full_rom": true,
+              "rom_deg": 113.2,
+              "duration_s": 2.0,
+              "velocity": 113.3
+            },
+            {
+              "rep": 3,
+              "full_rom": true,
+              "rom_deg": 116.5,
+              "duration_s": 1.87,
+              "velocity": 124.9
+            },
+            {
+              "rep": 4,
+              "full_rom": true,
+              "rom_deg": 109.9,
+              "duration_s": 1.93,
+              "velocity": 109.2
+            },
+            {
+              "rep": 5,
+              "full_rom": true,
+              "rom_deg": 114.9,
+              "duration_s": 1.9,
+              "velocity": 112.9
+            }
+          ]
+        },
+        {
+          "sessionId": 4,
+          "videoUrl": "https://www.youtube.com/watch?v=AqfdLm_I9Ik",
+          "uploadedAt": "2026-04-04T12:51:00",
+          "score": 56,
+          "fatigue": 1.6,
+          "efficiency": 58.34,
+          "total_reps": 7,
+          "full_rom_reps": 7,
+          "rom_avg_deg": 112.6,
+          "rom_min_deg": 108.3,
+          "rom_max_deg": 116.5,
+          "avg_duration_s": 1.93,
+          "avg_velocity": 114.5,
+          "reps_detail": [
+            {
+              "rep": 1,
+              "full_rom": true,
+              "rom_deg": 108.3,
+              "duration_s": 1.97,
+              "velocity": 116.5
+            },
+            {
+              "rep": 2,
+              "full_rom": true,
+              "rom_deg": 113.2,
+              "duration_s": 2.0,
+              "velocity": 113.3
+            },
+            {
+              "rep": 3,
+              "full_rom": true,
+              "rom_deg": 116.5,
+              "duration_s": 1.87,
+              "velocity": 124.9
+            },
+            {
+              "rep": 4,
+              "full_rom": true,
+              "rom_deg": 109.9,
+              "duration_s": 1.93,
+              "velocity": 109.2
+            },
+            {
+              "rep": 5,
+              "full_rom": true,
+              "rom_deg": 114.9,
+              "duration_s": 1.9,
+              "velocity": 112.9
+            }
+          ]
+        },
+        {
+          "sessionId": 5,
+          "videoUrl": "https://www.youtube.com/watch?v=AqfdLm_I9Ik",
+          "uploadedAt": "2026-04-05T12:51:00",
+          "score": 32,
+          "fatigue": 1.6,
+          "efficiency": 58.34,
+          "total_reps": 7,
+          "full_rom_reps": 7,
+          "rom_avg_deg": 112.6,
+          "rom_min_deg": 108.3,
+          "rom_max_deg": 116.5,
+          "avg_duration_s": 1.93,
+          "avg_velocity": 114.5,
+          "reps_detail": [
+            {
+              "rep": 1,
+              "full_rom": true,
+              "rom_deg": 108.3,
+              "duration_s": 1.97,
+              "velocity": 116.5
+            },
+            {
+              "rep": 2,
+              "full_rom": true,
+              "rom_deg": 113.2,
+              "duration_s": 2.0,
+              "velocity": 113.3
+            },
+            {
+              "rep": 3,
+              "full_rom": true,
+              "rom_deg": 116.5,
+              "duration_s": 1.87,
+              "velocity": 124.9
+            },
+            {
+              "rep": 4,
+              "full_rom": true,
+              "rom_deg": 109.9,
+              "duration_s": 1.93,
+              "velocity": 109.2
+            },
+            {
+              "rep": 5,
+              "full_rom": true,
+              "rom_deg": 114.9,
+              "duration_s": 1.9,
+              "velocity": 112.9
+            }
+          ]
+        },
+        {
+          "sessionId": 6,
+          "videoUrl": "https://www.youtube.com/watch?v=AqfdLm_I9Ik",
+          "uploadedAt": "2026-04-06T12:51:00",
+          "score": 85,
+          "fatigue": 1.6,
+          "efficiency": 58.34,
+          "total_reps": 7,
+          "full_rom_reps": 7,
+          "rom_avg_deg": 132.6,
+          "rom_min_deg": 108.3,
+          "rom_max_deg": 116.5,
+          "avg_duration_s": 1.93,
+          "avg_velocity": 114.5,
+          "reps_detail": [
+            {
+              "rep": 1,
+              "full_rom": true,
+              "rom_deg": 108.3,
+              "duration_s": 1.97,
+              "velocity": 116.5
+            },
+            {
+              "rep": 2,
+              "full_rom": true,
+              "rom_deg": 113.2,
+              "duration_s": 2.0,
+              "velocity": 113.3
+            },
+            {
+              "rep": 3,
+              "full_rom": true,
+              "rom_deg": 116.5,
+              "duration_s": 1.87,
+              "velocity": 124.9
+            },
+            {
+              "rep": 4,
+              "full_rom": true,
+              "rom_deg": 109.9,
+              "duration_s": 1.93,
+              "velocity": 109.2
+            },
+            {
+              "rep": 5,
+              "full_rom": true,
+              "rom_deg": 114.9,
+              "duration_s": 1.9,
+              "velocity": 112.9
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Deadlift",
+      "img": "https://lh3.googleusercontent.com/aida-public/AB6AXuAvpVbvGVfXD0-D5iv1ASR5skO2VI8JlO1sjXchQ7jhWhfZcs8rlhCbq7CNwsZQDpAamyPtjcBTCzP7-5q-jYKmWZJaGBs2tNupOHFQieo7waX-jOtHaZB9VJ2x-Z9tsLB0M12cR2B1ftkzcHyVU0SPARaar6R_sBTBY8rToBRpNcyt_pxorJa4d9VQ-uLyVl0tPVfWdN-95od54ZWFfmEXFVSpn5tgccHINT6hIGQ7Znu3w_dbrrDd27tVAcd8R0CESMmI4szohQg",
+      "upper": false,
+      "thresholds": {
+        "velocity": { "min": 60, "max": 180, "idealLow": 90, "idealHigh": 140 },
+        "rom": { "min": 60, "max": 140, "idealLow": 100, "idealHigh": 125 },
+        "duration": {
+          "min": 0.8,
+          "max": 4.0,
+          "idealLow": 1.5,
+          "idealHigh": 2.8
+        }
+      },
+      "avg_score": 81,
+      "sessions": [
+        {
+          "sessionId": 4,
+          "videoUrl": "https://www.youtube.com/watch?v=AqfdLm_I9Ik",
+          "uploadedAt": "2026-04-05T12:51:00",
+          "score": 67,
+          "fatigue": 1.6,
+          "efficiency": 58.34,
+          "total_reps": 7,
+          "full_rom_reps": 7,
+          "rom_avg_deg": 112.6,
+          "rom_min_deg": 108.3,
+          "rom_max_deg": 116.5,
+          "avg_duration_s": 1.93,
+          "avg_velocity": 114.5,
+          "reps_detail": [
+            {
+              "rep": 1,
+              "full_rom": true,
+              "rom_deg": 108.3,
+              "duration_s": 1.97,
+              "velocity": 116.5
+            },
+            {
+              "rep": 2,
+              "full_rom": true,
+              "rom_deg": 113.2,
+              "duration_s": 2.0,
+              "velocity": 113.3
+            }
+          ]
+        },
+        {
+          "sessionId": 5,
+          "videoUrl": "https://www.youtube.com/watch?v=AqfdLm_I9Ik",
+          "uploadedAt": "2026-04-05T12:51:00",
+          "score": 74,
+          "fatigue": 1.6,
+          "efficiency": 58.34,
+          "total_reps": 7,
+          "full_rom_reps": 7,
+          "rom_avg_deg": 112.6,
+          "rom_min_deg": 108.3,
+          "rom_max_deg": 116.5,
+          "avg_duration_s": 1.93,
+          "avg_velocity": 114.5,
+          "reps_detail": [
+            {
+              "rep": 1,
+              "full_rom": true,
+              "rom_deg": 108.3,
+              "duration_s": 1.97,
+              "velocity": 116.5
+            },
+            {
+              "rep": 2,
+              "full_rom": true,
+              "rom_deg": 113.2,
+              "duration_s": 2.0,
+              "velocity": 113.3
+            }
+          ]
+        },
+        {
+          "sessionId": 6,
+          "videoUrl": "https://www.youtube.com/watch?v=AqfdLm_I9Ik",
+          "uploadedAt": "2026-04-05T12:51:00",
+          "score": 82,
+          "fatigue": 1.6,
+          "efficiency": 58.34,
+          "total_reps": 7,
+          "full_rom_reps": 7,
+          "rom_avg_deg": 112.6,
+          "rom_min_deg": 108.3,
+          "rom_max_deg": 116.5,
+          "avg_duration_s": 1.93,
+          "avg_velocity": 114.5,
+          "reps_detail": [
+            {
+              "rep": 1,
+              "full_rom": true,
+              "rom_deg": 108.3,
+              "duration_s": 1.97,
+              "velocity": 116.5
+            },
+            {
+              "rep": 2,
+              "full_rom": true,
+              "rom_deg": 113.2,
+              "duration_s": 2.0,
+              "velocity": 113.3
+            }
+          ]
+        },
+        {
+          "sessionId": 7,
+          "videoUrl": "https://www.youtube.com/watch?v=AqfdLm_I9Ik",
+          "uploadedAt": "2026-04-05T12:51:00",
+          "score": 91,
+          "fatigue": 1.6,
+          "efficiency": 58.34,
+          "total_reps": 7,
+          "full_rom_reps": 7,
+          "rom_avg_deg": 112.6,
+          "rom_min_deg": 108.3,
+          "rom_max_deg": 116.5,
+          "avg_duration_s": 1.93,
+          "avg_velocity": 114.5,
+          "reps_detail": [
+            {
+              "rep": 1,
+              "full_rom": true,
+              "rom_deg": 108.3,
+              "duration_s": 1.97,
+              "velocity": 116.5
+            },
+            {
+              "rep": 2,
+              "full_rom": true,
+              "rom_deg": 113.2,
+              "duration_s": 2.0,
+              "velocity": 113.3
+            }
+          ]
+        },
+        {
+          "sessionId": 8,
+          "videoUrl": "https://www.youtube.com/watch?v=AqfdLm_I9Ik",
+          "uploadedAt": "2026-04-05T12:51:00",
+          "score": 93,
+          "fatigue": 1.6,
+          "efficiency": 58.34,
+          "total_reps": 7,
+          "full_rom_reps": 7,
+          "rom_avg_deg": 112.6,
+          "rom_min_deg": 108.3,
+          "rom_max_deg": 116.5,
+          "avg_duration_s": 1.93,
+          "avg_velocity": 114.5,
+          "reps_detail": [
+            {
+              "rep": 1,
+              "full_rom": true,
+              "rom_deg": 108.3,
+              "duration_s": 1.97,
+              "velocity": 116.5
+            },
+            {
+              "rep": 2,
+              "full_rom": true,
+              "rom_deg": 113.2,
+              "duration_s": 2.0,
+              "velocity": 113.3
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Bench Press",
+      "img": "https://lh3.googleusercontent.com/aida-public/AB6AXuAG4P7JYHIzYYj6FrR_etdeuEeDijYzxBrc00DHwOIZzwfrksMFsoY0h7UGMeNDQ0VB947QcPbZlCXXxjpoCn3AlokrW6iX7bnvXfsghv4BNixtoVJ7cHz6nAo1fBnyR1-dKm8vLc-Fksr0ml-k8NzDxSn0MexFfTZpwkkRNTtdWdxBpblIlu_pKbsCcG_7nI7xvcA-Z71t6KAXDL8kdzRd_hdixiUfzNHEkAK0ztqwIk2mcNId9obJjrFCoS1evgOg3wApuK9M_qc",
+      "upper": true,
+      "thresholds": {
+        "velocity": { "min": 60, "max": 180, "idealLow": 90, "idealHigh": 140 },
+        "rom": { "min": 60, "max": 140, "idealLow": 100, "idealHigh": 125 },
+        "duration": {
+          "min": 0.8,
+          "max": 4.0,
+          "idealLow": 1.5,
+          "idealHigh": 2.8
+        }
+      },
+      "avg_score": 59,
+      "sessions": [
+        {
+          "sessionId": 9,
+          "videoUrl": "https://www.youtube.com/watch?v=AqfdLm_I9Ik",
+          "uploadedAt": "2026-04-01T10:00:00",
+          "score": 12,
+          "fatigue": 1.6,
+          "efficiency": 58.34,
+          "total_reps": 7,
+          "full_rom_reps": 7,
+          "rom_avg_deg": 109.8,
+          "rom_min_deg": 104.9,
+          "rom_max_deg": 114.2,
+          "avg_duration_s": 2.08,
+          "avg_velocity": 108.4,
+          "reps_detail": [
+            {
+              "rep": 1,
+              "full_rom": true,
+              "rom_deg": 104.9,
+              "duration_s": 2.12,
+              "velocity": 109.5
+            },
+            {
+              "rep": 2,
+              "full_rom": true,
+              "rom_deg": 109.7,
+              "duration_s": 2.1,
+              "velocity": 107.8
+            },
+            {
+              "rep": 3,
+              "full_rom": true,
+              "rom_deg": 114.2,
+              "duration_s": 2.02,
+              "velocity": 111.3
+            },
+            {
+              "rep": 4,
+              "full_rom": true,
+              "rom_deg": 107.3,
+              "duration_s": 2.09,
+              "velocity": 105.6
+            },
+            {
+              "rep": 5,
+              "full_rom": true,
+              "rom_deg": 112.6,
+              "duration_s": 2.07,
+              "velocity": 107.9
+            }
+          ]
+        },
+        {
+          "sessionId": 10,
+          "videoUrl": "https://www.youtube.com/watch?v=AqfdLm_I9Ik",
+          "uploadedAt": "2026-04-02T10:00:00",
+          "score": 43,
+          "fatigue": 1.6,
+          "efficiency": 58.34,
+          "total_reps": 7,
+          "full_rom_reps": 7,
+          "rom_avg_deg": 111.2,
+          "rom_min_deg": 106.3,
+          "rom_max_deg": 115.8,
+          "avg_duration_s": 2.01,
+          "avg_velocity": 110.2,
+          "reps_detail": [
+            {
+              "rep": 1,
+              "full_rom": true,
+              "rom_deg": 106.3,
+              "duration_s": 2.04,
+              "velocity": 111.1
+            },
+            {
+              "rep": 2,
+              "full_rom": true,
+              "rom_deg": 111.8,
+              "duration_s": 2.0,
+              "velocity": 109.7
+            },
+            {
+              "rep": 3,
+              "full_rom": true,
+              "rom_deg": 115.8,
+              "duration_s": 1.95,
+              "velocity": 114.2
+            },
+            {
+              "rep": 4,
+              "full_rom": true,
+              "rom_deg": 108.7,
+              "duration_s": 2.02,
+              "velocity": 107.3
+            },
+            {
+              "rep": 5,
+              "full_rom": true,
+              "rom_deg": 113.4,
+              "duration_s": 2.03,
+              "velocity": 108.9
+            }
+          ]
+        },
+        {
+          "sessionId": 11,
+          "videoUrl": "https://www.youtube.com/watch?v=AqfdLm_I9Ik",
+          "uploadedAt": "2026-04-03T10:00:00",
+          "score": 65,
+          "fatigue": 1.6,
+          "efficiency": 58.34,
+          "total_reps": 7,
+          "full_rom_reps": 7,
+          "rom_avg_deg": 112.5,
+          "rom_min_deg": 107.6,
+          "rom_max_deg": 116.9,
+          "avg_duration_s": 1.96,
+          "avg_velocity": 112.7,
+          "reps_detail": [
+            {
+              "rep": 1,
+              "full_rom": true,
+              "rom_deg": 107.6,
+              "duration_s": 1.98,
+              "velocity": 113.5
+            },
+            {
+              "rep": 2,
+              "full_rom": true,
+              "rom_deg": 112.9,
+              "duration_s": 1.95,
+              "velocity": 111.2
+            },
+            {
+              "rep": 3,
+              "full_rom": true,
+              "rom_deg": 116.9,
+              "duration_s": 1.9,
+              "velocity": 116.8
+            },
+            {
+              "rep": 4,
+              "full_rom": true,
+              "rom_deg": 109.8,
+              "duration_s": 1.97,
+              "velocity": 110.1
+            },
+            {
+              "rep": 5,
+              "full_rom": true,
+              "rom_deg": 114.7,
+              "duration_s": 1.96,
+              "velocity": 112.0
+            }
+          ]
+        },
+        {
+          "sessionId": 12,
+          "videoUrl": "https://www.youtube.com/watch?v=AqfdLm_I9Ik",
+          "uploadedAt": "2026-04-04T10:00:00",
+          "score": 54,
+          "fatigue": 75,
+          "efficiency": 23.32,
+          "total_reps": 7,
+          "full_rom_reps": 7,
+          "rom_avg_deg": 132.65,
+          "rom_min_deg": 103.1,
+          "rom_max_deg": 114.2,
+          "avg_duration_s": 1.94,
+          "avg_velocity": 80,
+          "reps_detail": [
+            {
+              "rep": 1,
+              "full_rom": true,
+              "rom_deg": 108.1,
+              "duration_s": 1.96,
+              "velocity": 115.2
+            },
+            {
+              "rep": 2,
+              "full_rom": true,
+              "rom_deg": 113.6,
+              "duration_s": 1.92,
+              "velocity": 113.4
+            },
+            {
+              "rep": 3,
+              "full_rom": true,
+              "rom_deg": 117.5,
+              "duration_s": 1.88,
+              "velocity": 118.1
+            },
+            {
+              "rep": 4,
+              "full_rom": true,
+              "rom_deg": 110.7,
+              "duration_s": 1.95,
+              "velocity": 112.2
+            },
+            {
+              "rep": 5,
+              "full_rom": true,
+              "rom_deg": 115.3,
+              "duration_s": 1.94,
+              "velocity": 111.8
+            }
+          ]
+        },
+        {
+          "sessionId": 13,
+          "videoUrl": "https://www.youtube.com/watch?v=AqfdLm_I9Ik",
+          "uploadedAt": "2026-04-05T10:00:00",
+          "score": 72,
+          "fatigue": 1.6,
+          "efficiency": 58.34,
+          "total_reps": 7,
+          "full_rom_reps": 7,
+          "rom_avg_deg": 114.0,
+          "rom_min_deg": 109.0,
+          "rom_max_deg": 118.2,
+          "avg_duration_s": 1.91,
+          "avg_velocity": 115.3,
+          "reps_detail": [
+            {
+              "rep": 1,
+              "full_rom": true,
+              "rom_deg": 109.0,
+              "duration_s": 1.93,
+              "velocity": 116.0
+            },
+            {
+              "rep": 2,
+              "full_rom": true,
+              "rom_deg": 114.2,
+              "duration_s": 1.89,
+              "velocity": 114.1
+            },
+            {
+              "rep": 3,
+              "full_rom": true,
+              "rom_deg": 118.2,
+              "duration_s": 1.85,
+              "velocity": 119.6
+            },
+            {
+              "rep": 4,
+              "full_rom": true,
+              "rom_deg": 111.4,
+              "duration_s": 1.92,
+              "velocity": 113.2
+            },
+            {
+              "rep": 5,
+              "full_rom": true,
+              "rom_deg": 116.0,
+              "duration_s": 1.91,
+              "velocity": 113.8
+            }
+          ]
+        },
+        {
+          "sessionId": 14,
+          "videoUrl": "https://www.youtube.com/watch?v=AqfdLm_I9Ik",
+          "uploadedAt": "2026-04-06T10:00:00",
+          "score": 80,
+          "fatigue": 1.6,
+          "efficiency": 58.34,
+          "total_reps": 7,
+          "full_rom_reps": 7,
+          "rom_avg_deg": 114.6,
+          "rom_min_deg": 109.5,
+          "rom_max_deg": 118.9,
+          "avg_duration_s": 1.89,
+          "avg_velocity": 116.7,
+          "reps_detail": [
+            {
+              "rep": 1,
+              "full_rom": true,
+              "rom_deg": 109.5,
+              "duration_s": 1.9,
+              "velocity": 117.8
+            },
+            {
+              "rep": 2,
+              "full_rom": true,
+              "rom_deg": 115.0,
+              "duration_s": 1.87,
+              "velocity": 115.9
+            },
+            {
+              "rep": 3,
+              "full_rom": true,
+              "rom_deg": 118.9,
+              "duration_s": 1.82,
+              "velocity": 120.3
+            },
+            {
+              "rep": 4,
+              "full_rom": true,
+              "rom_deg": 112.1,
+              "duration_s": 1.89,
+              "velocity": 114.6
+            },
+            {
+              "rep": 5,
+              "full_rom": true,
+              "rom_deg": 116.8,
+              "duration_s": 1.88,
+              "velocity": 115.1
+            }
+          ]
+        },
+        {
+          "sessionId": 15,
+          "videoUrl": "https://www.youtube.com/watch?v=AqfdLm_I9Ik",
+          "uploadedAt": "2026-04-07T10:00:00",
+          "score": 87,
+          "fatigue": 1.6,
+          "efficiency": 58.34,
+          "total_reps": 7,
+          "full_rom_reps": 7,
+          "rom_avg_deg": 115.2,
+          "rom_min_deg": 110.1,
+          "rom_max_deg": 119.3,
+          "avg_duration_s": 1.87,
+          "avg_velocity": 118.0,
+          "reps_detail": [
+            {
+              "rep": 1,
+              "full_rom": true,
+              "rom_deg": 110.1,
+              "duration_s": 1.88,
+              "velocity": 118.9
+            },
+            {
+              "rep": 2,
+              "full_rom": true,
+              "rom_deg": 115.5,
+              "duration_s": 1.85,
+              "velocity": 116.7
+            },
+            {
+              "rep": 3,
+              "full_rom": true,
+              "rom_deg": 119.3,
+              "duration_s": 1.8,
+              "velocity": 121.4
+            },
+            {
+              "rep": 4,
+              "full_rom": true,
+              "rom_deg": 112.8,
+              "duration_s": 1.87,
+              "velocity": 116.1
+            },
+            {
+              "rep": 5,
+              "full_rom": true,
+              "rom_deg": 117.2,
+              "duration_s": 1.86,
+              "velocity": 116.9
+            }
+          ]
+        },
+        {
+          "sessionId": 16,
+          "videoUrl": "https://www.youtube.com/watch?v=AqfdLm_I9Ik",
+          "uploadedAt": "2026-04-08T10:00:00",
+          "score": 74,
+          "fatigue": 1.6,
+          "efficiency": 58.34,
+          "total_reps": 7,
+          "full_rom_reps": 7,
+          "rom_avg_deg": 109.8,
+          "rom_min_deg": 105.7,
+          "rom_max_deg": 113.9,
+          "avg_duration_s": 1.85,
+          "avg_velocity": 119.4,
+          "reps_detail": [
+            {
+              "rep": 1,
+              "full_rom": true,
+              "rom_deg": 110.7,
+              "duration_s": 1.86,
+              "velocity": 120.3
+            },
+            {
+              "rep": 2,
+              "full_rom": true,
+              "rom_deg": 116.0,
+              "duration_s": 1.83,
+              "velocity": 118.5
+            },
+            {
+              "rep": 3,
+              "full_rom": true,
+              "rom_deg": 119.9,
+              "duration_s": 1.78,
+              "velocity": 122.6
+            },
+            {
+              "rep": 4,
+              "full_rom": true,
+              "rom_deg": 113.3,
+              "duration_s": 1.85,
+              "velocity": 117.8
+            },
+            {
+              "rep": 5,
+              "full_rom": true,
+              "rom_deg": 117.9,
+              "duration_s": 1.84,
+              "velocity": 118.2
+            }
+          ]
+        },
+        {
+          "sessionId": 17,
+          "videoUrl": "https://www.youtube.com/watch?v=AqfdLm_I9Ik",
+          "uploadedAt": "2026-04-09T10:00:00",
+          "score": 89,
+          "fatigue": 1.6,
+          "efficiency": 58.34,
+          "total_reps": 7,
+          "full_rom_reps": 7,
+          "rom_avg_deg": 116.3,
+          "rom_min_deg": 111.2,
+          "rom_max_deg": 120.4,
+          "avg_duration_s": 1.83,
+          "avg_velocity": 120.6,
+          "reps_detail": [
+            {
+              "rep": 1,
+              "full_rom": true,
+              "rom_deg": 111.2,
+              "duration_s": 1.84,
+              "velocity": 121.5
+            },
+            {
+              "rep": 2,
+              "full_rom": true,
+              "rom_deg": 116.6,
+              "duration_s": 1.81,
+              "velocity": 119.3
+            },
+            {
+              "rep": 3,
+              "full_rom": true,
+              "rom_deg": 120.4,
+              "duration_s": 1.76,
+              "velocity": 123.1
+            },
+            {
+              "rep": 4,
+              "full_rom": true,
+              "rom_deg": 113.9,
+              "duration_s": 1.83,
+              "velocity": 118.9
+            },
+            {
+              "rep": 5,
+              "full_rom": true,
+              "rom_deg": 118.5,
+              "duration_s": 1.82,
+              "velocity": 119.2
+            }
+          ]
+        },
+        {
+          "sessionId": 18,
+          "videoUrl": "https://www.youtube.com/watch?v=AqfdLm_I9Ik",
+          "uploadedAt": "2026-04-10T10:00:00",
+          "score": 92,
+          "fatigue": 1.6,
+          "efficiency": 58.34,
+          "total_reps": 7,
+          "full_rom_reps": 7,
+          "rom_avg_deg": 116.9,
+          "rom_min_deg": 111.8,
+          "rom_max_deg": 121.0,
+          "avg_duration_s": 1.8,
+          "avg_velocity": 122.1,
+          "reps_detail": [
+            {
+              "rep": 1,
+              "full_rom": true,
+              "rom_deg": 111.8,
+              "duration_s": 1.82,
+              "velocity": 122.9
+            },
+            {
+              "rep": 2,
+              "full_rom": true,
+              "rom_deg": 117.1,
+              "duration_s": 1.79,
+              "velocity": 120.8
+            },
+            {
+              "rep": 3,
+              "full_rom": true,
+              "rom_deg": 121.0,
+              "duration_s": 1.74,
+              "velocity": 124.6
+            },
+            {
+              "rep": 4,
+              "full_rom": true,
+              "rom_deg": 114.5,
+              "duration_s": 1.81,
+              "velocity": 120.2
+            },
+            {
+              "rep": 5,
+              "full_rom": true,
+              "rom_deg": 119.1,
+              "duration_s": 1.8,
+              "velocity": 120.9
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

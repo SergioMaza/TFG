@@ -1,0 +1,27 @@
+:root {
+  --primary: #00f5ff;
+  --secondary: #5d5cde;
+  --tertiary: #ffb300;
+
+  --chart-color1: #22c55e;
+  --chart-color2: #2563eb;
+  --chart-color3: #f97316; 
+
+  /* Alerts */
+  --error: #cf2323;
+  --error-light: #fee2e2;
+
+  --success: #1fcc5e;
+  --success-light: #dcfce7;
+
+  --warning: #eab308;
+  --warning-light: #fef9c3;
+
+  /* Background */
+  --bg: #121212;
+  --bg-light: #1c1b1b;
+  --bg-extra-light: #232222;
+
+  /* Neutral */
+  --gray: #99a1af;
+}

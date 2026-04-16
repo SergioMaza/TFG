@@ -1,3 +1,22 @@
+# Estructura (Crear estructura real)
+pose-app/
+├── api/
+│   ├── app.py              # Flask + WebSocket + MediaPipe
+│   ├── requirements.txt
+│   └── Dockerfile
+├── frontend/
+│   ├── src/
+│   │   ├── App.js
+│   │   ├── index.js
+│   │   └── components/
+│   │       └── PoseCamera.jsx   # Componente principal
+│   ├── public/index.html
+│   ├── nginx.conf          # Proxy WebSocket
+│   ├── .env
+│   ├── package.json
+│   └── Dockerfile
+└── docker-compose.yml
+
 # Crear un entorno virual y Descargar requirements
 
 python -m venv .venv #Crear venv
