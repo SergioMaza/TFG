@@ -127,7 +127,7 @@ export default function MetricsPanel({ exercise, session }) {
       <div className="flex flex-col gap-10">
         <RangeBar
           label="Velocidad Media"
-          value={session.avg_velocity}
+          value={session.velocity_avg}
           min={exercise.thresholds.velocity.min}
           max={exercise.thresholds.velocity.max}
           idealLow={exercise.thresholds.velocity.idealLow}
@@ -147,7 +147,7 @@ export default function MetricsPanel({ exercise, session }) {
 
         <RangeBar
           label="Duración Rep"
-          value={session.avg_duration_s}
+          value={session.duration_avg}
           min={exercise.thresholds.duration.min}
           max={exercise.thresholds.duration.max}
           idealLow={exercise.thresholds.duration.idealLow}

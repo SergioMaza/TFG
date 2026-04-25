@@ -4,16 +4,15 @@
  */
 
 
-// import { useNavigate } from "react-router-dom";
-
-
+import { useNavigate } from "react-router-dom";
 import { AppContext } from "./AppContext";
+import { supabase } from "../../lib/supabaseClient";
 
 // TODO: TRADUCIR TODO; ERRORES Y DEMAS
 
 // 2. Provider
 export const AppProvider = ({ children }) => {
-  // const navigate = useNavigate();
+  const navigate = useNavigate();
 
   // -----------------------
   // AUTH FUNCTIONS

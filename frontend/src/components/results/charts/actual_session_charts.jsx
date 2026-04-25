@@ -19,7 +19,7 @@ export function SessionGeneralChart({ reps }) {
     name: `Rep ${r.rep}`,
     rom: parseFloat(r.rom_deg.toFixed(1)),
     velocidad: parseFloat(r.velocity.toFixed(1)),
-    duracion: parseFloat(r.duration_s.toFixed(2)),
+    duracion: parseFloat(r.duration.toFixed(2)),
   }));
 
   return (
@@ -121,7 +121,7 @@ export function PerformanceRadar({ exercise, session }) {
     },
     {
       metric: "Duración",
-      value: norm(session.avg_duration_s, exercise.thresholds.duration.idealLow, exercise.thresholds.duration.idealHigh),
+      value: norm(session.duration_avg, exercise.thresholds.duration.idealLow, exercise.thresholds.duration.idealHigh),
     },
   ];
 

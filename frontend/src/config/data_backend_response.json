@@ -14,8 +14,8 @@
       "img": "https://lh3.googleusercontent.com/aida-public/AB6AXuCk-7ltYEJvvOSb8nP7oC4f36mKn5ijE2l6VmT8_VThvp112yiI9j-99-itfkdszKiari2D2C7Y6KKUw4ZbLZ1QRXtDscWnbsTAm4kCeudA7aBKEmkKUbcCqLLV1VSvsWuRoameGRaRDv-A9fA4r1wx9wv_Hx3kN8sbnx0xyzN2YUBBYwoEW_DcyvRrTGIxp2p1BIDk3QnQJ7REswu_t--CqxmEc_oYWGVB2CgX3t7uLUt5vp9p27k5Xg7n4Bf6uEROpAgZDYEag3E",
       "upper": false,
       "thresholds": {
-        "velocity": { "min": 60, "max": 180, "idealLow": 90, "idealHigh": 140 },
-        "rom": { "min": 60, "max": 140, "idealLow": 100, "idealHigh": 125 },
+        "velocity": { "idealLow": 90, "idealHigh": 140 },
+        "rom": { "idealLow": 100, "idealHigh": 125 },
         "duration": {
           "min": 0.8,
           "max": 4.0,
@@ -344,8 +344,8 @@
       "img": "https://lh3.googleusercontent.com/aida-public/AB6AXuAvpVbvGVfXD0-D5iv1ASR5skO2VI8JlO1sjXchQ7jhWhfZcs8rlhCbq7CNwsZQDpAamyPtjcBTCzP7-5q-jYKmWZJaGBs2tNupOHFQieo7waX-jOtHaZB9VJ2x-Z9tsLB0M12cR2B1ftkzcHyVU0SPARaar6R_sBTBY8rToBRpNcyt_pxorJa4d9VQ-uLyVl0tPVfWdN-95od54ZWFfmEXFVSpn5tgccHINT6hIGQ7Znu3w_dbrrDd27tVAcd8R0CESMmI4szohQg",
       "upper": false,
       "thresholds": {
-        "velocity": { "min": 60, "max": 180, "idealLow": 90, "idealHigh": 140 },
-        "rom": { "min": 60, "max": 140, "idealLow": 100, "idealHigh": 125 },
+        "velocity": { "idealLow": 90, "idealHigh": 140 },
+        "rom": { "idealLow": 100, "idealHigh": 125 },
         "duration": {
           "min": 0.8,
           "max": 4.0,
@@ -517,8 +517,8 @@
       "img": "https://lh3.googleusercontent.com/aida-public/AB6AXuAG4P7JYHIzYYj6FrR_etdeuEeDijYzxBrc00DHwOIZzwfrksMFsoY0h7UGMeNDQ0VB947QcPbZlCXXxjpoCn3AlokrW6iX7bnvXfsghv4BNixtoVJ7cHz6nAo1fBnyR1-dKm8vLc-Fksr0ml-k8NzDxSn0MexFfTZpwkkRNTtdWdxBpblIlu_pKbsCcG_7nI7xvcA-Z71t6KAXDL8kdzRd_hdixiUfzNHEkAK0ztqwIk2mcNId9obJjrFCoS1evgOg3wApuK9M_qc",
       "upper": true,
       "thresholds": {
-        "velocity": { "min": 60, "max": 180, "idealLow": 90, "idealHigh": 140 },
-        "rom": { "min": 60, "max": 140, "idealLow": 100, "idealHigh": 125 },
+        "velocity": { "idealLow": 90, "idealHigh": 140 },
+        "rom": { "idealLow": 100, "idealHigh": 125 },
         "duration": {
           "min": 0.8,
           "max": 4.0,
