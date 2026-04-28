@@ -12,27 +12,33 @@ def ping():
 @app.route("/analysis", methods=["POST"])
 def process():
     data = request.json
-    video_path = data["video_path"]
+    user_id = data["user_id"]
+    session_id = data["session_id"]
     exercise_name = data["exercise_name"]
     rom_ideal_low = data["rom_ideal_low"]
     rom_ideal_high = data["rom_ideal_high"]
-    
 
-    session = process_video(video_path, exercise_name, rom_ideal_low, rom_ideal_high)
+    result = process_video(
+        user_id, session_id, exercise_name, rom_ideal_low, rom_ideal_high
+    )
 
-    return jsonify({"session": session})
+    return jsonify(result)
 
-#! DEGUB EXAMPLE 
+
+#! DEGUB EXAMPLE
 @app.route("/analysis_test")
 def process_test():
-    video_path = "./videos/Squad_1.mp4"
+    user_id = "2407f69b-8960-45fa-ac8b-0e1b1141ebf9"
+    session_id = "434285f9-ebb6-4ce5-bc40-a5852ff9a4c7"
     exercise_name = "squat"
     rom_ideal_low = 60
     rom_ideal_high = 150
 
-    session = process_video(video_path, exercise_name, rom_ideal_low, rom_ideal_high)
+    result = process_video(
+        user_id, session_id, exercise_name, rom_ideal_low, rom_ideal_high
+    )
 
-    return jsonify({"session": session})
+    return jsonify(result)
 
 
 if __name__ == "__main__":

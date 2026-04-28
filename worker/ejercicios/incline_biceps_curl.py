@@ -24,16 +24,8 @@ class InclineBicepsCurl(BaseExercise):
             "torso_lean": calculate_torso_lean(lm, w, h),
         }
 
-    def generate_feedback(self, metrics):
-        feedback = []
-
-        if metrics["torso_lean"] > 15:
-            feedback.append("Mantén la espalda recta")
-
-        if self.tracker.velocity() > 200:
-            feedback.append("Movimiento demasiado rápido")
-
-        if self.tracker.reps and not self.tracker.reps[-1].full_rom:
-            feedback.append("Recorrido incompleto")
-
-        return feedback
+    def generate_feedback(self, session: dict, reps: list) -> list[dict]:
+        # TODO Comprobar cual dejar
+        return []
+        #feedback = super().generate_feedback(session, reps)
+        #return feedback

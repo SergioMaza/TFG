@@ -54,7 +54,7 @@ def generate_session_summary(
     reps: list,
     rom_ideal_low: float,
     rom_ideal_high: float,
-    video_url: str = "",
+    processed_path: str = "",
     uploaded_at: str = None,
 ) -> dict:
     """
@@ -63,7 +63,7 @@ def generate_session_summary(
     if not reps:
         return {
             "exercise_name": exercise_name,
-            "video_url": video_url,
+            "processed_path": processed_path,
             "uploaded_at": uploaded_at or datetime.now(timezone.utc).isoformat(),
             "score": 0,
             "fatigue": 0.0,
@@ -86,11 +86,12 @@ def generate_session_summary(
     reps_detail = []
     for r in reps:
         rom_deg = r.peak_angle - r.min_angle
-        duration = r.duration
-        velocity = r.velocity
-
         roms.append(rom_deg)
+        
+        duration = r.duration
         durations.append(duration)
+        
+        velocity = r.velocity
         velocities.append(velocity)
 
         efficiency = (rom_deg / duration) if duration > 0 else 0.0
@@ -116,7 +117,7 @@ def generate_session_summary(
 
     return {
         "exercise_name": exercise_name,
-        "video_url": video_url,
+        "processed_path": processed_path,
         "uploaded_at": uploaded_at or datetime.now(timezone.utc).isoformat(),
         "score": calculate_score(
             rom_avg_deg, fatigue, efficiency_avg, rom_ideal_low, rom_ideal_high

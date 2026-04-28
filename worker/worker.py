@@ -1,19 +1,39 @@
 import cv2
-import os
+import os, tempfile
 import mediapipe as mp
 from mediapipe.tasks import python
 from mediapipe.tasks.python import vision
+from supabase import create_client
 
 from ejercicios.registry import get_exercise
 from my_libs.report import generate_session_summary
 
 MODEL_PATH = os.environ.get("MODEL_PATH")
 
+# Supabase Keys
+STORAGE_BUCKET_NAME = os.environ.get("STORAGE_BUCKET_NAME")
+SUPABASE_PUBLIC_URL = os.environ.get("SUPABASE_PUBLIC_URL")
+SUPABASE_SECRET_KEY = os.environ.get("SUPABASE_SECRET_KEY")
 
-def process_video(video_path: str, exercise_name: str, rom_ideal_low: float, rom_ideal_high: float, video_url: str = "" ) -> dict:
+supabase = create_client(SUPABASE_PUBLIC_URL, SUPABASE_SECRET_KEY)
+
+
+def process_video(
+    user_id: str,
+    session_id: str,
+    exercise_name: str,
+    rom_ideal_low: float,
+    rom_ideal_high: float,
+) -> dict:
     """
-    Procesa un vídeo completo y devuelve un json con el resultado
+    Descarga el video 'upload' desde Storage
+    Procesa un vídeo completo
+    Devuelve un json con el analisis y la url del video 'processed'
     """
+
+    # Obtener las urls de upload y processed
+    upload_path = f"upload/{user_id}/{session_id}.mp4"
+    processed_path = f"processed/{user_id}/{session_id}.mp4"
 
     # Obtener el objeto 'ejercicio' del registry
     exercise = get_exercise(exercise_name)
@@ -24,38 +44,71 @@ def process_video(video_path: str, exercise_name: str, rom_ideal_low: float, rom
         base_options=base_options, running_mode=vision.RunningMode.VIDEO
     )
 
-    # Config del input del video
-    cap = cv2.VideoCapture(video_path)
-    if not cap.isOpened():
-        raise ValueError(f"No se puede abrir el vídeo: {video_path}")
+    with tempfile.TemporaryDirectory() as tmp_dir:
+        # TODO: Abstraer logica en congif_IO() -> cap, out
+        #input_path = os.path.join(tmp_dir, "input.mp4")
+        output_path = os.path.join(tmp_dir, "processed.mp4")
 
-    width = int(cap.get(cv2.CAP_PROP_FRAME_WIDTH))
-    height = int(cap.get(cv2.CAP_PROP_FRAME_HEIGHT))
-    fps = cap.get(cv2.CAP_PROP_FPS)
+        # Descargar vídeo raw desde Storage
+        #video_bytes = supabase.storage.from_(STORAGE_BUCKET_NAME).download(upload_path)
+        #with open(input_path, "wb") as f:
+        #    f.write(video_bytes)
 
-    # Procesamiento del video
-    with vision.PoseLandmarker.create_from_options(options) as landmarker:
-        timestamp_ms = 0
-        while cap.isOpened():
-            ret, frame = cap.read()
-            if not ret:
-                break
-            timestamp_ms += int(1000 / fps)
-            rgb = cv2.cvtColor(frame, cv2.COLOR_BGR2RGB)
-            mp_image = mp.Image(image_format=mp.ImageFormat.SRGB, data=rgb)
-            result = landmarker.detect_for_video(mp_image, timestamp_ms)
+        # ! DEBUG
+        input_path = "./videos/Squad_1.mp4"
+        
+        # Config del input del video
+        cap = cv2.VideoCapture(input_path)
+        if not cap.isOpened():
+            raise ValueError(f"No se puede abrir el vídeo: {input_path}")
 
-            if result.pose_landmarks:
-                landmarks = result.pose_landmarks[0]
-                result_data = exercise.analyze(landmarks, width, height, fps)
-                # draw omitido en producción — solo para debug local
-    cap.release()
+        width = int(cap.get(cv2.CAP_PROP_FRAME_WIDTH))
+        height = int(cap.get(cv2.CAP_PROP_FRAME_HEIGHT))
+        fps = cap.get(cv2.CAP_PROP_FPS)
+        
+        # Config del output del video
+        fourcc = cv2.VideoWriter_fourcc(*"mp4v")
+        out = cv2.VideoWriter(output_path, fourcc, fps, (width, height))
+        
+        # Procesamiento del video
+        with vision.PoseLandmarker.create_from_options(options) as landmarker:
+            timestamp_ms = 0
+            while cap.isOpened():
+                ret, frame = cap.read()
+                if not ret:
+                    break
+                timestamp_ms += int(1000 / fps)
+                rgb = cv2.cvtColor(frame, cv2.COLOR_BGR2RGB)
+                mp_image = mp.Image(image_format=mp.ImageFormat.SRGB, data=rgb)
+                result = landmarker.detect_for_video(mp_image, timestamp_ms)
 
-    # Resultado
-    return generate_session_summary(
+                if result.pose_landmarks:
+                    landmarks = result.pose_landmarks[0]
+                    result_data = exercise.analyze(landmarks, width, height, fps)
+                    exercise.draw(cv2, frame, result_data, landmarks, width, height)
+                    
+                out.write(frame)
+        cap.release()
+        out.release()
+        
+        # Subir vídeo anotado a Storage
+        with open(output_path, "rb") as f:
+            supabase.storage.from_(STORAGE_BUCKET_NAME).upload(
+                processed_path,
+                f,
+                {"content-type": "video/mp4"}
+            )
+
+    # Construir Resultado
+    session = generate_session_summary(
         exercise_name=exercise_name,
         reps=exercise.tracker.reps,
-        rom_ideal_low = rom_ideal_low,
-        rom_ideal_high = rom_ideal_high,
-        video_url=video_url,
+        rom_ideal_low=rom_ideal_low,
+        rom_ideal_high=rom_ideal_high,
+        processed_path=processed_path,
     )
+
+    feedback = exercise.generate_feedback(session, exercise.tracker.reps)
+
+    # Devuelve un json unificado con session y feedback
+    return {**session, "feedback": feedback}

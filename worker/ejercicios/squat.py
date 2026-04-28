@@ -24,13 +24,14 @@ class Squat(BaseExercise):
             "torso_lean": calculate_torso_lean(lm, w, h),
         }
 
-    def generate_feedback(self, metrics):
-        feedback = []
+    def generate_feedback(self, session: dict, reps: list) -> list[dict]:
+        feedback = super().generate_feedback(session, reps)
 
-        if metrics["torso_lean"] > 20:
-            feedback.append("Mantén el torso vertical")
-
-        if self.tracker.reps and not self.tracker.reps[-1].full_rom:
-            feedback.append("Baja más")
+        if session.get("avg_torso_lean", 0) > 20:
+            feedback.append({
+                "rep_number": None,
+                "text": "Inclinas el torso hacia adelante — trabaja movilidad de tobillo",
+                "error": True
+            })
 
         return feedback

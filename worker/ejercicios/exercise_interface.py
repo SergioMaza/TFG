@@ -19,17 +19,15 @@ from dataclasses import dataclass, field
 class ExerciseResult:
     rep_count: int = 0
     reps: list = field(default_factory=list)
-    rom_current: float = 0.0
-    rom_avg: float = 0.0
+    #rom_current: float = 0.0 #TODO CREO QUE SE PUEDEN BORRAR
+    #rom_avg: float = 0.0 #TODO CREO QUE SE PUEDEN BORRAR
     metrics: dict = field(default_factory=dict)
-    feedback: list = field(default_factory=list) 
 
 class BaseExercise(ABC):
 
     name: str
     landmarks: list[int]
     connections: list[tuple]
-    rom_ideal: float
 
     def __init__(self):
         self.tracker = None
@@ -39,15 +37,40 @@ class BaseExercise(ABC):
         pass
 
     @abstractmethod
-    def generate_feedback(self, metrics: dict) -> list[str]:
-        pass
+    def generate_feedback(self, session: dict, reps: list) -> list[dict]:
+        feedback = []
+        
+        # Feedback por repe
+        for r in reps:
+            if not r.full_rom:
+                feedback.append({
+                    "rep_number": r.rep_number,
+                    "text": "Rango de movimiento incompleto",
+                    "error": True
+                })
+
+        # Feedback por session
+        if len(reps) >= 2:
+            if session["fatigue"] > 40:
+                feedback.append({
+                    "rep_number": None,
+                    "text": "Caída de velocidad notable hacia el final de la serie",
+                    "error": True
+                })
+            elif session["fatigue"] < 15:
+                feedback.append({
+                    "rep_number": None,
+                    "text": "Velocidad consistente a lo largo de toda la serie",
+                    "error": False
+                })
+
+        return feedback
 
     # Pipeline de procesamiento de cada ejercicio
     def analyze(self, lm, w: int, h: int, fps: float) -> ExerciseResult:
         metrics = self.compute_metrics(lm, w, h)
         self.update_tracker(metrics, fps)
-        feedback = self.generate_feedback(metrics)
-        return self.build_result(metrics, feedback)
+        return self.build_result(metrics)
 
     # Helper para recoger posiciones de los landmarks
     def get_xy(self, lm, w, h, idx):
@@ -74,13 +97,12 @@ class BaseExercise(ABC):
         draw_reps(cv2, frame, result_data)
     
     # Crear el componente ExerciseResult para el return
-    def build_result(self, metrics, feedback):
+    def build_result(self, metrics):
         return ExerciseResult(
             rep_count=self.tracker.rep_count,
             reps=self.tracker.reps.copy(),
-            rom_current=self.tracker.rom_current(),
-            rom_avg=self.tracker.rom_avg(),
-            feedback=feedback,
+            #rom_current=self.tracker.rom_current(),
+            #rom_avg=self.tracker.rom_avg(),
             metrics=metrics,
         )
 
