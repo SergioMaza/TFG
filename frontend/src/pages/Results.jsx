@@ -8,6 +8,7 @@ import ExerciseGrid from "../components/dashboard/ExerciseGrid";
 export default function Results() {
   const { id } = useParams();
 
+  // TODO: Que data fetch_user_sessions o algo asi que sea el que de toda la info
   const exercise = data.exercises.find((ex) =>
     ex.sessions.some((s) => s.sessionId === parseInt(id)),
   );

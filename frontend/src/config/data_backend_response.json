@@ -44,35 +44,35 @@
               "rep": 1,
               "full_rom": true,
               "rom_deg": 108.3,
-              "duration_s": 1.97,
+              "duration": 1.97,
               "velocity": 116.5
             },
             {
               "rep": 2,
               "full_rom": true,
               "rom_deg": 113.2,
-              "duration_s": 2.0,
+              "duration": 2.0,
               "velocity": 113.3
             },
             {
               "rep": 3,
               "full_rom": true,
               "rom_deg": 116.5,
-              "duration_s": 1.87,
+              "duration": 1.87,
               "velocity": 124.9
             },
             {
               "rep": 4,
               "full_rom": true,
               "rom_deg": 109.9,
-              "duration_s": 1.93,
+              "duration": 1.93,
               "velocity": 109.2
             },
             {
               "rep": 5,
               "full_rom": true,
               "rom_deg": 114.9,
-              "duration_s": 1.9,
+              "duration": 1.9,
               "velocity": 112.9
             }
           ]
@@ -96,35 +96,35 @@
               "rep": 1,
               "full_rom": true,
               "rom_deg": 108.3,
-              "duration_s": 1.97,
+              "duration": 1.97,
               "velocity": 116.5
             },
             {
               "rep": 2,
               "full_rom": true,
               "rom_deg": 113.2,
-              "duration_s": 2.0,
+              "duration": 2.0,
               "velocity": 113.3
             },
             {
               "rep": 3,
               "full_rom": true,
               "rom_deg": 116.5,
-              "duration_s": 1.87,
+              "duration": 1.87,
               "velocity": 124.9
             },
             {
               "rep": 4,
               "full_rom": true,
               "rom_deg": 109.9,
-              "duration_s": 1.93,
+              "duration": 1.93,
               "velocity": 109.2
             },
             {
               "rep": 5,
               "full_rom": true,
               "rom_deg": 114.9,
-              "duration_s": 1.9,
+              "duration": 1.9,
               "velocity": 112.9
             }
           ]
@@ -148,35 +148,35 @@
               "rep": 1,
               "full_rom": true,
               "rom_deg": 108.3,
-              "duration_s": 1.97,
+              "duration": 1.97,
               "velocity": 116.5
             },
             {
               "rep": 2,
               "full_rom": true,
               "rom_deg": 113.2,
-              "duration_s": 2.0,
+              "duration": 2.0,
               "velocity": 113.3
             },
             {
               "rep": 3,
               "full_rom": true,
               "rom_deg": 116.5,
-              "duration_s": 1.87,
+              "duration": 1.87,
               "velocity": 124.9
             },
             {
               "rep": 4,
               "full_rom": true,
               "rom_deg": 109.9,
-              "duration_s": 1.93,
+              "duration": 1.93,
               "velocity": 109.2
             },
             {
               "rep": 5,
               "full_rom": true,
               "rom_deg": 114.9,
-              "duration_s": 1.9,
+              "duration": 1.9,
               "velocity": 112.9
             }
           ]
@@ -200,35 +200,35 @@
               "rep": 1,
               "full_rom": true,
               "rom_deg": 108.3,
-              "duration_s": 1.97,
+              "duration": 1.97,
               "velocity": 116.5
             },
             {
               "rep": 2,
               "full_rom": true,
               "rom_deg": 113.2,
-              "duration_s": 2.0,
+              "duration": 2.0,
               "velocity": 113.3
             },
             {
               "rep": 3,
               "full_rom": true,
               "rom_deg": 116.5,
-              "duration_s": 1.87,
+              "duration": 1.87,
               "velocity": 124.9
             },
             {
               "rep": 4,
               "full_rom": true,
               "rom_deg": 109.9,
-              "duration_s": 1.93,
+              "duration": 1.93,
               "velocity": 109.2
             },
             {
               "rep": 5,
               "full_rom": true,
               "rom_deg": 114.9,
-              "duration_s": 1.9,
+              "duration": 1.9,
               "velocity": 112.9
             }
           ]
@@ -252,35 +252,35 @@
               "rep": 1,
               "full_rom": true,
               "rom_deg": 108.3,
-              "duration_s": 1.97,
+              "duration": 1.97,
               "velocity": 116.5
             },
             {
               "rep": 2,
               "full_rom": true,
               "rom_deg": 113.2,
-              "duration_s": 2.0,
+              "duration": 2.0,
               "velocity": 113.3
             },
             {
               "rep": 3,
               "full_rom": true,
               "rom_deg": 116.5,
-              "duration_s": 1.87,
+              "duration": 1.87,
               "velocity": 124.9
             },
             {
               "rep": 4,
               "full_rom": true,
               "rom_deg": 109.9,
-              "duration_s": 1.93,
+              "duration": 1.93,
               "velocity": 109.2
             },
             {
               "rep": 5,
               "full_rom": true,
               "rom_deg": 114.9,
-              "duration_s": 1.9,
+              "duration": 1.9,
               "velocity": 112.9
             }
           ]
@@ -304,35 +304,35 @@
               "rep": 1,
               "full_rom": true,
               "rom_deg": 108.3,
-              "duration_s": 1.97,
+              "duration": 1.97,
               "velocity": 116.5
             },
             {
               "rep": 2,
               "full_rom": true,
               "rom_deg": 113.2,
-              "duration_s": 2.0,
+              "duration": 2.0,
               "velocity": 113.3
             },
             {
               "rep": 3,
               "full_rom": true,
               "rom_deg": 116.5,
-              "duration_s": 1.87,
+              "duration": 1.87,
               "velocity": 124.9
             },
             {
               "rep": 4,
               "full_rom": true,
               "rom_deg": 109.9,
-              "duration_s": 1.93,
+              "duration": 1.93,
               "velocity": 109.2
             },
             {
               "rep": 5,
               "full_rom": true,
               "rom_deg": 114.9,
-              "duration_s": 1.9,
+              "duration": 1.9,
               "velocity": 112.9
             }
           ]
@@ -374,14 +374,14 @@
               "rep": 1,
               "full_rom": true,
               "rom_deg": 108.3,
-              "duration_s": 1.97,
+              "duration": 1.97,
               "velocity": 116.5
             },
             {
               "rep": 2,
               "full_rom": true,
               "rom_deg": 113.2,
-              "duration_s": 2.0,
+              "duration": 2.0,
               "velocity": 113.3
             }
           ]
@@ -405,14 +405,14 @@
               "rep": 1,
               "full_rom": true,
               "rom_deg": 108.3,
-              "duration_s": 1.97,
+              "duration": 1.97,
               "velocity": 116.5
             },
             {
               "rep": 2,
               "full_rom": true,
               "rom_deg": 113.2,
-              "duration_s": 2.0,
+              "duration": 2.0,
               "velocity": 113.3
             }
           ]
@@ -436,14 +436,14 @@
               "rep": 1,
               "full_rom": true,
               "rom_deg": 108.3,
-              "duration_s": 1.97,
+              "duration": 1.97,
               "velocity": 116.5
             },
             {
               "rep": 2,
               "full_rom": true,
               "rom_deg": 113.2,
-              "duration_s": 2.0,
+              "duration": 2.0,
               "velocity": 113.3
             }
           ]
@@ -467,14 +467,14 @@
               "rep": 1,
               "full_rom": true,
               "rom_deg": 108.3,
-              "duration_s": 1.97,
+              "duration": 1.97,
               "velocity": 116.5
             },
             {
               "rep": 2,
               "full_rom": true,
               "rom_deg": 113.2,
-              "duration_s": 2.0,
+              "duration": 2.0,
               "velocity": 113.3
             }
           ]
@@ -498,14 +498,14 @@
               "rep": 1,
               "full_rom": true,
               "rom_deg": 108.3,
-              "duration_s": 1.97,
+              "duration": 1.97,
               "velocity": 116.5
             },
             {
               "rep": 2,
               "full_rom": true,
               "rom_deg": 113.2,
-              "duration_s": 2.0,
+              "duration": 2.0,
               "velocity": 113.3
             }
           ]
@@ -547,35 +547,35 @@
               "rep": 1,
               "full_rom": true,
               "rom_deg": 104.9,
-              "duration_s": 2.12,
+              "duration": 2.12,
               "velocity": 109.5
             },
             {
               "rep": 2,
               "full_rom": true,
               "rom_deg": 109.7,
-              "duration_s": 2.1,
+              "duration": 2.1,
               "velocity": 107.8
             },
             {
               "rep": 3,
               "full_rom": true,
               "rom_deg": 114.2,
-              "duration_s": 2.02,
+              "duration": 2.02,
               "velocity": 111.3
             },
             {
               "rep": 4,
               "full_rom": true,
               "rom_deg": 107.3,
-              "duration_s": 2.09,
+              "duration": 2.09,
               "velocity": 105.6
             },
             {
               "rep": 5,
               "full_rom": true,
               "rom_deg": 112.6,
-              "duration_s": 2.07,
+              "duration": 2.07,
               "velocity": 107.9
             }
           ]
@@ -599,35 +599,35 @@
               "rep": 1,
               "full_rom": true,
               "rom_deg": 106.3,
-              "duration_s": 2.04,
+              "duration": 2.04,
               "velocity": 111.1
             },
             {
               "rep": 2,
               "full_rom": true,
               "rom_deg": 111.8,
-              "duration_s": 2.0,
+              "duration": 2.0,
               "velocity": 109.7
             },
             {
               "rep": 3,
               "full_rom": true,
               "rom_deg": 115.8,
-              "duration_s": 1.95,
+              "duration": 1.95,
               "velocity": 114.2
             },
             {
               "rep": 4,
               "full_rom": true,
               "rom_deg": 108.7,
-              "duration_s": 2.02,
+              "duration": 2.02,
               "velocity": 107.3
             },
             {
               "rep": 5,
               "full_rom": true,
               "rom_deg": 113.4,
-              "duration_s": 2.03,
+              "duration": 2.03,
               "velocity": 108.9
             }
           ]
@@ -651,35 +651,35 @@
               "rep": 1,
               "full_rom": true,
               "rom_deg": 107.6,
-              "duration_s": 1.98,
+              "duration": 1.98,
               "velocity": 113.5
             },
             {
               "rep": 2,
               "full_rom": true,
               "rom_deg": 112.9,
-              "duration_s": 1.95,
+              "duration": 1.95,
               "velocity": 111.2
             },
             {
               "rep": 3,
               "full_rom": true,
               "rom_deg": 116.9,
-              "duration_s": 1.9,
+              "duration": 1.9,
               "velocity": 116.8
             },
             {
               "rep": 4,
               "full_rom": true,
               "rom_deg": 109.8,
-              "duration_s": 1.97,
+              "duration": 1.97,
               "velocity": 110.1
             },
             {
               "rep": 5,
               "full_rom": true,
               "rom_deg": 114.7,
-              "duration_s": 1.96,
+              "duration": 1.96,
               "velocity": 112.0
             }
           ]
@@ -703,35 +703,35 @@
               "rep": 1,
               "full_rom": true,
               "rom_deg": 108.1,
-              "duration_s": 1.96,
+              "duration": 1.96,
               "velocity": 115.2
             },
             {
               "rep": 2,
               "full_rom": true,
               "rom_deg": 113.6,
-              "duration_s": 1.92,
+              "duration": 1.92,
               "velocity": 113.4
             },
             {
               "rep": 3,
               "full_rom": true,
               "rom_deg": 117.5,
-              "duration_s": 1.88,
+              "duration": 1.88,
               "velocity": 118.1
             },
             {
               "rep": 4,
               "full_rom": true,
               "rom_deg": 110.7,
-              "duration_s": 1.95,
+              "duration": 1.95,
               "velocity": 112.2
             },
             {
               "rep": 5,
               "full_rom": true,
               "rom_deg": 115.3,
-              "duration_s": 1.94,
+              "duration": 1.94,
               "velocity": 111.8
             }
           ]
@@ -755,35 +755,35 @@
               "rep": 1,
               "full_rom": true,
               "rom_deg": 109.0,
-              "duration_s": 1.93,
+              "duration": 1.93,
               "velocity": 116.0
             },
             {
               "rep": 2,
               "full_rom": true,
               "rom_deg": 114.2,
-              "duration_s": 1.89,
+              "duration": 1.89,
               "velocity": 114.1
             },
             {
               "rep": 3,
               "full_rom": true,
               "rom_deg": 118.2,
-              "duration_s": 1.85,
+              "duration": 1.85,
               "velocity": 119.6
             },
             {
               "rep": 4,
               "full_rom": true,
               "rom_deg": 111.4,
-              "duration_s": 1.92,
+              "duration": 1.92,
               "velocity": 113.2
             },
             {
               "rep": 5,
               "full_rom": true,
               "rom_deg": 116.0,
-              "duration_s": 1.91,
+              "duration": 1.91,
               "velocity": 113.8
             }
           ]
@@ -807,35 +807,35 @@
               "rep": 1,
               "full_rom": true,
               "rom_deg": 109.5,
-              "duration_s": 1.9,
+              "duration": 1.9,
               "velocity": 117.8
             },
             {
               "rep": 2,
               "full_rom": true,
               "rom_deg": 115.0,
-              "duration_s": 1.87,
+              "duration": 1.87,
               "velocity": 115.9
             },
             {
               "rep": 3,
               "full_rom": true,
               "rom_deg": 118.9,
-              "duration_s": 1.82,
+              "duration": 1.82,
               "velocity": 120.3
             },
             {
               "rep": 4,
               "full_rom": true,
               "rom_deg": 112.1,
-              "duration_s": 1.89,
+              "duration": 1.89,
               "velocity": 114.6
             },
             {
               "rep": 5,
               "full_rom": true,
               "rom_deg": 116.8,
-              "duration_s": 1.88,
+              "duration": 1.88,
               "velocity": 115.1
             }
           ]
@@ -859,35 +859,35 @@
               "rep": 1,
               "full_rom": true,
               "rom_deg": 110.1,
-              "duration_s": 1.88,
+              "duration": 1.88,
               "velocity": 118.9
             },
             {
               "rep": 2,
               "full_rom": true,
               "rom_deg": 115.5,
-              "duration_s": 1.85,
+              "duration": 1.85,
               "velocity": 116.7
             },
             {
               "rep": 3,
               "full_rom": true,
               "rom_deg": 119.3,
-              "duration_s": 1.8,
+              "duration": 1.8,
               "velocity": 121.4
             },
             {
               "rep": 4,
               "full_rom": true,
               "rom_deg": 112.8,
-              "duration_s": 1.87,
+              "duration": 1.87,
               "velocity": 116.1
             },
             {
               "rep": 5,
               "full_rom": true,
               "rom_deg": 117.2,
-              "duration_s": 1.86,
+              "duration": 1.86,
               "velocity": 116.9
             }
           ]
@@ -911,35 +911,35 @@
               "rep": 1,
               "full_rom": true,
               "rom_deg": 110.7,
-              "duration_s": 1.86,
+              "duration": 1.86,
               "velocity": 120.3
             },
             {
               "rep": 2,
               "full_rom": true,
               "rom_deg": 116.0,
-              "duration_s": 1.83,
+              "duration": 1.83,
               "velocity": 118.5
             },
             {
               "rep": 3,
               "full_rom": true,
               "rom_deg": 119.9,
-              "duration_s": 1.78,
+              "duration": 1.78,
               "velocity": 122.6
             },
             {
               "rep": 4,
               "full_rom": true,
               "rom_deg": 113.3,
-              "duration_s": 1.85,
+              "duration": 1.85,
               "velocity": 117.8
             },
             {
               "rep": 5,
               "full_rom": true,
               "rom_deg": 117.9,
-              "duration_s": 1.84,
+              "duration": 1.84,
               "velocity": 118.2
             }
           ]
@@ -963,35 +963,35 @@
               "rep": 1,
               "full_rom": true,
               "rom_deg": 111.2,
-              "duration_s": 1.84,
+              "duration": 1.84,
               "velocity": 121.5
             },
             {
               "rep": 2,
               "full_rom": true,
               "rom_deg": 116.6,
-              "duration_s": 1.81,
+              "duration": 1.81,
               "velocity": 119.3
             },
             {
               "rep": 3,
               "full_rom": true,
               "rom_deg": 120.4,
-              "duration_s": 1.76,
+              "duration": 1.76,
               "velocity": 123.1
             },
             {
               "rep": 4,
               "full_rom": true,
               "rom_deg": 113.9,
-              "duration_s": 1.83,
+              "duration": 1.83,
               "velocity": 118.9
             },
             {
               "rep": 5,
               "full_rom": true,
               "rom_deg": 118.5,
-              "duration_s": 1.82,
+              "duration": 1.82,
               "velocity": 119.2
             }
           ]
@@ -1015,35 +1015,35 @@
               "rep": 1,
               "full_rom": true,
               "rom_deg": 111.8,
-              "duration_s": 1.82,
+              "duration": 1.82,
               "velocity": 122.9
             },
             {
               "rep": 2,
               "full_rom": true,
               "rom_deg": 117.1,
-              "duration_s": 1.79,
+              "duration": 1.79,
               "velocity": 120.8
             },
             {
               "rep": 3,
               "full_rom": true,
               "rom_deg": 121.0,
-              "duration_s": 1.74,
+              "duration": 1.74,
               "velocity": 124.6
             },
             {
               "rep": 4,
               "full_rom": true,
               "rom_deg": 114.5,
-              "duration_s": 1.81,
+              "duration": 1.81,
               "velocity": 120.2
             },
             {
               "rep": 5,
               "full_rom": true,
               "rom_deg": 119.1,
-              "duration_s": 1.8,
+              "duration": 1.8,
               "velocity": 120.9
             }
           ]

@@ -1,6 +1,6 @@
-// Simulando registro de ejercicios
+// TODO: DEBUG Simulando registro de ejercicios
 const EXERCISES = {
-  squat: { name: "Sentadilla" },
+  squat: { name: "squat" },
   bench: { name: "Press de Banca" },
   deadlift: { name: "Peso Muerto" },
 };

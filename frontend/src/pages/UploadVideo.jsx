@@ -1,29 +1,30 @@
 import { useState } from "react";
 import VideoUpload from "../components/upload/VideoUpload";
-import RomControl from "../components/upload/RomControl";
 import TargetInputs from "../components/upload/TargetInputs";
 import ExerciseSelector from "../components/upload/ExerciseSelector";
+import { useUploadVideo } from "../hooks/useUploadVideo";
+import { Routes, useNavigate } from "react-router-dom";
 
 export default function UploadVideo() {
   const [uploadedFile, setUploadedFile] = useState(null);
-  const [videoDuration, setVideoDuration] = useState({ h: 0, m: 0, s: 0 });
-  const [endTime, setEndTime] = useState({ h: 0, m: 0, s: 0 });
-
   const [exercise, setExercise] = useState(null);
-  const [romMargin, setRomMargin] = useState(0);
-  const [targetReps, setTargetReps] = useState(10);
-  const [targetSets, setTargetSets] = useState(3);
+  const { analyze, loading, error } = useUploadVideo();
+  const navigate = useNavigate();
+  const user_id = "2407f69b-8960-45fa-ac8b-0e1b1141ebf9"; // TODO: Recoger desde Auth
 
-  const handleAnalyze = () => {
-    console.log({
-      uploadedFile,
-      exercise,
-      romMargin,
-      targetReps,
-      targetSets,
-      endTime,
-      videoDuration,
-    });
+  const handleAnalyze = async () => {
+    if (!uploadedFile || !exercise) return;
+
+    try {
+      const result = await analyze({
+        file: uploadedFile,
+        exercise: exercise,
+        userId: user_id,
+      });
+      navigate(Routes.results.replace(":id", result.session_id));
+    } catch (err) {
+      console.error(err);
+    }
   };
 
   return (
@@ -49,32 +50,33 @@ export default function UploadVideo() {
         <VideoUpload
           uploadedFile={uploadedFile}
           setUploadedFile={setUploadedFile}
-          setEndTime={setEndTime}
-          setVideoDuration={setVideoDuration}
         />
 
         {/* Exercise Select */}
         <ExerciseSelector value={exercise} onChange={setExercise} />
 
-        {/* Rom Control */}
-        <RomControl value={romMargin} onChange={setRomMargin} max={180} />
-
-        {/* Targets */}
+        {/* Targets 
+          const [targetReps, setTargetReps] = useState(10);
+          const [targetSets, setTargetSets] = useState(3);
         <TargetInputs
           reps={targetReps}
           sets={targetSets}
           setReps={setTargetReps}
           setSets={setTargetSets}
-        />
+        />*/}
+
+        {error && <p className="text-red-500 text-sm text-center">{error}</p>}
 
         {/* Botón analizar */}
         <button
           onClick={handleAnalyze}
+          disabled={!uploadedFile || !exercise || loading}
           className="w-full bg-(--secondary) text-white py-4 rounded-xl
           text-[12px] font-bold tracking-[0.2em] uppercase transition-all duration-200 hover:opacity-90 active:scale-[0.98]
+          disabled:opacity-40 disabled:cursor-not-allowed
           "
         >
-          Analizar Ejercicio
+          {loading ? "Analizando..." : "Analizar Ejercicio"}
         </button>
       </div>
     </div>

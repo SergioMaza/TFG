@@ -21,6 +21,7 @@ supabase = create_client(SUPABASE_PUBLIC_URL, SUPABASE_SECRET_KEY)
 def process_video(
     user_id: str,
     session_id: str,
+    upload_path: str,
     exercise_name: str,
     rom_ideal_low: float,
     rom_ideal_high: float,
@@ -31,9 +32,8 @@ def process_video(
     Devuelve un json con el analisis y la url del video 'processed'
     """
 
-    # Obtener las urls de upload y processed
-    upload_path = f"upload/{user_id}/{session_id}.mp4"
-    processed_path = f"processed/{user_id}/{session_id}.mp4"
+    # Obtener la url de processed
+    processed_path = f"processed/user_id_{user_id}/session_id_{session_id}.mp4"
 
     # Obtener el objeto 'ejercicio' del registry
     exercise = get_exercise(exercise_name)
@@ -46,16 +46,13 @@ def process_video(
 
     with tempfile.TemporaryDirectory() as tmp_dir:
         # TODO: Abstraer logica en congif_IO() -> cap, out
-        #input_path = os.path.join(tmp_dir, "input.mp4")
+        input_path = os.path.join(tmp_dir, "input.mp4")
         output_path = os.path.join(tmp_dir, "processed.mp4")
 
         # Descargar vídeo raw desde Storage
-        #video_bytes = supabase.storage.from_(STORAGE_BUCKET_NAME).download(upload_path)
-        #with open(input_path, "wb") as f:
-        #    f.write(video_bytes)
-
-        # ! DEBUG
-        input_path = "./videos/Squad_1.mp4"
+        video_bytes = supabase.storage.from_(STORAGE_BUCKET_NAME).download(upload_path)
+        with open(input_path, "wb") as f:
+            f.write(video_bytes)
         
         # Config del input del video
         cap = cv2.VideoCapture(input_path)

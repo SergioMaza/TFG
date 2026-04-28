@@ -4,8 +4,6 @@ import { Upload } from "lucide-react";
 export default function VideoUpload({
   uploadedFile,
   setUploadedFile,
-  setEndTime,
-  setVideoDuration,
 }) {
   const fileInputRef = useRef();
   const [isVertical, setIsVertical] = useState(false);
@@ -20,13 +18,6 @@ export default function VideoUpload({
     const { videoWidth, videoHeight } = e.target;
     setIsVertical(videoHeight > videoWidth);
 
-    const duration = e.currentTarget.duration;
-    const h = Math.floor(duration / 3600);
-    const m = Math.floor((duration % 3600) / 60);
-    const s = Math.floor(duration % 60);
-
-    setEndTime({ h, m, s });
-    setVideoDuration({ h, m, s });
   };
 
   // Cambiar archivo

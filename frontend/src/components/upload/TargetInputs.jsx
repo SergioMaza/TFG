@@ -1,3 +1,5 @@
+// TODO: DE MOMENTO NO ESTA IMPLEMENTADO
+
 export default function TargetInputs({ reps, sets, setReps, setSets }) {
   return (
     <div className="flex items-center space-x-10">
