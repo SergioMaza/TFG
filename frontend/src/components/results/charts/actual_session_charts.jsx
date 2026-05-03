@@ -114,10 +114,10 @@ export function PerformanceRadar({ exercise, session }) {
   const data = [
     { metric: "ROM", value: norm(session.rom_avg_deg, exercise.thresholds.rom.idealLow, exercise.thresholds.rom.idealHigh) },
     { metric: "Fatiga", value: norm(session.fatigue, 0, 100) },
-    { metric: "Eficiencia", value: norm(session.efficiency, 0, 100) },
+    { metric: "Eficiencia", value: norm(session.efficiency_avg, 0, 100) },
     {
       metric: "Velocidad",
-      value: norm(session.avg_velocity, exercise.thresholds.velocity.idealLow, exercise.thresholds.velocity.idealHigh),
+      value: norm(session.velocity_avg, exercise.thresholds.velocity.idealLow, exercise.thresholds.velocity.idealHigh),
     },
     {
       metric: "Duración",

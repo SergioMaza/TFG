@@ -3,57 +3,80 @@
  * unificando la gestión de autenticación y la interacción con la base de datos.
  */
 
-
-import { useNavigate } from "react-router-dom";
 import { AppContext } from "./AppContext";
 import { supabase } from "../../lib/supabaseClient";
+import { useCallback, useEffect, useState } from "react";
 
-// TODO: TRADUCIR TODO; ERRORES Y DEMAS
+const VITE_API_URL = import.meta.env.VITE_API_URL;
 
 // 2. Provider
 export const AppProvider = ({ children }) => {
-  const navigate = useNavigate();
+  const [userId, setUserId] = useState(null);
+  const [data, setData] = useState(null);
+  const [loading, setLoading] = useState(false);
+  const [error, setError] = useState(null);
 
   // -----------------------
   // AUTH FUNCTIONS
   // -----------------------
 
   const signUp = async (email, password, repeatPassword) => {
-    return email, password, repeatPassword
+    return (email, password, repeatPassword);
   };
 
   const signIn = async (email, password) => {
-    return email, password
+    return (email, password);
   };
 
   const signInWithGoogle = async () => {
-    return null
+    return null;
   };
 
   const signOut = async () => {
-   return null
+    return null;
   };
 
   const deleteAccount = async () => {
-    return null
+    return null;
   };
 
   // Forgot password
   const forgotPassword = async (email) => {
-    return email
+    return email;
   };
 
   // Update password
   const updatePassword = async (newPassword) => {
-    return newPassword
+    return newPassword;
   };
 
   // -----------------------
   // DB FUNCTIONS
   // -----------------------
-  const insertUserInDB = async ({ marketingOptIn }) => {
-    return marketingOptIn
-  };
+  const fetchSessions = useCallback(async () => {
+    // ! Quitar comentario cuando haya user_id if (!userId) return;
+
+    setLoading(true);
+    setError(null);
+
+    try {
+      const res = await fetch(
+        `${VITE_API_URL}/api/get-sessions?user_id=${userId}`,
+      );
+      if (!res.ok) throw new Error("Error obteniendo sesiones");
+
+      const json = await res.json();
+      setData(json);
+    } catch (err) {
+      setError(err.message);
+    } finally {
+      setLoading(false);
+    }
+  }, [userId]);
+
+  useEffect(() => {
+    fetchSessions();
+  }, [fetchSessions]);
 
   // -----------------------
   // PROVIDE ALL DATA
@@ -68,7 +91,10 @@ export const AppProvider = ({ children }) => {
         forgotPassword,
         updatePassword,
         deleteAccount,
-        insertUserInDB,
+        fetchSessions,
+        data,
+        loading,
+        error
       }}
     >
       {children}

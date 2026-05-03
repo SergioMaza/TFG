@@ -3,7 +3,8 @@ import VideoUpload from "../components/upload/VideoUpload";
 import TargetInputs from "../components/upload/TargetInputs";
 import ExerciseSelector from "../components/upload/ExerciseSelector";
 import { useUploadVideo } from "../hooks/useUploadVideo";
-import { Routes, useNavigate } from "react-router-dom";
+import { useNavigate } from "react-router-dom";
+import { ROUTES } from "../config/routes";
 
 export default function UploadVideo() {
   const [uploadedFile, setUploadedFile] = useState(null);
@@ -21,7 +22,7 @@ export default function UploadVideo() {
         exercise: exercise,
         userId: user_id,
       });
-      navigate(Routes.results.replace(":id", result.session_id));
+      navigate(ROUTES.results.replace(":id", result.session_id));
     } catch (err) {
       console.error(err);
     }

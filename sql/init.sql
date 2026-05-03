@@ -48,3 +48,12 @@ CREATE TABLE reps (
   duration FLOAT,
   velocity FLOAT
 );
+
+CREATE TABLE feedback (
+  id UUID PRIMARY KEY DEFAULT uuid_generate_v4(),
+  session_id UUID REFERENCES sessions(id) ON DELETE CASCADE,
+
+  text TEXT NOT NULL,
+  rep_number INT,
+  error BOOLEAN NOT NULL DEFAULT TRUE
+);

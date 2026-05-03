@@ -1,9 +1,15 @@
 import MetricsGrid from "../components/dashboard/MetricsGrid";
 import ExerciseGrid from "../components/dashboard/ExerciseGrid";
 import ScoreCard from "../components/dashboard/ScoreCard";
-import data from "../config/data_backend_response.json";
+import { useAppProvider } from "../hooks/useAppProvider";
 
 export default function Dashboard() {
+  const { data, loading, error } = useAppProvider();
+
+  if (loading) return <p>Cargando...</p>;
+  if (error)   return <p>Error: {error}</p>;
+  if (!data)   return null;
+
   return (
     <div className="flex-1 space-y-10">
       {/* Header */}

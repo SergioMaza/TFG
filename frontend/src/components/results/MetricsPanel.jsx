@@ -1,7 +1,7 @@
 import { useState, useEffect } from "react";
 import { ScoreRing } from "../common/ScoreRing";
 
-function RangeBar({ label, value, min, max, idealLow, idealHigh, unit = "" }) {
+function RangeBar({ label, value, idealLow, idealHigh, unit = "" }) {
   const [animated, setAnimated] = useState(false);
 
   useEffect(() => {
@@ -9,19 +9,19 @@ function RangeBar({ label, value, min, max, idealLow, idealHigh, unit = "" }) {
     return () => clearTimeout(t);
   }, []);
 
-  const pct = Math.max(0, Math.min(100, ((value - min) / (max - min)) * 100));
-  const inIdeal = value >= idealLow && value <= idealHigh;
+  const range = idealHigh - idealLow || Math.abs(value) * 0.2 || 1;
+  const padding = range * 0.5;
+  const min = idealLow - padding;
+  const max = idealHigh + padding;
 
+  const pctRaw = ((value - min) / (max - min)) * 100;
+  const pct = Math.max(0, Math.min(100, pctRaw))
+
+  const inIdeal = value >= idealLow && value <= idealHigh;
   const indicatorColor = inIdeal ? "var(--primary)" : "var(--error)";
 
-  const idealLowPct = Math.max(
-    0,
-    Math.min(100, ((idealLow - min) / (max - min)) * 100),
-  );
-  const idealHighPct = Math.max(
-    0,
-    Math.min(100, ((idealHigh - min) / (max - min)) * 100),
-  );
+  const idealLowPct = ((idealLow - min) / (max - min)) * 100;
+  const idealHighPct = ((idealHigh - min) / (max - min)) * 100;
 
   return (
     <div className="space-y-2">
@@ -59,13 +59,13 @@ function RangeBar({ label, value, min, max, idealLow, idealHigh, unit = "" }) {
         <div className="relative h-4 text-[9px] pt-4">
           {/* MIN */}
           <span className="absolute left-0 text-(--gray)">
-            {min}
+            {min.toFixed(2)}
             {unit}
           </span>
 
           {/* MAX */}
           <span className="absolute right-0 text-(--gray)">
-            {max}
+            {max.toFixed(2)}
             {unit}
           </span>
         </div>
@@ -99,7 +99,7 @@ export default function MetricsPanel({ exercise, session }) {
             value: `${session.fatigue}%`,
             warn: Math.abs(session.fatigue) > 20,
           },
-          { label: "Eficiencia", value: `${session.efficiency}%` },
+          { label: "Avg Eficiencia", value: `${session.efficiency_avg}%` },
         ].map(({ label, value, warn }) => (
           <div
             key={label}
@@ -128,8 +128,6 @@ export default function MetricsPanel({ exercise, session }) {
         <RangeBar
           label="Velocidad Media"
           value={session.velocity_avg}
-          min={exercise.thresholds.velocity.min}
-          max={exercise.thresholds.velocity.max}
           idealLow={exercise.thresholds.velocity.idealLow}
           idealHigh={exercise.thresholds.velocity.idealHigh}
           unit="°/s"
@@ -138,8 +136,6 @@ export default function MetricsPanel({ exercise, session }) {
         <RangeBar
           label="ROM Medio"
           value={session.rom_avg_deg}
-          min={exercise.thresholds.rom.min}
-          max={exercise.thresholds.rom.max}
           idealLow={exercise.thresholds.rom.idealLow}
           idealHigh={exercise.thresholds.rom.idealHigh}
           unit="°"
@@ -148,8 +144,6 @@ export default function MetricsPanel({ exercise, session }) {
         <RangeBar
           label="Duración Rep"
           value={session.duration_avg}
-          min={exercise.thresholds.duration.min}
-          max={exercise.thresholds.duration.max}
           idealLow={exercise.thresholds.duration.idealLow}
           idealHigh={exercise.thresholds.duration.idealHigh}
           unit="s"

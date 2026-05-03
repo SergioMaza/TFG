@@ -2,6 +2,8 @@ from flask import Flask, jsonify, request
 import os, requests
 from supabase import create_client
 from flask_cors import CORS
+from db import upload_session_to_db, get_all_sessions_full
+from auxiliar import build_dashboard_response
 
 app = Flask(__name__)
 CORS(app, resources={r"/api/*": {"origins": "http://localhost:5173"}})
@@ -26,7 +28,7 @@ def get_storage_info():
     user_id = data.get("user_id")
     session_id = str(__import__("uuid").uuid4())
 
-    upload_path = f"upload/user_id_{user_id}/session_id_{session_id}.mp4"
+    upload_path = f"upload/user_{user_id}/session_{session_id}.mp4"
 
     # Generar signed URL para que el frontend suba el video al Storage
     response = supabase.storage.from_(STORAGE_BUCKET_NAME).create_signed_upload_url(
@@ -94,10 +96,33 @@ def analysis():
         return jsonify({"error": f"Error llamando al worker: {str(e)}"}), 502
 
     result = worker_response.json()
-    # TODO: Guardar resultado en DB
-    # TODO: Calcular metrics con el result
+    
+    # Guardar resultado en DB
+    upload_session_to_db(supabase, session_id, user_id, exercise_name, result)
+    print("Session guardada en DB")
     return jsonify({"session_id": session_id}), 201
 
+@app.route("/api/get-sessions", methods=["GET"])
+def get_sessions():
+    # user_id = request.args.get("user_id")
+    user_id = "2407f69b-8960-45fa-ac8b-0e1b1141ebf9"
+
+    if not user_id:
+        return jsonify({"error": "user_id requerido"}), 400
+
+    exercises = get_all_sessions_full(supabase, user_id)
+    return jsonify(build_dashboard_response(exercises)), 200
+
+@app.route("/api/get-signed-url-video", methods=["GET"])
+def get_video_url():
+    video_path = request.args.get("path")
+    if not video_path:
+        return jsonify({"error": "path requerido"}), 400
+    
+    response = supabase.storage.from_(STORAGE_BUCKET_NAME).create_signed_url(
+        video_path, 3600
+    )
+    return jsonify({"url": response["signedURL"]}), 200
 
 if __name__ == "__main__":
     app.run(host="0.0.0.0", port=5000)

@@ -1,26 +1,50 @@
 import { useParams } from "react-router-dom";
-import data from "../config/data_backend_response.json";
 import SessionHistory from "../components/results/SessionHistory";
 import MetricsPanel from "../components/results/MetricsPanel";
 import AnalyticsDashboard from "../components/results/Analyticsdashboard";
 import ExerciseGrid from "../components/dashboard/ExerciseGrid";
+import { useAppProvider } from "../hooks/useAppProvider";
+import { useEffect, useState } from "react";
+
+const VITE_API_URL = import.meta.env.VITE_API_URL;
 
 export default function Results() {
   const { id } = useParams();
+  const { data, loading, error } = useAppProvider();
+  const [videoUrl, setVideoUrl] = useState(null);
 
-  // TODO: Que data fetch_user_sessions o algo asi que sea el que de toda la info
-  const exercise = data.exercises.find((ex) =>
-    ex.sessions.some((s) => s.sessionId === parseInt(id)),
+  // Obtener el ejercicio y la sesion en base al id
+  const exercise = data?.exercises?.find((ex) =>
+    ex.sessions.some((s) => s.session_id === id),
   );
+  const session = exercise?.sessions?.find((s) => s.session_id === id);
 
-  const sessions = exercise.sessions;
+  // Obtener el resto de sesiones
+  const sessions = exercise?.sessions;
 
-  const session = exercise.sessions.find((s) => s.sessionId === parseInt(id));
+  // Componente para seccion de "Otros Ejercicios"
+  const otherExercises = data?.exercises?.filter((ex) => ex !== exercise);
 
-  const filteredData = {
-    ...data,
-    exercises: data.exercises.filter((ex) => ex !== exercise),
-  };
+  // Construir SignedURL para mostrar el video
+  useEffect(() => {
+    if (!session?.video_url) return;
+
+    const getVideoUrl = async () => {
+      const res = await fetch(
+        `${VITE_API_URL}/api/get-signed-url-video?path=${encodeURIComponent(session.video_url)}`,
+      );
+      const json = await res.json();
+      setVideoUrl(json.url);
+    };
+
+    getVideoUrl();
+  }, [session?.video_url]);
+
+  // Validacion de campos
+  if (loading) return <p>Cargando...</p>;
+  if (error) return <p>Error: {error}</p>;
+  if (!data) return null;
+  if (!exercise) return <p>Sesión no encontrada</p>;
 
   return (
     <div className="flex-1 space-y-20">
@@ -46,9 +70,9 @@ export default function Results() {
             {/* VIDEO */}
             <div className="relative aspect-video rounded-xl overflow-hidden">
               <video
-                src="/squad_example.mp4"
+                src={videoUrl}
                 controls
-                className="w-full h-full object-cover rounded-xl"
+                className="w-full h-full object-contain rounded-xl"
               />
             </div>
 
@@ -70,8 +94,12 @@ export default function Results() {
         />
       </div>
 
-      {/* OTROS EJERCICIOS */}
-      <ExerciseGrid data={filteredData} title={"Otros Ejercicios"} />
+      {otherExercises?.length > 0 && (
+        <ExerciseGrid
+          data={{ ...data, exercises: otherExercises }}
+          title={"Otros Ejercicios"}
+        />
+      )}
     </div>
   );
 }

@@ -18,12 +18,12 @@ export default function SessionHistory({ sessions, activeId }) {
       <div className="border-b border-white/10">
         <div className="flex gap-6 overflow-x-auto pb-2 scroll-smooth snap-x">
           {sessions.map((s) => {
-            const isActive = s.sessionId === parseInt(activeId);
+            const isActive = s.session_id === activeId;
 
             return (
               <button
-                key={s.sessionId}
-                onClick={() => handleSessionClick(s.sessionId)}
+                key={s.session_id}
+                onClick={() => handleSessionClick(s.session_id)}
                 className={`group flex flex-col items-center px-3 py-2 rounded-md snap-end
                 transition-all duration-200 cursor-pointer
                 ${
@@ -40,7 +40,7 @@ export default function SessionHistory({ sessions, activeId }) {
 
                 {/* FECHA */}
                 <span className="text-[10px] opacity-60">
-                  {new Date(s.uploadedAt).toLocaleDateString()}
+                  {new Date(s.uploaded_at).toLocaleDateString()}
                 </span>
 
                 {/* INDICADOR ACTIVO */}

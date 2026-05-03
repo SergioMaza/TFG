@@ -25,23 +25,5 @@ def process():
 
     return jsonify(result)
 
-
-#! DEGUB EXAMPLE
-@app.route("/analysis_test")
-def process_test():
-    user_id = "2407f69b-8960-45fa-ac8b-0e1b1141ebf9"
-    session_id = "434285f9-ebb6-4ce5-bc40-a5852ff9a4c7"
-    upload_path = ""
-    exercise_name = "squat"
-    rom_ideal_low = 60
-    rom_ideal_high = 150
-
-    result = process_video(
-        user_id, session_id, upload_path, exercise_name, rom_ideal_low, rom_ideal_high
-    )
-
-    return jsonify(result)
-
-
 if __name__ == "__main__":
     app.run(host="0.0.0.0", port=5001)

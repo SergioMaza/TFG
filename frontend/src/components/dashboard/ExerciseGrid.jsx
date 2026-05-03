@@ -24,7 +24,7 @@ function ExerciseCard({ title, img, avg_score, sessions }) {
   function handleClick() {
     if (sessions.length > 0) {
       navigate(
-        ROUTES.results.replace(":id", sessions[sessions.length - 1].sessionId),
+        ROUTES.results.replace(":id", sessions[sessions.length - 1].session_id),
       );
     }
   }

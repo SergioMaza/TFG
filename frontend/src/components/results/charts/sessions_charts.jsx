@@ -215,7 +215,7 @@ export function FatigueEfficiencyChart({ sessions }) {
   const data = sessions.map((s, i) => ({
     name: `S${i + 1}`,
     fatiga: s.fatigue,
-    eficiencia: s.efficiency,
+    eficiencia: s.efficiency_avg,
   }));
 
   return (
