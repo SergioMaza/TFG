@@ -25,7 +25,5 @@ class InclineBicepsCurl(BaseExercise):
         }
 
     def generate_feedback(self, session: dict, reps: list) -> list[dict]:
-        # TODO Comprobar cual dejar
-        return []
-        #feedback = super().generate_feedback(session, reps)
-        #return feedback
+        feedback = super().generate_feedback(session, reps)
+        return feedback

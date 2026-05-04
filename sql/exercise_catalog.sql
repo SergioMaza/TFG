@@ -19,3 +19,25 @@ INSERT INTO exercises_catalog (
   1.5,
   2.8
 );
+
+INSERT INTO exercises_catalog (
+  title,
+  img,
+  upper,
+  velocity_ideal_low,
+  velocity_ideal_high,
+  rom_ideal_low,
+  rom_ideal_high,
+  duration_ideal_low,
+  duration_ideal_high
+) VALUES (
+  'incline_biceps_curl',
+  'https://liftmanual.com/wp-content/uploads/2023/04/dumbbell-incline-biceps-curl.jpg',
+  true,
+  40,
+  90,
+  70,
+  130,
+  2.0,
+  3.5
+);

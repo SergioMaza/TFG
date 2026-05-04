@@ -9,9 +9,6 @@ def calculate_fatigue(reps: list) -> float:
     100 = fatiga máxima
     """
 
-    if len(reps) < 2:
-        return 0.0
-
     first = reps[0].velocity
     last_window = reps[-3:] if len(reps) >= 3 else reps[-1:]
     avg_last = sum(r.velocity for r in last_window) / len(last_window)
@@ -19,7 +16,10 @@ def calculate_fatigue(reps: list) -> float:
     if first <= 0:
         return 0.0
 
+    # Calcular fatiga 0-100
     fatigue = (first - avg_last) / first * 100
+    fatigue = max(0.0, min(100.0, fatigue))
+    
     return round(fatigue, 2)
 
 
@@ -95,6 +95,7 @@ def generate_session_summary(
         velocities.append(velocity)
 
         efficiency = (rom_deg / duration) if duration > 0 else 0.0
+        efficiency = max(0.0, min(100.0, efficiency))
         efficiencies.append(efficiency)
 
         reps_detail.append(

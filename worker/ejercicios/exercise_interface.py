@@ -19,8 +19,6 @@ from dataclasses import dataclass, field
 class ExerciseResult:
     rep_count: int = 0
     reps: list = field(default_factory=list)
-    #rom_current: float = 0.0 #TODO CREO QUE SE PUEDEN BORRAR
-    #rom_avg: float = 0.0 #TODO CREO QUE SE PUEDEN BORRAR
     metrics: dict = field(default_factory=dict)
 
 class BaseExercise(ABC):
@@ -101,8 +99,6 @@ class BaseExercise(ABC):
         return ExerciseResult(
             rep_count=self.tracker.rep_count,
             reps=self.tracker.reps.copy(),
-            #rom_current=self.tracker.rom_current(),
-            #rom_avg=self.tracker.rom_avg(),
             metrics=metrics,
         )
 

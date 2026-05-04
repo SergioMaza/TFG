@@ -93,7 +93,7 @@ export default function MetricsPanel({ exercise, session }) {
       <div className="grid grid-cols-2 gap-2">
         {[
           { label: "Reps", value: session.total_reps },
-          { label: "Avg ROM", value: `${session.rom_avg_deg}%` },
+          { label: "Avg ROM", value: `${session.rom_avg_deg}º` },
           {
             label: "Fatiga",
             value: `${session.fatigue}%`,
@@ -142,7 +142,7 @@ export default function MetricsPanel({ exercise, session }) {
         />
 
         <RangeBar
-          label="Duración Rep"
+          label="Duración Media"
           value={session.duration_avg}
           idealLow={exercise.thresholds.duration.idealLow}
           idealHigh={exercise.thresholds.duration.idealHigh}
