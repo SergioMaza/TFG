@@ -5,8 +5,8 @@ from ejercicios.registry import register
 
 
 @register
-class InclineBicepsCurl(BaseExercise):
-    name = "incline_biceps_curl"
+class BicepsCurl(BaseExercise):
+    name = "biceps_curl"
     landmarks = [11, 13, 15]
     connections = [(11, 13), (13, 15)]
 

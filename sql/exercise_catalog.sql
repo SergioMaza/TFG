@@ -31,7 +31,7 @@ INSERT INTO exercises_catalog (
   duration_ideal_low,
   duration_ideal_high
 ) VALUES (
-  'incline_biceps_curl',
+  'biceps_curl',
   'https://liftmanual.com/wp-content/uploads/2023/04/dumbbell-incline-biceps-curl.jpg',
   true,
   40,

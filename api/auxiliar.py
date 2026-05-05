@@ -26,16 +26,18 @@ def _calculate_global_metrics(exercises: list) -> dict:
     sessions_last_week = []
     upper_count = 0
     lower_count = 0
-    exercise_counts = {} 
+    exercise_counts = {}
 
     for ex in exercises:
-        count = len(ex["sessions"])
-        exercise_counts[ex["title"]] = exercise_counts.get(ex["title"], 0) + count
+        exercise_counts[ex["title"]] = exercise_counts.get(ex["title"], 0) + len(
+            ex["sessions"]
+        )
 
         for s in ex["sessions"]:
-            uploaded = s.get("uploadedAt")
+            uploaded = s.get("uploaded_at")
             if not uploaded:
                 continue
+
             uploaded_dt = datetime.fromisoformat(uploaded)
             if uploaded_dt.tzinfo is None:
                 uploaded_dt = uploaded_dt.replace(tzinfo=timezone.utc)
@@ -54,8 +56,8 @@ def _calculate_global_metrics(exercises: list) -> dict:
         1
         for ex in exercises
         for s in ex["sessions"]
-        if s.get("uploadedAt")
-        and datetime.fromisoformat(s["uploadedAt"]).replace(tzinfo=timezone.utc)
+        if s.get("uploaded_at")
+        and datetime.fromisoformat(s["uploaded_at"]).replace(tzinfo=timezone.utc)
         >= month_start
     )
 
@@ -78,7 +80,6 @@ def _calculate_global_metrics(exercises: list) -> dict:
     last_week_avg = (
         round(sum(last_week_scores) / len(last_week_scores)) if last_week_scores else 0
     )
-    score_change = week_avg - last_week_avg
 
     return {
         "sessions_this_month": sessions_this_month,
@@ -87,7 +88,7 @@ def _calculate_global_metrics(exercises: list) -> dict:
         "upper_percentage": upper_pct,
         "lower_percentage": lower_pct,
         "avg_score": avg_score,
-        "score_change_weekly": score_change,
+        "score_change_weekly": week_avg - last_week_avg,
     }
 
 

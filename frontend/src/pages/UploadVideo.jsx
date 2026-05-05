@@ -5,11 +5,13 @@ import ExerciseSelector from "../components/upload/ExerciseSelector";
 import { useUploadVideo } from "../hooks/useUploadVideo";
 import { useNavigate } from "react-router-dom";
 import { ROUTES } from "../config/routes";
+import { useAppProvider } from "../hooks/useAppProvider";
 
 export default function UploadVideo() {
   const [uploadedFile, setUploadedFile] = useState(null);
   const [exercise, setExercise] = useState(null);
   const { analyze, loading, error } = useUploadVideo();
+  const { fetchSessions } = useAppProvider();
   const navigate = useNavigate();
   const user_id = "2407f69b-8960-45fa-ac8b-0e1b1141ebf9"; // TODO: Recoger desde Auth
 
@@ -22,6 +24,7 @@ export default function UploadVideo() {
         exercise: exercise,
         userId: user_id,
       });
+      await fetchSessions();
       navigate(ROUTES.results.replace(":id", result.session_id));
     } catch (err) {
       console.error(err);

@@ -1,7 +1,7 @@
 // TODO: DEBUG Simulando registro de ejercicios
 const EXERCISES = {
   squat: { name: "squat" },
-  bench: { name: "incline_biceps_curl" },
+  bench: { name: "biceps_curl" },
 };
 
 export default function ExerciseSelect({ value, onChange }) {

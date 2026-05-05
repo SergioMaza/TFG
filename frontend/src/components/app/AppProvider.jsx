@@ -54,8 +54,6 @@ export const AppProvider = ({ children }) => {
   // DB FUNCTIONS
   // -----------------------
   const fetchSessions = useCallback(async () => {
-    // ! Quitar comentario cuando haya user_id if (!userId) return;
-
     setLoading(true);
     setError(null);
 
