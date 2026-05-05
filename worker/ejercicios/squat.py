@@ -30,9 +30,14 @@ class Squat(BaseExercise):
             "torso_lean": torso,
         }
 
-    def generate_feedback(self, session: dict, reps: list) -> list[dict]:
+    def generate_feedback(
+        self,
+        session: dict,
+        rom_ideal_low: float,
+        rom_ideal_high: float,
+    ) -> list[dict]:
         print("generate_feedback - Funcion llamada")
-        feedback = super().generate_feedback(session, reps)
+        feedback = super().generate_feedback(session, rom_ideal_low, rom_ideal_high)
         print("generate_feedback - feedback padre: ", feedback)
         print("generate_feedback - self._torso_leans: ", self._torso_leans)
         if self._torso_leans:

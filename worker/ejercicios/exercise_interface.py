@@ -15,11 +15,13 @@ Metodos:
 from abc import ABC, abstractmethod
 from dataclasses import dataclass, field
 
+
 @dataclass
 class ExerciseResult:
     rep_count: int = 0
     reps: list = field(default_factory=list)
     metrics: dict = field(default_factory=dict)
+
 
 class BaseExercise(ABC):
 
@@ -35,32 +37,64 @@ class BaseExercise(ABC):
         pass
 
     @abstractmethod
-    def generate_feedback(self, session: dict, reps: list) -> list[dict]:
+    def generate_feedback(
+        self, session: dict, rom_ideal_low: float, rom_ideal_high: float
+    ) -> list[dict]:
         feedback = []
-        
+
         # Feedback por repe
-        for r in reps:
-            if not r.full_rom:
-                feedback.append({
-                    "rep_number": r.rep_number,
-                    "text": "Rango de movimiento incompleto",
-                    "error": True
-                })
+        for rep in session["reps_detail"]:
+            if rep["rom_deg"] < rom_ideal_low:
+                feedback.append(
+                    {
+                        "rep_number": rep["rep_number"],
+                        "text": "Rango de movimiento incompleto",
+                        "error": True,
+                    }
+                )
+            elif rep["rom_deg"] > rom_ideal_high:
+                feedback.append(
+                    {
+                        "rep_number": rep["rep_number"],
+                        "text": "Rango de movimiento excesivo",
+                        "error": True,
+                    }
+                )
 
         # Feedback por session
-        if len(reps) >= 2:
-            if session["fatigue"] > 40:
-                feedback.append({
+        if session["fatigue"] > 40:
+            feedback.append(
+                {
                     "rep_number": None,
                     "text": "Caída de velocidad notable hacia el final de la serie",
-                    "error": True
-                })
-            elif session["fatigue"] < 15:
-                feedback.append({
+                    "error": True,
+                }
+            )
+        elif session["fatigue"] < 15:
+            feedback.append(
+                {
                     "rep_number": None,
                     "text": "Velocidad consistente a lo largo de toda la serie",
-                    "error": False
-                })
+                    "error": False,
+                }
+            )
+
+        if session["rom_avg_deg"] < rom_ideal_low:
+            feedback.append(
+                {
+                    "rep_number": rep["rep_number"],
+                    "text": "Rango de movimiento demasiado bajo",
+                    "error": True,
+                }
+            )
+        elif session["rom_avg_deg"] > rom_ideal_high:
+            feedback.append(
+                {
+                    "rep_number": rep["rep_number"],
+                    "text": "Rango de movimiento demasiado alto",
+                    "error": True,
+                }
+            )
 
         return feedback
 
@@ -85,15 +119,20 @@ class BaseExercise(ABC):
         Cada ejercicio puede sobreescribir este método para personalizar.
         """
         from my_libs.draw import draw_connections, draw_keypoints, draw_angle, draw_reps
+
         draw_connections(cv2, frame, self.connections, landmarks, w, h)
         draw_keypoints(cv2, frame, landmarks, self.landmarks, w, h)
         draw_angle(
-            cv2, frame, landmarks, w, h,
+            cv2,
+            frame,
+            landmarks,
+            w,
+            h,
             (self.landmarks[0], self.landmarks[1], self.landmarks[2]),
-            result_data.metrics.get("main_angle")
+            result_data.metrics.get("main_angle"),
         )
         draw_reps(cv2, frame, result_data)
-    
+
     # Crear el componente ExerciseResult para el return
     def build_result(self, metrics):
         return ExerciseResult(

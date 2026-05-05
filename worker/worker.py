@@ -130,7 +130,7 @@ def process_video(
         processed_path=processed_path,
     )
 
-    feedback = exercise.generate_feedback(session, exercise.tracker.reps)
+    feedback = exercise.generate_feedback(session, rom_ideal_low, rom_ideal_high)
 
     # Devuelve un json unificado con session y feedback
     return {**session, "feedback": feedback}

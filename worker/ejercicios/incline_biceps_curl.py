@@ -24,6 +24,11 @@ class InclineBicepsCurl(BaseExercise):
             "torso_lean": calculate_torso_lean(lm, w, h),
         }
 
-    def generate_feedback(self, session: dict, reps: list) -> list[dict]:
-        feedback = super().generate_feedback(session, reps)
+    def generate_feedback(
+        self,
+        session: dict,
+        rom_ideal_low: float,
+        rom_ideal_high: float,
+    ) -> list[dict]:
+        feedback = super().generate_feedback(session, rom_ideal_low, rom_ideal_high)
         return feedback
