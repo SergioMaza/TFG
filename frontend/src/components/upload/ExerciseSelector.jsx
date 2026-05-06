@@ -1,11 +1,7 @@
-// TODO: DEBUG Simulando registro de ejercicios
-const EXERCISES = {
-  squat: { name: "squat" },
-  bench: { name: "biceps_curl" },
-};
+import { useUploadVideo } from "../../hooks/useUploadVideo";
 
 export default function ExerciseSelect({ value, onChange }) {
-  const exercises = Object.values(EXERCISES);
+  const { exercises } = useUploadVideo();
 
   return (
     <div className="flex flex-col space-y-2">

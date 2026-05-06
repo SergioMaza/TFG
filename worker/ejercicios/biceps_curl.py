@@ -21,7 +21,7 @@ class BicepsCurl(BaseExercise):
 
         return {
             "main_angle": calculate_angle(shoulder, elbow, wrist),
-            "torso_lean": calculate_torso_lean(lm, w, h),
+            # "torso_lean": calculate_torso_lean(lm, w, h),
         }
 
     def generate_feedback(

@@ -59,17 +59,7 @@ export default function UploadVideo() {
         {/* Exercise Select */}
         <ExerciseSelector value={exercise} onChange={setExercise} />
 
-        {/* Targets 
-          const [targetReps, setTargetReps] = useState(10);
-          const [targetSets, setTargetSets] = useState(3);
-        <TargetInputs
-          reps={targetReps}
-          sets={targetSets}
-          setReps={setTargetReps}
-          setSets={setTargetSets}
-        />*/}
-
-        {error && <p className="text-red-500 text-sm text-center">{error}</p>}
+        {error && <p className="text-(--error) text-sm text-center">{error}</p>}
 
         {/* Botón analizar */}
         <button

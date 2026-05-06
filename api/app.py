@@ -124,5 +124,22 @@ def get_video_url():
     )
     return jsonify({"url": response["signedURL"]}), 200
 
+@app.route("/api/get-exercise-catalog", methods=["GET"])
+def get_exercise_titles():
+    try:
+        response = (
+            supabase.table("exercises_catalog")
+            .select("title")
+            .execute()
+        )
+
+        # Extraer solo los títulos en una lista
+        titles = [item["title"] for item in response.data]
+
+        return jsonify({"titles": titles}), 200
+
+    except Exception as e:
+        return jsonify({"error": str(e)}), 500
+
 if __name__ == "__main__":
     app.run(host="0.0.0.0", port=5000)

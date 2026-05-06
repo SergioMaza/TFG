@@ -38,8 +38,6 @@ class Squat(BaseExercise):
     ) -> list[dict]:
         print("generate_feedback - Funcion llamada")
         feedback = super().generate_feedback(session, rom_ideal_low, rom_ideal_high)
-        print("generate_feedback - feedback padre: ", feedback)
-        print("generate_feedback - self._torso_leans: ", self._torso_leans)
         if self._torso_leans:
             peak_torso = max(self._torso_leans)
             print("generate_feedback - peak_torso: ", peak_torso)

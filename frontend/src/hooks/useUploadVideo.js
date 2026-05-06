@@ -1,10 +1,11 @@
-import { useState } from "react";
+import { useState, useEffect } from "react";
 
 const VITE_API_URL = import.meta.env.VITE_API_URL;
 
 export function useUploadVideo() {
   const [loading, setLoading] = useState(false);
   const [error, setError] = useState(null);
+  const [exercises, setExercises] = useState([]);
 
   const analyze = async ({ file, exercise, userId }) => {
     setLoading(true);
@@ -51,5 +52,28 @@ export function useUploadVideo() {
     }
   };
 
-  return { analyze, loading, error };
+  useEffect(() => {
+    const fetchExercises = async () => {
+      setLoading(true);
+      setError(null);
+
+      try {
+        const res = await fetch(`${VITE_API_URL}/api/get-exercise-catalog`);
+        if (!res.ok) throw new Error("Error obteniendo ejercicios");
+
+        const data = await res.json();
+
+        const formatted = data.titles.map((t) => ({ name: t }));
+        setExercises(formatted);
+      } catch (err) {
+        setError(err.message);
+      } finally {
+        setLoading(false);
+      }
+    };
+
+    fetchExercises();
+  }, []);
+
+  return { exercises, analyze, loading, error };
 }
