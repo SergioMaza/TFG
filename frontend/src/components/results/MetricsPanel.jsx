@@ -76,18 +76,14 @@ function RangeBar({ label, value, idealLow, idealHigh, unit = "" }) {
 
 export default function MetricsPanel({ exercise, session }) {
   return (
-    <div className="bg-(--bg-light) rounded-2xl border border-(--bg-extra-light) p-5 h-full flex flex-col gap-5">
-      {/* HEADER */}
-      <div className="flex items-center justify-between">
-        <h2 className="text-xl font-bold tracking-[0.3em] uppercase text-white border-l-4 border-(--primary) pl-3">
-          Métricas
-        </h2>
+    <div className="flex flex-col gap-10">
 
-        <ScoreRing score={session.score} />
+      {/* SCORE CENTRAL */}
+      <div className="flex justify-center py-5">
+        <div className="scale-130">
+          <ScoreRing score={session.score} />
+        </div>
       </div>
-
-      {/* SEPARATOR */}
-      <div className="h-px bg-(--bg-extra-light)" />
 
       {/* STATS */}
       <div className="grid grid-cols-2 gap-2">
@@ -99,11 +95,12 @@ export default function MetricsPanel({ exercise, session }) {
             value: `${session.fatigue}%`,
             warn: Math.abs(session.fatigue) > 20,
           },
-          { label: "Avg Eficiencia", value: `${session.efficiency_avg}%` },
+          { label: "Eficiencia", value: `${session.efficiency_avg}%` },
         ].map(({ label, value, warn }) => (
           <div
             key={label}
-            className={`rounded-lg p-2 border transition-all
+            className={`
+              rounded-lg p-2 border transition-all
               ${warn ? "border-(--error)" : "border-(--bg-extra-light)"}
             `}
           >
@@ -112,7 +109,9 @@ export default function MetricsPanel({ exercise, session }) {
             </div>
 
             <div
-              className={`text-lg font-extrabold ${warn ? "text-(--error)" : "text-white"}`}
+              className={`text-lg font-extrabold ${
+                warn ? "text-(--error)" : "text-white"
+              }`}
             >
               {value}
             </div>
@@ -120,11 +119,8 @@ export default function MetricsPanel({ exercise, session }) {
         ))}
       </div>
 
-      {/* SEPARATOR */}
-      <div className="h-px bg-(--bg-extra-light)" />
-
       {/* BARS */}
-      <div className="flex flex-col gap-10">
+      <div className="flex flex-col gap-8 p-2">
         <RangeBar
           label="Velocidad Media"
           value={session.velocity_avg}

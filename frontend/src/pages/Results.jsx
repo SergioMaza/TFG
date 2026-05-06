@@ -5,6 +5,7 @@ import AnalyticsDashboard from "../components/results/Analyticsdashboard";
 import ExerciseGrid from "../components/dashboard/ExerciseGrid";
 import { useAppProvider } from "../hooks/useAppProvider";
 import { useEffect, useState } from "react";
+import SidePanel from "../components/results/SidePanel";
 
 const VITE_API_URL = import.meta.env.VITE_API_URL;
 
@@ -82,7 +83,7 @@ export default function Results() {
 
           {/* RIGHT - 30% */}
           <div className="lg:col-span-3 h-full">
-            <MetricsPanel exercise={exercise} session={session} />
+            <SidePanel exercise={exercise} session={session} />
           </div>
         </div>
 
