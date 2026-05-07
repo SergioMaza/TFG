@@ -6,13 +6,17 @@ import { useUploadVideo } from "../hooks/useUploadVideo";
 import { useNavigate } from "react-router-dom";
 import { ROUTES } from "../config/routes";
 import { useAppProvider } from "../hooks/useAppProvider";
+import SideSelector from "../components/upload/SideSelector";
 
 export default function UploadVideo() {
+  const navigate = useNavigate();
   const [uploadedFile, setUploadedFile] = useState(null);
   const [exercise, setExercise] = useState(null);
+  const [side, setSide] = useState("right");
+
   const { analyze, loading, error } = useUploadVideo();
   const { fetchSessions } = useAppProvider();
-  const navigate = useNavigate();
+
   const user_id = "2407f69b-8960-45fa-ac8b-0e1b1141ebf9"; // TODO: Recoger desde Auth
 
   const handleAnalyze = async () => {
@@ -23,6 +27,7 @@ export default function UploadVideo() {
         file: uploadedFile,
         exercise: exercise,
         userId: user_id,
+        side: side,
       });
       await fetchSessions();
       navigate(ROUTES.results.replace(":id", result.session_id));
@@ -58,6 +63,9 @@ export default function UploadVideo() {
 
         {/* Exercise Select */}
         <ExerciseSelector value={exercise} onChange={setExercise} />
+
+        {/* Side Selector */}
+        <SideSelector value={side} onChange={setSide} />
 
         {error && <p className="text-(--error) text-sm text-center">{error}</p>}
 

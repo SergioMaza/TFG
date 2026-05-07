@@ -1,6 +1,8 @@
 # Funciones auxiliares de procesamiento para abstraer logica y no saturar app.py
 
 from datetime import datetime, timezone, timedelta
+from dateutil.parser import isoparse
+
 
 
 def _calculate_exercise_avg_scores(exercises: list) -> list:
@@ -38,7 +40,7 @@ def _calculate_global_metrics(exercises: list) -> dict:
             if not uploaded:
                 continue
 
-            uploaded_dt = datetime.fromisoformat(uploaded)
+            uploaded_dt = isoparse(uploaded)
             if uploaded_dt.tzinfo is None:
                 uploaded_dt = uploaded_dt.replace(tzinfo=timezone.utc)
 
@@ -57,7 +59,7 @@ def _calculate_global_metrics(exercises: list) -> dict:
         for ex in exercises
         for s in ex["sessions"]
         if s.get("uploaded_at")
-        and datetime.fromisoformat(s["uploaded_at"]).replace(tzinfo=timezone.utc)
+        and isoparse(s["uploaded_at"]).replace(tzinfo=timezone.utc)
         >= month_start
     )
 

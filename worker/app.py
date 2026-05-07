@@ -16,11 +16,12 @@ def process():
     session_id = data["session_id"]
     upload_path = data["upload_path"]
     exercise_name = data["exercise_name"]
+    side = data.get("side")
     rom_ideal_low = data["rom_ideal_low"]
     rom_ideal_high = data["rom_ideal_high"]
 
     result = process_video(
-        user_id, session_id, upload_path, exercise_name, rom_ideal_low, rom_ideal_high
+        user_id, session_id, upload_path, exercise_name, side, rom_ideal_low, rom_ideal_high
     )
 
     return jsonify(result)

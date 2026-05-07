@@ -7,7 +7,7 @@ export function useUploadVideo() {
   const [error, setError] = useState(null);
   const [exercises, setExercises] = useState([]);
 
-  const analyze = async ({ file, exercise, userId }) => {
+  const analyze = async ({ file, exercise, userId, side}) => {
     setLoading(true);
     setError(null);
 
@@ -38,6 +38,7 @@ export function useUploadVideo() {
           session_id: session_id,
           upload_path: upload_path,
           exercise_name: exercise.name,
+          side: side
         }),
       });
       if (!analysisRes.ok) throw new Error("Error en el análisis");
@@ -52,6 +53,7 @@ export function useUploadVideo() {
     }
   };
 
+  // Obtener los ejercicios para el desplegable
   useEffect(() => {
     const fetchExercises = async () => {
       setLoading(true);

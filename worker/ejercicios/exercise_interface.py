@@ -9,11 +9,11 @@ Atributos:
 Metodos:
 - analyze: Funcion que define cada ejercicio donde se establecen las metricas y el fedback
 
-
 """
 
 from abc import ABC, abstractmethod
 from dataclasses import dataclass, field
+from my_libs.draw import draw_connections, draw_keypoints, draw_angle, draw_reps
 
 
 @dataclass
@@ -25,12 +25,19 @@ class ExerciseResult:
 
 class BaseExercise(ABC):
 
-    name: str
-    landmarks: list[int]
-    connections: list[tuple]
+    name: str  # Nombre id del ejercicio
+    landmarks_left: list[int] = []  # Landmarks perfil izq
+    connections_left: list[tuple] = []  # Conexiones perfil izq
+    landmarks_right: list[int] = []  # Landmarks perfil der
+    connections_right: list[tuple] = []  # Conexiones perfil der
+
+    # Resueltos dinámicamente por set_side()
+    landmarks: list[int] = []
+    connections: list[tuple] = []
 
     def __init__(self):
         self.tracker = None
+        self._side: str | None = None  # "left" | "right" | None
 
     @abstractmethod
     def compute_metrics(self, lm, w, h) -> dict:
@@ -98,8 +105,23 @@ class BaseExercise(ABC):
 
         return feedback
 
+    # Resuelve landmarks y connections según el lado detectado
+    def set_side(self, side: str):
+        if side not in ("left", "right"):
+            raise ValueError(f"side debe ser 'left' o 'right', recibido: {side!r}")
+
+        self._side = side
+
+        if side == "right":
+            self.landmarks = list(self.landmarks_right)
+            self.connections = list(self.connections_right)
+        else:
+            self.landmarks = list(self.landmarks_left)
+            self.connections = list(self.connections_left)
+
     # Pipeline de procesamiento de cada ejercicio
     def analyze(self, lm, w: int, h: int, fps: float) -> ExerciseResult:
+        print("DEBUG SIDE: ", self._side)
         metrics = self.compute_metrics(lm, w, h)
         self.update_tracker(metrics, fps)
         return self.build_result(metrics)
@@ -113,13 +135,8 @@ class BaseExercise(ABC):
         main_angle = metrics["main_angle"]
         self.tracker.update(main_angle, fps)
 
+    # Dibuja la visualización por defecto.
     def draw(self, cv2, frame, result_data: ExerciseResult, landmarks, w, h):
-        """
-        Dibuja la visualización por defecto.
-        Cada ejercicio puede sobreescribir este método para personalizar.
-        """
-        from my_libs.draw import draw_connections, draw_keypoints, draw_angle, draw_reps
-
         draw_connections(cv2, frame, self.connections, landmarks, w, h)
         draw_keypoints(cv2, frame, landmarks, self.landmarks, w, h)
         draw_angle(
@@ -144,3 +161,4 @@ class BaseExercise(ABC):
     def reset(self):
         if self.tracker:
             self.tracker.reset()
+        self._side = None

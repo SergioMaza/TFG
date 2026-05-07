@@ -46,6 +46,7 @@ def process_video(
     session_id: str,
     upload_path: str,
     exercise_name: str,
+    side: str,
     rom_ideal_low: float,
     rom_ideal_high: float,
 ) -> dict:
@@ -68,7 +69,6 @@ def process_video(
     )
 
     with tempfile.TemporaryDirectory() as tmp_dir:
-        # TODO: Abstraer logica en congif_IO() -> cap, out
         input_path = os.path.join(tmp_dir, "input.mp4")
         raw_path = os.path.join(tmp_dir, "raw.mp4")  # mp4v de OpenCV
         output_path = os.path.join(tmp_dir, "processed.mp4")  # H.264 final
@@ -87,13 +87,18 @@ def process_video(
         height = int(cap.get(cv2.CAP_PROP_FRAME_HEIGHT))
         fps = cap.get(cv2.CAP_PROP_FPS)
 
-        # Config del output del video
-        fourcc = cv2.VideoWriter_fourcc(*"mp4v")
-        out = cv2.VideoWriter(raw_path, fourcc, fps, (width, height))
-
         # Procesamiento del video
         with vision.PoseLandmarker.create_from_options(options) as landmarker:
+            
+            # Detectar perfil para ejercicios
+            exercise.set_side(side)
+            cap.set(cv2.CAP_PROP_POS_FRAMES, 0)  # Rebobinar al inicio para procesar de nuevo todos los frames
+            
+            # Procesamiento del video
+            fourcc = cv2.VideoWriter_fourcc(*"mp4v")
+            out = cv2.VideoWriter(raw_path, fourcc, fps, (width, height))
             timestamp_ms = 0
+            
             while cap.isOpened():
                 ret, frame = cap.read()
                 if not ret:

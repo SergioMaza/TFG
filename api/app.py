@@ -54,8 +54,9 @@ def analysis():
     session_id = data.get("session_id")
     upload_path = data.get("upload_path")
     exercise_name = data.get("exercise_name")
+    side = data.get("side")
 
-    if not all([user_id, session_id, exercise_name, upload_path]):
+    if not all([user_id, session_id, exercise_name, upload_path, side]):
         return jsonify({"error": "Faltan campos obligatorios"}), 400
 
     # Obtener configuración del ejercicio desde DB
@@ -81,6 +82,7 @@ def analysis():
                 "session_id": session_id,
                 "exercise_name": exercise_name,
                 "upload_path": upload_path,
+                "side": side,
                 "rom_ideal_low": config["rom_ideal_low"],
                 "rom_ideal_high": config["rom_ideal_high"],
             },

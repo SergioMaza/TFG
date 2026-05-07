@@ -7,8 +7,14 @@ from ejercicios.exercise_interface import BaseExercise
 @register
 class Squat(BaseExercise):
     name = "squat"
-    landmarks = [23, 25, 27, 11]
-    connections = [(23, 25), (25, 27), (11, 23)]
+    
+    # Perfil izq
+    landmarks_left = [24, 26, 28, 12]
+    connections_left = [(24, 26), (26, 28), (12, 24)]
+    
+    # Perfil der
+    landmarks_right = [23, 25, 27, 11]
+    connections_right = [(23, 25), (25, 27), (11, 23)]
 
     def __init__(self):
         super().__init__()
@@ -18,9 +24,9 @@ class Squat(BaseExercise):
         self._torso_leans = []
 
     def compute_metrics(self, lm, w, h):
-        hip = self.get_xy(lm, w, h, 23)
-        knee = self.get_xy(lm, w, h, 25)
-        ankle = self.get_xy(lm, w, h, 27)
+        hip = self.get_xy(lm, w, h, self.landmarks[0])
+        knee = self.get_xy(lm, w, h, self.landmarks[1])
+        ankle = self.get_xy(lm, w, h, self.landmarks[2])
 
         torso = calculate_torso_lean(lm, w, h)
         self._torso_leans.append(torso)
