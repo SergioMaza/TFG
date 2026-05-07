@@ -106,8 +106,7 @@ def analysis():
 
 @app.route("/api/get-sessions", methods=["GET"])
 def get_sessions():
-    # user_id = request.args.get("user_id")
-    user_id = "2407f69b-8960-45fa-ac8b-0e1b1141ebf9"
+    user_id = request.args.get("user_id")
 
     if not user_id:
         return jsonify({"error": "user_id requerido"}), 400

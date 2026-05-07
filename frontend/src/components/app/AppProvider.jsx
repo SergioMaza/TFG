@@ -6,13 +6,19 @@
 import { AppContext } from "./AppContext";
 import { supabase } from "../../lib/supabaseClient";
 import { useCallback, useEffect, useState } from "react";
+import { useNavigate } from "react-router-dom";
+import { ROUTES } from "../../config/routes";
 
 const VITE_API_URL = import.meta.env.VITE_API_URL;
+const VITE_FRONTEND_URL = import.meta.env.VITE_FRONTEND_URL;
 
-// 2. Provider
+// Provider
 export const AppProvider = ({ children }) => {
+  const navigate = useNavigate();
+
   const [userId, setUserId] = useState(null);
-  const [data, setData] = useState(null);
+  const [data, setData] = useState(null); // Toda la info del usuario (ejercicios, sesiones, metrics, etc)
+
   const [loading, setLoading] = useState(false);
   const [error, setError] = useState(null);
 
@@ -20,35 +26,71 @@ export const AppProvider = ({ children }) => {
   // AUTH FUNCTIONS
   // -----------------------
 
-  const signUp = async (email, password, repeatPassword) => {
-    return (email, password, repeatPassword);
+  const signUp = async (email, password) => {
+    console.log("DEBUG email: ", email);
+    console.log("DEBUG password: ", password);
+    const { data, error } = await supabase.auth.signUp({
+      email,
+      password,
+    });
+
+    if (!error) navigate(ROUTES.dashboard);
+
+    return { data, error };
   };
 
   const signIn = async (email, password) => {
-    return (email, password);
+    console.log("DEBUG email: ", email);
+    console.log("DEBUG password: ", password);
+    const { data, error } = await supabase.auth.signInWithPassword({
+      email,
+      password,
+    });
+    console.log("DEBUG data: ", data);
+    console.log("DEBUG error: ", error);
+
+    if (!error) navigate(ROUTES.dashboard);
+
+    return { data, error };
   };
 
   const signInWithGoogle = async () => {
-    return null;
+    const { data, error } = await supabase.auth.signInWithOAuth({
+      provider: "google",
+      options: {
+        redirectTo: `${VITE_FRONTEND_URL}/dashboard`,
+      },
+    });
+
+    return { data, error };
   };
 
   const signOut = async () => {
-    return null;
+    console.log("signOut de ", userId)
+    const { error } = await supabase.auth.signOut();
+    if (!error) navigate(ROUTES.auth);
+    return { error };
   };
 
-  const deleteAccount = async () => {
-    return null;
-  };
+  useEffect(() => {
+    const initUser = async () => {
+      const { data } = await supabase.auth.getSession();
+      const user = data?.session?.user ?? null;
+      setUserId(user?.id ?? null);
+    };
 
-  // Forgot password
-  const forgotPassword = async (email) => {
-    return email;
-  };
+    initUser();
 
-  // Update password
-  const updatePassword = async (newPassword) => {
-    return newPassword;
-  };
+    const { data: listener } = supabase.auth.onAuthStateChange(
+      (_event, session) => {
+        setUserId(session?.user?.id ?? null);
+      },
+    );
+
+    return () => {
+      listener.subscription.unsubscribe();
+    };
+  }, []);
 
   // -----------------------
   // DB FUNCTIONS
@@ -73,8 +115,9 @@ export const AppProvider = ({ children }) => {
   }, [userId]);
 
   useEffect(() => {
+    if (!userId) return;
     fetchSessions();
-  }, [fetchSessions]);
+  }, [fetchSessions, userId]);
 
   // -----------------------
   // PROVIDE ALL DATA
@@ -86,13 +129,11 @@ export const AppProvider = ({ children }) => {
         signIn,
         signInWithGoogle,
         signOut,
-        forgotPassword,
-        updatePassword,
-        deleteAccount,
         fetchSessions,
+        userId,
         data,
         loading,
-        error
+        error,
       }}
     >
       {children}

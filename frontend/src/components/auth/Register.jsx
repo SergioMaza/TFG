@@ -1,16 +1,15 @@
 import { useForm } from "react-hook-form";
 import Input from "./Input";
-import { useNavigate } from "react-router-dom";
 import { ROUTES } from "../../config/routes";
-
+import { useAppProvider } from "../../hooks/useAppProvider";
 
 export default function Register() {
   const { register, handleSubmit } = useForm();
-   const navigate = useNavigate();
+  const { signUp } = useAppProvider();
 
-  const onSubmit = (data) => {
-    console.log(data);
-    navigate(ROUTES.dashboard);
+  const onSubmit = async (data) => {
+    const error = await signUp(data.email, data.password);
+    console.log("DEBUG error: ", error)
   };
 
   return (
@@ -35,7 +34,7 @@ export default function Register() {
         register={register("password")}
       />
 
-      <button className="w-full bg-(--secondary) text-white py-4 rounded-xl font-bold hover:opacity-90 transition">
+      <button className="w-full bg-(--secondary) text-white py-4 rounded-xl font-bold hover:opacity-90 transition cursor-pointer">
         Create Cuenta
       </button>
     </form>

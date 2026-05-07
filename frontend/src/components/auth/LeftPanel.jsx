@@ -13,7 +13,7 @@ export default function LeftPanel() {
       {/* BRAND */}
       <div className="relative z-10 flex items-center gap-3">
         <div>
-          <h1 className="font-black text-2xl tracking-tight">KINETIC LAB</h1>
+          <h1 className="font-black text-2xl tracking-tight">KINESIS LAB</h1>
           <p className="text-xs tracking-widest text-(--primary)">
             Análisis preciso de ejercicios con IA
           </p>

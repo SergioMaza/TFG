@@ -15,9 +15,7 @@ export default function UploadVideo() {
   const [side, setSide] = useState("right");
 
   const { analyze, loading, error } = useUploadVideo();
-  const { fetchSessions } = useAppProvider();
-
-  const user_id = "2407f69b-8960-45fa-ac8b-0e1b1141ebf9"; // TODO: Recoger desde Auth
+  const { userId, fetchSessions } = useAppProvider();
 
   const handleAnalyze = async () => {
     if (!uploadedFile || !exercise) return;
@@ -26,7 +24,7 @@ export default function UploadVideo() {
       const result = await analyze({
         file: uploadedFile,
         exercise: exercise,
-        userId: user_id,
+        userId: userId,
         side: side,
       });
       await fetchSessions();

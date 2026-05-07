@@ -1,10 +1,12 @@
-import { Upload, Video, Settings, User, Plus, BarChart3 } from "lucide-react";
+import { Upload, Video, Settings, User, Plus, BarChart3, LogOut } from "lucide-react";
 import { useNavigate, useLocation } from "react-router-dom";
 import { ROUTES } from "../../config/routes";
+import { useAppProvider } from "../../hooks/useAppProvider";
 
 export default function Sidebar() {
   const navigate = useNavigate();
   const location = useLocation();
+  const { signOut } = useAppProvider();
 
   return (
     <aside className="fixed left-0 top-0 h-full w-64 border border-(--bg-extra-light) p-6 flex flex-col justify-between">
@@ -44,7 +46,7 @@ export default function Sidebar() {
         </nav>
       </div>
 
-      <div>
+      <div className="space-y-2">
         <button
           onClick={() => navigate(ROUTES.uploadVideo)}
           className="w-full p-2 bg-(--secondary) text-white rounded-[10px] flex items-center gap-3
@@ -53,12 +55,15 @@ export default function Sidebar() {
           <Plus className="text-white size-6" />
           Analizar Ejercicio
         </button>
-        <NavItem
-          icon={<User />}
-          label="Profile"
-          active={location.pathname === ROUTES.profile}
-          onClick={() => navigate(ROUTES.profile)}
-        />
+
+        <button
+          onClick={signOut}
+          className="w-full p-2 bg-(--error)/70 text-white rounded-[10px] flex items-center gap-3
+          text-[10px] font-bold tracking-[0.2em] uppercase transition-all duration-200 hover:opacity-90 active:scale-[0.98]"
+        >
+          <LogOut className="text-white size-6" />
+          Cerrar sesión
+        </button>
       </div>
     </aside>
   );
