@@ -35,7 +35,7 @@ function ExerciseCard({ title, img, avg_score, sessions }) {
       className="rounded-xl overflow-hidden flex flex-col group border border-(--bg-extra-light) hover:border-(--primary)/30 transition-all"
     >
       {/* IMAGE HEADER */}
-      <div className="h-32 w-full relative">
+      <div className="h-64 w-full relative">
         <img
           src={img}
           alt={title}

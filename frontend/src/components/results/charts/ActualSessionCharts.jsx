@@ -225,7 +225,7 @@ export function RepFeedbackChart({ reps, feedback, thresholds }) {
   return (
     <Card
       title="Feedback por repetición"
-      subtitle="ROM real con indicadores de error por rep"
+      subtitle="ROM media con indicadores de error por rep"
     >
       <ResponsiveContainer width="100%" height={220}>
         <LineChart

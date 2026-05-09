@@ -25,11 +25,18 @@ class ExerciseResult:
 
 class BaseExercise(ABC):
 
-    name: str  # Nombre id del ejercicio
-    landmarks_left: list[int] = []  # Landmarks perfil izq
-    connections_left: list[tuple] = []  # Conexiones perfil izq
-    landmarks_right: list[int] = []  # Landmarks perfil der
-    connections_right: list[tuple] = []  # Conexiones perfil der
+    name: str
+    inverted: bool # pull=True | push=False
+    angle_extended: int
+    angle_flexed: int
+    
+    # Perfil izq
+    landmarks_left: list[int] = []
+    connections_left: list[tuple] = []
+    
+    # Perfil der
+    landmarks_right: list[int] = []
+    connections_right: list[tuple] = []
 
     # Resueltos dinámicamente por set_side()
     landmarks: list[int] = []
@@ -38,16 +45,17 @@ class BaseExercise(ABC):
     def __init__(self):
         self.tracker = None
         self._side: str | None = None  # "left" | "right" | None
+        self._rep_feedback: list[dict] = [] # Guarda el feedback de cada rep
 
     @abstractmethod
     def compute_metrics(self, lm, w, h) -> dict:
         pass
-
-    @abstractmethod
+    
+    # Genera el feedback de la sesion
     def generate_feedback(
         self, session: dict, rom_ideal_low: float, rom_ideal_high: float
     ) -> list[dict]:
-        feedback = []
+        feedback = list(self._rep_feedback)
 
         # Feedback por repe
         for rep in session["reps_detail"]:
@@ -105,6 +113,10 @@ class BaseExercise(ABC):
 
         return feedback
 
+    # Genera el feedback de cada rep
+    def generate_rep_feedback(self, rep, metrics: dict):
+        pass
+
     # Resuelve landmarks y connections según el lado detectado
     def set_side(self, side: str):
         if side not in ("left", "right"):
@@ -121,14 +133,25 @@ class BaseExercise(ABC):
 
     # Pipeline de procesamiento de cada ejercicio
     def analyze(self, lm, w: int, h: int, fps: float) -> ExerciseResult:
-        print("DEBUG SIDE: ", self._side)
         metrics = self.compute_metrics(lm, w, h)
+        
+        rep_count_before = self.tracker.rep_count
         self.update_tracker(metrics, fps)
+        
+        # Detecta cuando se ha terminado una rep
+        if self.tracker.rep_count > rep_count_before:
+            last_rep = self.tracker.reps[-1]
+            self.generate_rep_feedback(last_rep, metrics)
+        
         return self.build_result(metrics)
 
     # Helper para recoger posiciones de los landmarks
     def get_xy(self, lm, w, h, idx):
         return [lm[idx].x * w, lm[idx].y * h]
+    
+    # Helper para calcular el angulo en funcion del ejercicio (pull/push)
+    def normalize_angle(self, angle: float) -> float:
+        return 180 - angle if self.inverted else angle
 
     # Actualizar tracker (Por defecto: primer angulo como referencia)
     def update_tracker(self, metrics, fps):

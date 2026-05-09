@@ -27,8 +27,6 @@ export const AppProvider = ({ children }) => {
   // -----------------------
 
   const signUp = async (email, password) => {
-    console.log("DEBUG email: ", email);
-    console.log("DEBUG password: ", password);
     const { data, error } = await supabase.auth.signUp({
       email,
       password,
@@ -40,14 +38,10 @@ export const AppProvider = ({ children }) => {
   };
 
   const signIn = async (email, password) => {
-    console.log("DEBUG email: ", email);
-    console.log("DEBUG password: ", password);
     const { data, error } = await supabase.auth.signInWithPassword({
       email,
       password,
     });
-    console.log("DEBUG data: ", data);
-    console.log("DEBUG error: ", error);
 
     if (!error) navigate(ROUTES.dashboard);
 

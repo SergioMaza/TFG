@@ -76,14 +76,6 @@ def draw_angle(
         thickness=thickness,
     )
 
-    # Calcular posición del texto
-    text_pos = (int(elbow[0] + 20), int(elbow[1] - 40))
-
-    # Dibujar valor numérico del ángulo
-    cv2.putText(
-        frame, f"{int(angle)}", text_pos, cv2.FONT_HERSHEY_SIMPLEX, 0.7, color, 2
-    )
-
 
 def draw_reps(cv2, frame, result):
     """
