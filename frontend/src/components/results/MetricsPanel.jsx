@@ -1,5 +1,6 @@
 import { useState, useEffect } from "react";
 import { ScoreRing } from "../common/ScoreRing";
+import { usePdfReport } from "../../hooks/usePdfReport";
 
 function RangeBar({ label, value, idealLow, idealHigh, unit = "" }) {
   const [animated, setAnimated] = useState(false);
@@ -15,7 +16,7 @@ function RangeBar({ label, value, idealLow, idealHigh, unit = "" }) {
   const max = idealHigh + padding;
 
   const pctRaw = ((value - min) / (max - min)) * 100;
-  const pct = Math.max(0, Math.min(100, pctRaw))
+  const pct = Math.max(0, Math.min(100, pctRaw));
 
   const inIdeal = value >= idealLow && value <= idealHigh;
   const indicatorColor = inIdeal ? "var(--primary)" : "var(--error)";
@@ -33,7 +34,6 @@ function RangeBar({ label, value, idealLow, idealHigh, unit = "" }) {
 
       {/* TRACK */}
       <div className="relative h-2 rounded-full bg-(--bg-extra-light)">
-
         {/* ZONA VERDE (IDEAL) */}
         <div
           className="absolute top-0 h-full rounded-full"
@@ -75,9 +75,20 @@ function RangeBar({ label, value, idealLow, idealHigh, unit = "" }) {
 }
 
 export default function MetricsPanel({ exercise, session }) {
+  const { downloadReport } = usePdfReport();
+  const [loading, setLoading] = useState(false);
+
+  async function handleDownload() {
+    setLoading(true);
+    try {
+      await downloadReport(exercise);
+    } finally {
+      setLoading(false);
+    }
+  }
+
   return (
     <div className="flex flex-col gap-10">
-
       {/* SCORE CENTRAL */}
       <div className="flex justify-center py-5">
         <div className="scale-130">
@@ -147,8 +158,15 @@ export default function MetricsPanel({ exercise, session }) {
       </div>
 
       {/* CTA */}
-      <button className="mt-auto px-3.5 py-3.5 bg-(--secondary) text-white text-[10px] font-bold tracking-[0.2em] uppercase rounded-[10px] transition-all duration-200 hover:opacity-90 active:scale-[0.98]">
+      <button className="mt-auto px-3.5 py-3.5 bg-(--secondary) text-white text-[10px] font-bold tracking-[0.2em] uppercase rounded-[10px] transition-all duration-200 hover:opacity-90 active:scale-[0.98] cursor-pointer">
         Descargar informe completo
+      </button>
+      <button
+        onClick={handleDownload}
+        disabled={loading}
+        className="mt-auto px-3.5 py-3.5 bg-(--secondary) text-white text-[10px] font-bold tracking-[0.2em] uppercase rounded-[10px] transition-all duration-200 hover:opacity-90 active:scale-[0.98] disabled:opacity-50 disabled:cursor-not-allowed"
+      >
+        {loading ? "Generando…" : "Descargar informe completo"}
       </button>
     </div>
   );
