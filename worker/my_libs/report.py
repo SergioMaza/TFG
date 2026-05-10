@@ -84,6 +84,7 @@ def generate_session_summary(
     velocities = []
     efficiencies = []
     reps_detail = []
+    max_velocity = max(r.velocity for r in reps) if reps else 1.0
     for r in reps:
         rom_deg = r.peak_angle - r.min_angle
         roms.append(rom_deg)
@@ -94,8 +95,9 @@ def generate_session_summary(
         velocity = r.velocity
         velocities.append(velocity)
 
-        efficiency = (rom_deg / duration) if duration > 0 else 0.0
-        efficiency = max(0.0, min(100.0, efficiency))
+        rom_ratio = min(rom_deg / ((rom_ideal_low + rom_ideal_high) / 2), 1.0)
+        velocity_ratio = r.velocity / max_velocity if max_velocity > 0 else 0.0
+        efficiency = (rom_ratio * 0.6 + velocity_ratio * 0.4) * 100
         efficiencies.append(efficiency)
 
         reps_detail.append(

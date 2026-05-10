@@ -9,7 +9,7 @@ class Squat(BaseExercise):
     name = "squat"
     inverted = False
     angle_extended = 170
-    angle_flexed = 100
+    angle_flexed = 120
 
     # Perfil izq
     landmarks_left = [24, 26, 28, 12]

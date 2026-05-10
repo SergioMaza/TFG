@@ -1,6 +1,5 @@
 import { useParams } from "react-router-dom";
 import SessionHistory from "../components/results/SessionHistory";
-import MetricsPanel from "../components/results/MetricsPanel";
 import AnalyticsDashboard from "../components/results/Analyticsdashboard";
 import ExerciseGrid from "../components/dashboard/ExerciseGrid";
 import { useAppProvider } from "../hooks/useAppProvider";
