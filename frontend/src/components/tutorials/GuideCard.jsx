@@ -1,4 +1,4 @@
-export function GuideCard({ title, img, guide_url }) {
+export function GuideCard({ title, img, guide_url, commercial_name }) {
   return (
     <div className="rounded-xl overflow-hidden flex flex-col group border border-(--bg-extra-light)">
       {/* IMAGE HEADER */}
@@ -12,7 +12,7 @@ export function GuideCard({ title, img, guide_url }) {
         <div className="absolute inset-0 bg-linear-to-t from-(--bg-light) to-transparent" />
 
         <div className="absolute bottom-4 left-6">
-          <h4 className="text-2xl font-black">{title}</h4>
+          <h4 className="text-2xl font-black">{commercial_name}</h4>
         </div>
       </div>
 

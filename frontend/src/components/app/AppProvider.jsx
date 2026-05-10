@@ -18,6 +18,7 @@ export const AppProvider = ({ children }) => {
 
   const [userId, setUserId] = useState(null);
   const [data, setData] = useState(null); // Toda la info del usuario (ejercicios, sesiones, metrics, etc)
+  const [exercisesCatalog, setExercisesCatalog] = useState([]); // Catalogo de ejercicios para upload y guides
 
   const [loading, setLoading] = useState(false);
   const [error, setError] = useState(null);
@@ -100,7 +101,6 @@ export const AppProvider = ({ children }) => {
       if (!res.ok) throw new Error("Error obteniendo sesiones");
 
       const json = await res.json();
-      console.log("DEBUG data: ", json)
       setData(json);
     } catch (err) {
       setError(err.message);
@@ -114,6 +114,28 @@ export const AppProvider = ({ children }) => {
     fetchSessions();
   }, [fetchSessions, userId]);
 
+  // Obtener el catalogo de ejercicios
+  useEffect(() => {
+    const fetchExercises = async () => {
+      setLoading(true);
+      setError(null);
+
+      try {
+        const res = await fetch(`${VITE_API_URL}/api/get-exercise-catalog`);
+        if (!res.ok) throw new Error("Error obteniendo ejercicios");
+
+        const data = await res.json();
+        setExercisesCatalog(data.exercises);
+      } catch (err) {
+        setError(err.message);
+      } finally {
+        setLoading(false);
+      }
+    };
+
+    fetchExercises();
+  }, []);
+
   // -----------------------
   // PROVIDE ALL DATA
   // -----------------------
@@ -126,6 +148,7 @@ export const AppProvider = ({ children }) => {
         signOut,
         fetchSessions,
         userId,
+        exercisesCatalog,
         data,
         loading,
         error,

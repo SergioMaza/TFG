@@ -54,7 +54,7 @@ export default function Results() {
         <div className="flex flex-col lg:flex-row justify-between items-start lg:items-center gap-1">
           <div className="space-y-4 max-w-2xl">
             <h2 className="text-5xl font-black tracking-tighter">
-              Análisis de {exercise.title}
+              Análisis de {exercise.commercial_name}
             </h2>
 
             <p className="text-(--gray) text-lg leading-relaxed">

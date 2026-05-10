@@ -1,13 +1,13 @@
 import React from "react";
-import { useAppProvider } from "../hooks/useAppProvider";
 import { GuideCard } from "../components/tutorials/GuideCard";
+import { useAppProvider } from "../hooks/useAppProvider";
 
 export default function Guides() {
-  const { data, loading, error } = useAppProvider();
+  const { exercisesCatalog, loading, error } = useAppProvider();
 
   if (loading) return <p>Cargando...</p>;
   if (error) return <p>Error: {error}</p>;
-  if (!data) return null;
+  if (!exercisesCatalog) return null;
 
   return (
     <div className="flex-1 space-y-10">
@@ -28,7 +28,7 @@ export default function Guides() {
 
       {/* Grid */}
       <div className="grid md:grid-cols-2 xl:grid-cols-3 gap-6">
-        {data.exercises.map((exercise, i) => (
+        {exercisesCatalog.map((exercise, i) => (
           <GuideCard key={i} {...exercise} />
         ))}
       </div>

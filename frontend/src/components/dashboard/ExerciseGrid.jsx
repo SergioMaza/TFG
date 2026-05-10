@@ -16,7 +16,7 @@ export default function ExerciseGrid({ data, title = "Ejercicios" }) {
   );
 }
 
-function ExerciseCard({ title, img, avg_score, sessions }) {
+function ExerciseCard({ title, commercial_name, img, avg_score, sessions }) {
   const navigate = useNavigate();
 
   const color = getScoreColorValue(avg_score);
@@ -45,7 +45,7 @@ function ExerciseCard({ title, img, avg_score, sessions }) {
         <div className="absolute inset-0 bg-linear-to-t from-(--bg-light) to-transparent" />
 
         <div className="absolute bottom-4 left-6">
-          <h4 className="text-xl font-black">{title}</h4>
+          <h4 className="text-xl font-black">{commercial_name}</h4>
         </div>
       </div>
 

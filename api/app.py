@@ -130,14 +130,21 @@ def get_exercise_titles():
     try:
         response = (
             supabase.table("exercises_catalog")
-            .select("title")
+            .select("title, img, guide_url, commercial_name")
             .execute()
         )
 
-        # Extraer solo los títulos en una lista
-        titles = [item["title"] for item in response.data]
+        exercises = [
+            {
+                "title": item["title"],
+                "commercial_name": item["commercial_name"],
+                "img": item["img"],
+                "guide_url": item["guide_url"]
+            }
+            for item in response.data
+        ]
 
-        return jsonify({"titles": titles}), 200
+        return jsonify({"exercises": exercises}), 200
 
     except Exception as e:
         return jsonify({"error": str(e)}), 500

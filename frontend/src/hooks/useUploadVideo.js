@@ -1,11 +1,10 @@
-import { useState, useEffect } from "react";
+import { useState } from "react";
 
 const VITE_API_URL = import.meta.env.VITE_API_URL;
 
 export function useUploadVideo() {
   const [loading, setLoading] = useState(false);
   const [error, setError] = useState(null);
-  const [exercises, setExercises] = useState([]);
 
   const analyze = async ({ file, exercise, userId, side}) => {
     setLoading(true);
@@ -37,7 +36,7 @@ export function useUploadVideo() {
           user_id: userId,
           session_id: session_id,
           upload_path: upload_path,
-          exercise_name: exercise.name,
+          exercise_name: exercise,
           side: side
         }),
       });
@@ -53,29 +52,7 @@ export function useUploadVideo() {
     }
   };
 
-  // Obtener los ejercicios para el desplegable
-  useEffect(() => {
-    const fetchExercises = async () => {
-      setLoading(true);
-      setError(null);
+  
 
-      try {
-        const res = await fetch(`${VITE_API_URL}/api/get-exercise-catalog`);
-        if (!res.ok) throw new Error("Error obteniendo ejercicios");
-
-        const data = await res.json();
-
-        const formatted = data.titles.map((t) => ({ name: t }));
-        setExercises(formatted);
-      } catch (err) {
-        setError(err.message);
-      } finally {
-        setLoading(false);
-      }
-    };
-
-    fetchExercises();
-  }, []);
-
-  return { exercises, analyze, loading, error };
+  return { analyze, loading, error };
 }

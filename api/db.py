@@ -81,7 +81,7 @@ def get_all_sessions_full(supabase, user_id: str) -> list:
             total_reps, full_rom_reps, rom_avg_deg, rom_min_deg, rom_max_deg,
             duration_avg, velocity_avg,
             exercises_catalog (
-                id, title, img, upper, guide_url,
+                id, title, img, upper, guide_url, commercial_name,
                 velocity_ideal_low, velocity_ideal_high,
                 rom_ideal_low, rom_ideal_high,
                 duration_ideal_low, duration_ideal_high
@@ -125,6 +125,7 @@ def get_all_sessions_full(supabase, user_id: str) -> list:
         if ex_id not in exercises_map:
             exercises_map[ex_id] = {
                 "title": catalog["title"],
+                "commercial_name": catalog["commercial_name"],
                 "img": catalog["img"],
                 "upper": catalog["upper"],
                 "guide_url": catalog["guide_url"],

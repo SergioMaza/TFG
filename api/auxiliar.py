@@ -3,8 +3,6 @@
 from datetime import datetime, timezone, timedelta
 from dateutil.parser import isoparse
 
-
-
 def _calculate_exercise_avg_scores(exercises: list) -> list:
     """
     avg_score a cada ejercicio calculado en base a los scores de cada sesion.
