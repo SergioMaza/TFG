@@ -81,7 +81,7 @@ def get_all_sessions_full(supabase, user_id: str) -> list:
             total_reps, full_rom_reps, rom_avg_deg, rom_min_deg, rom_max_deg,
             duration_avg, velocity_avg,
             exercises_catalog (
-                id, title, img, upper,
+                id, title, img, upper, guide_url,
                 velocity_ideal_low, velocity_ideal_high,
                 rom_ideal_low, rom_ideal_high,
                 duration_ideal_low, duration_ideal_high
@@ -127,6 +127,7 @@ def get_all_sessions_full(supabase, user_id: str) -> list:
                 "title": catalog["title"],
                 "img": catalog["img"],
                 "upper": catalog["upper"],
+                "guide_url": catalog["guide_url"],
                 "thresholds": {
                     "velocity": {
                         "idealLow": catalog["velocity_ideal_low"],

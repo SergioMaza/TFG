@@ -18,7 +18,9 @@ export default function Layout({ children }) {
       <div className="flex-1 ml-64 flex flex-col">
         <main className="flex-1 px-10 py-20">{children}</main>
 
-        <Footer />
+        <div className="pt-70">
+          <Footer />
+        </div>
       </div>
     </div>
   );

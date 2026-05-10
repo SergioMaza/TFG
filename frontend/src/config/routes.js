@@ -3,6 +3,7 @@ export const ROUTES = {
   uploadVideo: "/uploadVideo",
   dashboard: "/dashboard",
   results: "/results/:id",
+  guides: "/guides",
 
   // LandingPage
   landingPage: "/",

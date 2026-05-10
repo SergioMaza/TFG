@@ -14,6 +14,7 @@ import { AppProvider } from "./components/app/AppProvider";
 import Layout from "./components/app/Layout";
 import AuthLayout from "./pages/AuthLayout";
 import Dashboard from "./pages/Dashboard";
+import Guides from "./pages/Guides";
 
 const root = ReactDOM.createRoot(document.getElementById("root"));
 root.render(
@@ -26,7 +27,7 @@ root.render(
         {/* LandingPage */}
         <Route path={ROUTES.landingPage} element={<LandingPage />} />
 
-        {/* Dub Video */}
+        {/* Upload Video */}
         <Route
           path={ROUTES.uploadVideo}
           element={
@@ -52,6 +53,16 @@ root.render(
           element={
             <Layout>
               <Results />
+            </Layout>
+          }
+        />
+
+        {/* Guides */}
+        <Route
+          path={ROUTES.guides}
+          element={
+            <Layout>
+              <Guides />
             </Layout>
           }
         />

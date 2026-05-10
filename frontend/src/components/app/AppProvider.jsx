@@ -100,6 +100,7 @@ export const AppProvider = ({ children }) => {
       if (!res.ok) throw new Error("Error obteniendo sesiones");
 
       const json = await res.json();
+      console.log("DEBUG data: ", json)
       setData(json);
     } catch (err) {
       setError(err.message);

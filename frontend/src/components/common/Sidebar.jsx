@@ -32,9 +32,9 @@ export default function Sidebar() {
 
           <NavItem
             icon={<Video />}
-            label="Library"
-            active={location.pathname === ROUTES.library}
-            onClick={() => navigate(ROUTES.library)}
+            label="Guías"
+            active={location.pathname === ROUTES.guides}
+            onClick={() => navigate(ROUTES.guides)}
           />
 
           <NavItem
