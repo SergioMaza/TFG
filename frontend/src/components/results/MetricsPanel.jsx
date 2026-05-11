@@ -158,9 +158,6 @@ export default function MetricsPanel({ exercise, session }) {
       </div>
 
       {/* CTA */}
-      <button className="mt-auto px-3.5 py-3.5 bg-(--secondary) text-white text-[10px] font-bold tracking-[0.2em] uppercase rounded-[10px] transition-all duration-200 hover:opacity-90 active:scale-[0.98] cursor-pointer">
-        Descargar informe completo
-      </button>
       <button
         onClick={handleDownload}
         disabled={loading}
