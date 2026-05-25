@@ -1,0 +1,122 @@
+{
+    "exercise_name": "biceps_curl",
+    "processed_path": "processed/user_e78c1d46-8e44-4131-ba22-6ee45289c9e3/session_9825ded5-2c56-496a-946e-7dbdc803408f.mp4",
+    "uploaded_at": "2026-05-15T22:32:24.606379+00:00",
+    "score": 87,
+    "fatigue": 37.49,
+    "efficiency_avg": 84.74,
+    "total_reps": 11,
+    "full_rom_reps": 11,
+    "rom_avg_deg": 96.4,
+    "rom_min_deg": 52.5,
+    "rom_max_deg": 113.1,
+    "duration_avg": 3.09,
+    "velocity_avg": 78.5,
+    "reps_detail": [
+        {
+            "rep_number": 1,
+            "full_rom": true,
+            "rom_deg": 109.3,
+            "duration": 2.43,
+            "velocity": 86.0,
+            "efficiency": 95.17
+        },
+        {
+            "rep_number": 2,
+            "full_rom": true,
+            "rom_deg": 109.1,
+            "duration": 2.63,
+            "velocity": 87.7,
+            "efficiency": 95.85
+        },
+        {
+            "rep_number": 3,
+            "full_rom": true,
+            "rom_deg": 112.3,
+            "duration": 2.53,
+            "velocity": 97.9,
+            "efficiency": 100.0
+        },
+        {
+            "rep_number": 4,
+            "full_rom": true,
+            "rom_deg": 113.1,
+            "duration": 2.9,
+            "velocity": 86.0,
+            "efficiency": 95.14
+        },
+        {
+            "rep_number": 5,
+            "full_rom": true,
+            "rom_deg": 107.5,
+            "duration": 2.9,
+            "velocity": 86.7,
+            "efficiency": 95.43
+        },
+        {
+            "rep_number": 6,
+            "full_rom": true,
+            "rom_deg": 111.8,
+            "duration": 2.87,
+            "velocity": 87.0,
+            "efficiency": 95.58
+        },
+        {
+            "rep_number": 7,
+            "full_rom": true,
+            "rom_deg": 112.5,
+            "duration": 2.8,
+            "velocity": 93.7,
+            "efficiency": 98.29
+        },
+        {
+            "rep_number": 8,
+            "full_rom": true,
+            "rom_deg": 104.9,
+            "duration": 3.33,
+            "velocity": 77.4,
+            "efficiency": 90.21
+        },
+        {
+            "rep_number": 9,
+            "full_rom": true,
+            "rom_deg": 57.9,
+            "duration": 2.43,
+            "velocity": 60.9,
+            "efficiency": 57.17
+        },
+        {
+            "rep_number": 10,
+            "full_rom": true,
+            "rom_deg": 69.7,
+            "duration": 3.07,
+            "velocity": 53.3,
+            "efficiency": 60.67
+        },
+        {
+            "rep_number": 11,
+            "full_rom": true,
+            "rom_deg": 52.5,
+            "duration": 6.1,
+            "velocity": 47.2,
+            "efficiency": 48.6
+        }
+    ],
+    "feedback": [
+        {
+            "rep_number": 9,
+            "text": "Rango de movimiento incompleto",
+            "error": true
+        },
+        {
+            "rep_number": 10,
+            "text": "Rango de movimiento incompleto",
+            "error": true
+        },
+        {
+            "rep_number": 11,
+            "text": "Rango de movimiento incompleto",
+            "error": true
+        }
+    ]
+}

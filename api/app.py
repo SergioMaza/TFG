@@ -1,12 +1,12 @@
 from flask import Flask, jsonify, request
-import os, requests
+import os, requests, json
 from supabase import create_client
 from flask_cors import CORS
 from db import upload_session_to_db, get_all_sessions_full
 from auxiliar import build_dashboard_response
 
 app = Flask(__name__)
-CORS(app, resources={r"/api/*": {"origins": "http://localhost:5173"}})
+CORS(app, resources={r"/api/*": {"origins": "*"}})
 
 # Supabase keys
 STORAGE_BUCKET_NAME = os.environ.get("STORAGE_BUCKET_NAME")
@@ -112,6 +112,12 @@ def get_sessions():
         return jsonify({"error": "user_id requerido"}), 400
 
     exercises = get_all_sessions_full(supabase, user_id)
+    
+    # ! TEMP: Descargar json para DEBUG
+    file_path = f"/app/backend_response.json"
+    with open(file_path, "w") as f:
+        json.dump(build_dashboard_response(exercises), f, indent=4)
+    
     return jsonify(build_dashboard_response(exercises)), 200
 
 @app.route("/api/get-signed-url-video", methods=["GET"])
@@ -150,4 +156,5 @@ def get_exercise_titles():
         return jsonify({"error": str(e)}), 500
 
 if __name__ == "__main__":
-    app.run(host="0.0.0.0", port=5000)
+    port = int(os.environ.get("PORT", 5000))
+    app.run(host="0.0.0.0", port=port)

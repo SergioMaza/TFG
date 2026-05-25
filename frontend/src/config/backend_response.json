@@ -1,0 +1,2795 @@
+{
+    "metrics": {
+        "sessions_this_month": 23,
+        "sessions_this_week": 4,
+        "most_trained_muscle": "biceps_curl",
+        "upper_percentage": 74,
+        "lower_percentage": 26,
+        "avg_score": 80,
+        "score_change_weekly": 16
+    },
+    "exercises": [
+        {
+            "title": "biceps_curl",
+            "commercial_name": "Curl de B\u00edceps",
+            "img": "https://liftmanual.com/wp-content/uploads/2023/04/dumbbell-incline-biceps-curl.jpg",
+            "upper": true,
+            "guide_url": "https://liftmanual.com/dumbbell-biceps-curl/",
+            "thresholds": {
+                "velocity": {
+                    "idealLow": 50,
+                    "idealHigh": 100
+                },
+                "rom": {
+                    "idealLow": 90,
+                    "idealHigh": 125
+                },
+                "duration": {
+                    "idealLow": 1.5,
+                    "idealHigh": 3.5
+                }
+            },
+            "sessions": [
+                {
+                    "session_id": "3589bc5b-d740-4f46-a7d9-b3bc9b4b7f45",
+                    "video_url": "processed/user_e78c1d46-8e44-4131-ba22-6ee45289c9e3/session_3589bc5b-d740-4f46-a7d9-b3bc9b4b7f45.mp4",
+                    "uploaded_at": "2026-05-10T19:31:06.00372",
+                    "score": 81,
+                    "fatigue": 0.56,
+                    "efficiency_avg": 33.21,
+                    "total_reps": 5,
+                    "full_rom_reps": 5,
+                    "rom_avg_deg": 104.7,
+                    "rom_min_deg": 73.6,
+                    "rom_max_deg": 120.5,
+                    "duration_avg": 3.68,
+                    "velocity_avg": 81.3,
+                    "reps_detail": [
+                        {
+                            "id": "5f5a0572-3011-4d1e-8b1e-01563ee87372",
+                            "rep_number": 1,
+                            "full_rom": true,
+                            "rom_deg": 114.2,
+                            "duration": 3.43,
+                            "velocity": 79,
+                            "efficiency": 33.26
+                        },
+                        {
+                            "id": "cf25be19-f0c8-4465-96fc-09d667883de5",
+                            "rep_number": 2,
+                            "full_rom": true,
+                            "rom_deg": 120.5,
+                            "duration": 3.17,
+                            "velocity": 91.7,
+                            "efficiency": 38.04
+                        },
+                        {
+                            "id": "4f5d4f96-4a9b-43b4-b601-60d7e41ccf5b",
+                            "rep_number": 3,
+                            "full_rom": true,
+                            "rom_deg": 73.6,
+                            "duration": 1.87,
+                            "velocity": 80,
+                            "efficiency": 39.41
+                        },
+                        {
+                            "id": "cf27150d-c9d3-4114-9191-ea5ad0bdd52c",
+                            "rep_number": 4,
+                            "full_rom": true,
+                            "rom_deg": 106.5,
+                            "duration": 2.63,
+                            "velocity": 81.9,
+                            "efficiency": 40.45
+                        },
+                        {
+                            "id": "15338d79-5ba2-4bfa-b265-ab05d6af823d",
+                            "rep_number": 5,
+                            "full_rom": true,
+                            "rom_deg": 108.7,
+                            "duration": 7.3,
+                            "velocity": 73.8,
+                            "efficiency": 14.89
+                        }
+                    ],
+                    "feedback": [
+                        {
+                            "rep_number": 3,
+                            "text": "Rango de movimiento incompleto",
+                            "error": true
+                        },
+                        {
+                            "rep_number": null,
+                            "text": "Velocidad consistente a lo largo de toda la serie",
+                            "error": false
+                        }
+                    ]
+                },
+                {
+                    "session_id": "632290ec-e937-43ad-a9cc-9e0ea18f09d9",
+                    "video_url": "processed/user_e78c1d46-8e44-4131-ba22-6ee45289c9e3/session_632290ec-e937-43ad-a9cc-9e0ea18f09d9.mp4",
+                    "uploaded_at": "2026-05-10T19:31:43.939034",
+                    "score": 85,
+                    "fatigue": 0,
+                    "efficiency_avg": 39.73,
+                    "total_reps": 12,
+                    "full_rom_reps": 12,
+                    "rom_avg_deg": 113.2,
+                    "rom_min_deg": 108.8,
+                    "rom_max_deg": 115.5,
+                    "duration_avg": 2.89,
+                    "velocity_avg": 87.7,
+                    "reps_detail": [
+                        {
+                            "id": "4409c736-03a9-4349-aab0-5c86a3545b66",
+                            "rep_number": 1,
+                            "full_rom": true,
+                            "rom_deg": 108.8,
+                            "duration": 3.5,
+                            "velocity": 69.6,
+                            "efficiency": 31.09
+                        },
+                        {
+                            "id": "9a73b5d7-7c55-482c-bbed-07be2e9c3fbc",
+                            "rep_number": 2,
+                            "full_rom": true,
+                            "rom_deg": 113.2,
+                            "duration": 2.73,
+                            "velocity": 90.2,
+                            "efficiency": 41.4
+                        },
+                        {
+                            "id": "bd8f739a-9cda-4518-b071-0b6568bacdef",
+                            "rep_number": 3,
+                            "full_rom": true,
+                            "rom_deg": 114.8,
+                            "duration": 3.1,
+                            "velocity": 81.4,
+                            "efficiency": 37.03
+                        },
+                        {
+                            "id": "818dddbd-e5bd-451f-9866-f0298e028031",
+                            "rep_number": 4,
+                            "full_rom": true,
+                            "rom_deg": 115.5,
+                            "duration": 3.37,
+                            "velocity": 76,
+                            "efficiency": 34.31
+                        },
+                        {
+                            "id": "01b3e316-5c1a-442d-896d-a9a048b5a0e3",
+                            "rep_number": 5,
+                            "full_rom": true,
+                            "rom_deg": 111.1,
+                            "duration": 3.13,
+                            "velocity": 79.9,
+                            "efficiency": 35.47
+                        },
+                        {
+                            "id": "4b6caf68-48b6-457b-b704-0598809012cb",
+                            "rep_number": 6,
+                            "full_rom": true,
+                            "rom_deg": 114.4,
+                            "duration": 3.03,
+                            "velocity": 81.4,
+                            "efficiency": 37.73
+                        },
+                        {
+                            "id": "644e217d-36e0-41a4-bfa3-663ced1dfd75",
+                            "rep_number": 7,
+                            "full_rom": true,
+                            "rom_deg": 115.3,
+                            "duration": 2.57,
+                            "velocity": 99.3,
+                            "efficiency": 44.9
+                        },
+                        {
+                            "id": "f2a137de-f6a4-4df2-862c-d187ed267242",
+                            "rep_number": 8,
+                            "full_rom": true,
+                            "rom_deg": 115.3,
+                            "duration": 2.5,
+                            "velocity": 104,
+                            "efficiency": 46.14
+                        },
+                        {
+                            "id": "f2a41a29-2ddf-4a00-af9b-bf9fb1c08146",
+                            "rep_number": 9,
+                            "full_rom": true,
+                            "rom_deg": 111.8,
+                            "duration": 2.6,
+                            "velocity": 97.7,
+                            "efficiency": 43.01
+                        },
+                        {
+                            "id": "dc01d565-84bd-4357-a565-9094cd7fd448",
+                            "rep_number": 10,
+                            "full_rom": true,
+                            "rom_deg": 114.5,
+                            "duration": 2.73,
+                            "velocity": 91.6,
+                            "efficiency": 41.9
+                        },
+                        {
+                            "id": "e3e8c12d-a311-4343-a19b-adc80243b3bf",
+                            "rep_number": 11,
+                            "full_rom": true,
+                            "rom_deg": 114.3,
+                            "duration": 2.93,
+                            "velocity": 84.9,
+                            "efficiency": 38.95
+                        },
+                        {
+                            "id": "15d34457-11cd-4bcc-bc3f-e8c5a7eef70a",
+                            "rep_number": 12,
+                            "full_rom": true,
+                            "rom_deg": 109.2,
+                            "duration": 2.43,
+                            "velocity": 96.8,
+                            "efficiency": 44.87
+                        }
+                    ],
+                    "feedback": [
+                        {
+                            "rep_number": null,
+                            "text": "Velocidad consistente a lo largo de toda la serie",
+                            "error": false
+                        }
+                    ]
+                },
+                {
+                    "session_id": "3e772f11-e864-4d7f-aeab-e5b9276aae4f",
+                    "video_url": "processed/user_e78c1d46-8e44-4131-ba22-6ee45289c9e3/session_3e772f11-e864-4d7f-aeab-e5b9276aae4f.mp4",
+                    "uploaded_at": "2026-05-10T19:32:31.200095",
+                    "score": 70,
+                    "fatigue": 37.49,
+                    "efficiency_avg": 33.86,
+                    "total_reps": 11,
+                    "full_rom_reps": 11,
+                    "rom_avg_deg": 96.4,
+                    "rom_min_deg": 52.5,
+                    "rom_max_deg": 113.1,
+                    "duration_avg": 3.09,
+                    "velocity_avg": 78.5,
+                    "reps_detail": [
+                        {
+                            "id": "c5dad878-6a6c-414e-a9cb-dba9f1734a78",
+                            "rep_number": 1,
+                            "full_rom": true,
+                            "rom_deg": 109.3,
+                            "duration": 2.43,
+                            "velocity": 86,
+                            "efficiency": 44.9
+                        },
+                        {
+                            "id": "0fdd20c9-4fe0-4f10-847b-931273fd9666",
+                            "rep_number": 2,
+                            "full_rom": true,
+                            "rom_deg": 109.1,
+                            "duration": 2.63,
+                            "velocity": 87.7,
+                            "efficiency": 41.43
+                        },
+                        {
+                            "id": "08735c91-5077-4526-abaa-1158059038c8",
+                            "rep_number": 3,
+                            "full_rom": true,
+                            "rom_deg": 112.3,
+                            "duration": 2.53,
+                            "velocity": 97.9,
+                            "efficiency": 44.34
+                        },
+                        {
+                            "id": "44083c06-bab1-4aaa-8d2f-e829f50a2c03",
+                            "rep_number": 4,
+                            "full_rom": true,
+                            "rom_deg": 113.1,
+                            "duration": 2.9,
+                            "velocity": 86,
+                            "efficiency": 39.01
+                        },
+                        {
+                            "id": "0202768c-4f67-442b-aa4d-2c87f8eb4ad7",
+                            "rep_number": 5,
+                            "full_rom": true,
+                            "rom_deg": 107.5,
+                            "duration": 2.9,
+                            "velocity": 86.7,
+                            "efficiency": 37.06
+                        },
+                        {
+                            "id": "1eccd07d-c1e5-4f51-87d2-a25983ac8f44",
+                            "rep_number": 6,
+                            "full_rom": true,
+                            "rom_deg": 111.8,
+                            "duration": 2.87,
+                            "velocity": 87,
+                            "efficiency": 38.99
+                        },
+                        {
+                            "id": "db4e7c42-3ecd-4298-9a26-e3a0c334a91d",
+                            "rep_number": 7,
+                            "full_rom": true,
+                            "rom_deg": 112.5,
+                            "duration": 2.8,
+                            "velocity": 93.7,
+                            "efficiency": 40.18
+                        },
+                        {
+                            "id": "c205fb90-a42e-4add-9837-cd8900123792",
+                            "rep_number": 8,
+                            "full_rom": true,
+                            "rom_deg": 104.9,
+                            "duration": 3.33,
+                            "velocity": 77.4,
+                            "efficiency": 31.48
+                        },
+                        {
+                            "id": "8052c91d-dd3b-4efd-a5ac-3a9f976c1cc8",
+                            "rep_number": 9,
+                            "full_rom": true,
+                            "rom_deg": 57.9,
+                            "duration": 2.43,
+                            "velocity": 60.9,
+                            "efficiency": 23.78
+                        },
+                        {
+                            "id": "269cc874-1845-4010-8e7c-020390a3965a",
+                            "rep_number": 10,
+                            "full_rom": true,
+                            "rom_deg": 69.7,
+                            "duration": 3.07,
+                            "velocity": 53.3,
+                            "efficiency": 22.71
+                        },
+                        {
+                            "id": "53f347f7-28f0-41ad-95f5-071805bec817",
+                            "rep_number": 11,
+                            "full_rom": true,
+                            "rom_deg": 52.5,
+                            "duration": 6.1,
+                            "velocity": 47.2,
+                            "efficiency": 8.61
+                        }
+                    ],
+                    "feedback": [
+                        {
+                            "rep_number": 9,
+                            "text": "Rango de movimiento incompleto",
+                            "error": true
+                        },
+                        {
+                            "rep_number": 10,
+                            "text": "Rango de movimiento incompleto",
+                            "error": true
+                        },
+                        {
+                            "rep_number": 11,
+                            "text": "Rango de movimiento incompleto",
+                            "error": true
+                        }
+                    ]
+                },
+                {
+                    "session_id": "4815ea45-17ae-47bf-8fb5-ee40fe9efc6b",
+                    "video_url": "processed/user_e78c1d46-8e44-4131-ba22-6ee45289c9e3/session_4815ea45-17ae-47bf-8fb5-ee40fe9efc6b.mp4",
+                    "uploaded_at": "2026-05-10T19:36:12.081277",
+                    "score": 85,
+                    "fatigue": 11.68,
+                    "efficiency_avg": 46.34,
+                    "total_reps": 8,
+                    "full_rom_reps": 8,
+                    "rom_avg_deg": 112.1,
+                    "rom_min_deg": 100,
+                    "rom_max_deg": 134.8,
+                    "duration_avg": 2.43,
+                    "velocity_avg": 98.1,
+                    "reps_detail": [
+                        {
+                            "id": "069ae871-580a-473a-bf55-078b93db2757",
+                            "rep_number": 1,
+                            "full_rom": true,
+                            "rom_deg": 134.8,
+                            "duration": 2.57,
+                            "velocity": 106.4,
+                            "efficiency": 52.51
+                        },
+                        {
+                            "id": "1026c583-7fe8-4dcb-aef4-f2bb6deda1f8",
+                            "rep_number": 2,
+                            "full_rom": true,
+                            "rom_deg": 116.3,
+                            "duration": 2.8,
+                            "velocity": 98.7,
+                            "efficiency": 41.54
+                        },
+                        {
+                            "id": "85624681-6cb7-4ae9-a702-239d4c468563",
+                            "rep_number": 3,
+                            "full_rom": true,
+                            "rom_deg": 114.9,
+                            "duration": 2.7,
+                            "velocity": 98.1,
+                            "efficiency": 42.55
+                        },
+                        {
+                            "id": "4c507501-655b-469e-97cc-74284906048e",
+                            "rep_number": 4,
+                            "full_rom": true,
+                            "rom_deg": 116.7,
+                            "duration": 2.7,
+                            "velocity": 96.7,
+                            "efficiency": 43.24
+                        },
+                        {
+                            "id": "ad6c8530-6780-4397-89d0-d7dbc984a438",
+                            "rep_number": 5,
+                            "full_rom": true,
+                            "rom_deg": 106.2,
+                            "duration": 2.03,
+                            "velocity": 103,
+                            "efficiency": 52.21
+                        },
+                        {
+                            "id": "ec003a11-048c-4491-bc4f-b26fa924ca3e",
+                            "rep_number": 6,
+                            "full_rom": true,
+                            "rom_deg": 106.4,
+                            "duration": 2.23,
+                            "velocity": 97.6,
+                            "efficiency": 47.65
+                        },
+                        {
+                            "id": "810b40c4-b93a-4e6e-9e82-c88a7cffe88d",
+                            "rep_number": 7,
+                            "full_rom": true,
+                            "rom_deg": 100,
+                            "duration": 2.27,
+                            "velocity": 89.7,
+                            "efficiency": 44.1
+                        },
+                        {
+                            "id": "f9bd1e5c-3cb5-4757-83a4-222508a6bf02",
+                            "rep_number": 8,
+                            "full_rom": true,
+                            "rom_deg": 101.7,
+                            "duration": 2.17,
+                            "velocity": 94.7,
+                            "efficiency": 46.92
+                        }
+                    ],
+                    "feedback": [
+                        {
+                            "rep_number": 1,
+                            "text": "Rango de movimiento excesivo",
+                            "error": true
+                        },
+                        {
+                            "rep_number": null,
+                            "text": "Velocidad consistente a lo largo de toda la serie",
+                            "error": false
+                        }
+                    ]
+                },
+                {
+                    "session_id": "3dff86d3-c82f-4556-bb78-9ce425189408",
+                    "video_url": "processed/user_e78c1d46-8e44-4131-ba22-6ee45289c9e3/session_3dff86d3-c82f-4556-bb78-9ce425189408.mp4",
+                    "uploaded_at": "2026-05-10T19:38:00.39099",
+                    "score": 84,
+                    "fatigue": 0,
+                    "efficiency_avg": 36.07,
+                    "total_reps": 2,
+                    "full_rom_reps": 2,
+                    "rom_avg_deg": 118.7,
+                    "rom_min_deg": 115.9,
+                    "rom_max_deg": 121.5,
+                    "duration_avg": 3.3,
+                    "velocity_avg": 85.2,
+                    "reps_detail": [
+                        {
+                            "id": "3be57805-cd95-4ba7-ae2c-463a12de6a54",
+                            "rep_number": 1,
+                            "full_rom": true,
+                            "rom_deg": 115.9,
+                            "duration": 3.43,
+                            "velocity": 79.5,
+                            "efficiency": 33.77
+                        },
+                        {
+                            "id": "d95f9bdd-b757-4113-9b7d-d4257501ae19",
+                            "rep_number": 2,
+                            "full_rom": true,
+                            "rom_deg": 121.5,
+                            "duration": 3.17,
+                            "velocity": 91,
+                            "efficiency": 38.37
+                        }
+                    ],
+                    "feedback": [
+                        {
+                            "rep_number": null,
+                            "text": "Velocidad consistente a lo largo de toda la serie",
+                            "error": false
+                        }
+                    ]
+                },
+                {
+                    "session_id": "8d6fdf7c-743b-478d-8807-0dd55e4e4d2b",
+                    "video_url": "processed/user_e78c1d46-8e44-4131-ba22-6ee45289c9e3/session_8d6fdf7c-743b-478d-8807-0dd55e4e4d2b.mp4",
+                    "uploaded_at": "2026-05-10T20:53:58.741254",
+                    "score": 87,
+                    "fatigue": 37.49,
+                    "efficiency_avg": 84.74,
+                    "total_reps": 11,
+                    "full_rom_reps": 11,
+                    "rom_avg_deg": 96.4,
+                    "rom_min_deg": 52.5,
+                    "rom_max_deg": 113.1,
+                    "duration_avg": 3.09,
+                    "velocity_avg": 78.5,
+                    "reps_detail": [
+                        {
+                            "id": "6b2bb3e6-d2b2-4a6d-acb3-e1cd3ecb98c7",
+                            "rep_number": 1,
+                            "full_rom": true,
+                            "rom_deg": 109.3,
+                            "duration": 2.43,
+                            "velocity": 86,
+                            "efficiency": 95.17
+                        },
+                        {
+                            "id": "f50e7b15-e8ca-4aab-8189-9e006447a4d5",
+                            "rep_number": 2,
+                            "full_rom": true,
+                            "rom_deg": 109.1,
+                            "duration": 2.63,
+                            "velocity": 87.7,
+                            "efficiency": 95.85
+                        },
+                        {
+                            "id": "212ddb84-6b4a-476b-9bc7-936c32f1b97e",
+                            "rep_number": 3,
+                            "full_rom": true,
+                            "rom_deg": 112.3,
+                            "duration": 2.53,
+                            "velocity": 97.9,
+                            "efficiency": 100
+                        },
+                        {
+                            "id": "f355a063-537f-4760-a7ff-70008af6160f",
+                            "rep_number": 4,
+                            "full_rom": true,
+                            "rom_deg": 113.1,
+                            "duration": 2.9,
+                            "velocity": 86,
+                            "efficiency": 95.14
+                        },
+                        {
+                            "id": "195e1450-588e-4aef-9577-e15e2a965b4a",
+                            "rep_number": 5,
+                            "full_rom": true,
+                            "rom_deg": 107.5,
+                            "duration": 2.9,
+                            "velocity": 86.7,
+                            "efficiency": 95.43
+                        },
+                        {
+                            "id": "33ab3481-1b53-48e2-bd5d-46dfd3a967f2",
+                            "rep_number": 6,
+                            "full_rom": true,
+                            "rom_deg": 111.8,
+                            "duration": 2.87,
+                            "velocity": 87,
+                            "efficiency": 95.58
+                        },
+                        {
+                            "id": "b316a0e4-1bc3-4c27-ac18-bfe3799e8308",
+                            "rep_number": 7,
+                            "full_rom": true,
+                            "rom_deg": 112.5,
+                            "duration": 2.8,
+                            "velocity": 93.7,
+                            "efficiency": 98.29
+                        },
+                        {
+                            "id": "736a6cb2-21e1-440e-be4c-6564e11bb703",
+                            "rep_number": 8,
+                            "full_rom": true,
+                            "rom_deg": 104.9,
+                            "duration": 3.33,
+                            "velocity": 77.4,
+                            "efficiency": 90.21
+                        },
+                        {
+                            "id": "4ec7c8ca-3f16-42ee-8fc8-7ad8f4a737ef",
+                            "rep_number": 9,
+                            "full_rom": true,
+                            "rom_deg": 57.9,
+                            "duration": 2.43,
+                            "velocity": 60.9,
+                            "efficiency": 57.17
+                        },
+                        {
+                            "id": "9d213a7d-43cf-4ec4-ad1e-f23c5ab6b389",
+                            "rep_number": 10,
+                            "full_rom": true,
+                            "rom_deg": 69.7,
+                            "duration": 3.07,
+                            "velocity": 53.3,
+                            "efficiency": 60.67
+                        },
+                        {
+                            "id": "697e5bc7-ceb0-44fa-acd3-154657ffb488",
+                            "rep_number": 11,
+                            "full_rom": true,
+                            "rom_deg": 52.5,
+                            "duration": 6.1,
+                            "velocity": 47.2,
+                            "efficiency": 48.6
+                        }
+                    ],
+                    "feedback": [
+                        {
+                            "rep_number": 9,
+                            "text": "Rango de movimiento incompleto",
+                            "error": true
+                        },
+                        {
+                            "rep_number": 10,
+                            "text": "Rango de movimiento incompleto",
+                            "error": true
+                        },
+                        {
+                            "rep_number": 11,
+                            "text": "Rango de movimiento incompleto",
+                            "error": true
+                        }
+                    ]
+                },
+                {
+                    "session_id": "33ce66d9-c767-47a0-a4b7-6ce3926037d3",
+                    "video_url": "processed/user_e78c1d46-8e44-4131-ba22-6ee45289c9e3/session_33ce66d9-c767-47a0-a4b7-6ce3926037d3.mp4",
+                    "uploaded_at": "2026-05-10T20:54:36.222657",
+                    "score": 100,
+                    "fatigue": 0,
+                    "efficiency_avg": 93.75,
+                    "total_reps": 12,
+                    "full_rom_reps": 12,
+                    "rom_avg_deg": 113.2,
+                    "rom_min_deg": 108.8,
+                    "rom_max_deg": 115.5,
+                    "duration_avg": 2.89,
+                    "velocity_avg": 87.7,
+                    "reps_detail": [
+                        {
+                            "id": "b7f94764-8437-4e46-bd64-ad8380e929d6",
+                            "rep_number": 1,
+                            "full_rom": true,
+                            "rom_deg": 108.8,
+                            "duration": 3.5,
+                            "velocity": 69.6,
+                            "efficiency": 86.76
+                        },
+                        {
+                            "id": "e0a8247f-ead8-4229-b0de-bccab6551c70",
+                            "rep_number": 2,
+                            "full_rom": true,
+                            "rom_deg": 113.2,
+                            "duration": 2.73,
+                            "velocity": 90.2,
+                            "efficiency": 94.69
+                        },
+                        {
+                            "id": "4a886748-697e-4d5c-8654-8ac85470f2fc",
+                            "rep_number": 3,
+                            "full_rom": true,
+                            "rom_deg": 114.8,
+                            "duration": 3.1,
+                            "velocity": 81.4,
+                            "efficiency": 91.3
+                        },
+                        {
+                            "id": "9d253d11-c6bb-4bf0-aec4-d1fa1763923c",
+                            "rep_number": 4,
+                            "full_rom": true,
+                            "rom_deg": 115.5,
+                            "duration": 3.37,
+                            "velocity": 76,
+                            "efficiency": 89.25
+                        },
+                        {
+                            "id": "a92539f9-9b32-4dc0-8f53-6994df2fb7a7",
+                            "rep_number": 5,
+                            "full_rom": true,
+                            "rom_deg": 111.1,
+                            "duration": 3.13,
+                            "velocity": 79.9,
+                            "efficiency": 90.73
+                        },
+                        {
+                            "id": "880c04c8-df9b-43c6-9b6f-e69d1de76132",
+                            "rep_number": 6,
+                            "full_rom": true,
+                            "rom_deg": 114.4,
+                            "duration": 3.03,
+                            "velocity": 81.4,
+                            "efficiency": 91.32
+                        },
+                        {
+                            "id": "8f23c1bf-733e-4577-8ef7-1a31ccc5abac",
+                            "rep_number": 7,
+                            "full_rom": true,
+                            "rom_deg": 115.3,
+                            "duration": 2.57,
+                            "velocity": 99.3,
+                            "efficiency": 98.19
+                        },
+                        {
+                            "id": "fe2573a7-c11e-49ab-9b18-ce2ac61b4030",
+                            "rep_number": 8,
+                            "full_rom": true,
+                            "rom_deg": 115.3,
+                            "duration": 2.5,
+                            "velocity": 104,
+                            "efficiency": 100
+                        },
+                        {
+                            "id": "70803d28-def7-429a-b291-4762ca4e9d25",
+                            "rep_number": 9,
+                            "full_rom": true,
+                            "rom_deg": 111.8,
+                            "duration": 2.6,
+                            "velocity": 97.7,
+                            "efficiency": 97.61
+                        },
+                        {
+                            "id": "1e793b92-bf93-4dc7-abf3-c1867ec22c67",
+                            "rep_number": 10,
+                            "full_rom": true,
+                            "rom_deg": 114.5,
+                            "duration": 2.73,
+                            "velocity": 91.6,
+                            "efficiency": 95.23
+                        },
+                        {
+                            "id": "a6286f68-1761-4a6e-85bc-c37266c35675",
+                            "rep_number": 11,
+                            "full_rom": true,
+                            "rom_deg": 114.3,
+                            "duration": 2.93,
+                            "velocity": 84.9,
+                            "efficiency": 92.66
+                        },
+                        {
+                            "id": "f8152b3d-7b2f-43e7-86c1-7eee594e9285",
+                            "rep_number": 12,
+                            "full_rom": true,
+                            "rom_deg": 109.2,
+                            "duration": 2.43,
+                            "velocity": 96.8,
+                            "efficiency": 97.22
+                        }
+                    ],
+                    "feedback": [
+                        {
+                            "rep_number": null,
+                            "text": "Velocidad consistente a lo largo de toda la serie",
+                            "error": false
+                        }
+                    ]
+                },
+                {
+                    "session_id": "9b4fc11d-a755-4fe7-a4a9-327d322b39df",
+                    "video_url": "processed/user_e78c1d46-8e44-4131-ba22-6ee45289c9e3/session_9b4fc11d-a755-4fe7-a4a9-327d322b39df.mp4",
+                    "uploaded_at": "2026-05-14T14:50:42.602717",
+                    "score": 100,
+                    "fatigue": 0,
+                    "efficiency_avg": 93.75,
+                    "total_reps": 12,
+                    "full_rom_reps": 12,
+                    "rom_avg_deg": 113.2,
+                    "rom_min_deg": 108.8,
+                    "rom_max_deg": 115.5,
+                    "duration_avg": 2.89,
+                    "velocity_avg": 87.7,
+                    "reps_detail": [
+                        {
+                            "id": "e482e701-3dd2-42a7-901c-9bf724d25b20",
+                            "rep_number": 1,
+                            "full_rom": true,
+                            "rom_deg": 108.8,
+                            "duration": 3.5,
+                            "velocity": 69.6,
+                            "efficiency": 86.76
+                        },
+                        {
+                            "id": "ff60db2d-3c96-40e3-92d2-96e2f28aebd1",
+                            "rep_number": 2,
+                            "full_rom": true,
+                            "rom_deg": 113.2,
+                            "duration": 2.73,
+                            "velocity": 90.2,
+                            "efficiency": 94.69
+                        },
+                        {
+                            "id": "30bf10fa-e2b0-4254-ab68-24dfc156af92",
+                            "rep_number": 3,
+                            "full_rom": true,
+                            "rom_deg": 114.8,
+                            "duration": 3.1,
+                            "velocity": 81.4,
+                            "efficiency": 91.3
+                        },
+                        {
+                            "id": "e12a8bb0-4bde-4238-8ed4-67796a4a5d68",
+                            "rep_number": 4,
+                            "full_rom": true,
+                            "rom_deg": 115.5,
+                            "duration": 3.37,
+                            "velocity": 76,
+                            "efficiency": 89.25
+                        },
+                        {
+                            "id": "fa4dd6ab-2828-438c-a9f4-60cd5a10fd00",
+                            "rep_number": 5,
+                            "full_rom": true,
+                            "rom_deg": 111.1,
+                            "duration": 3.13,
+                            "velocity": 79.9,
+                            "efficiency": 90.73
+                        },
+                        {
+                            "id": "ceff6fc3-41ae-4a45-91cd-0fe44e46ae53",
+                            "rep_number": 6,
+                            "full_rom": true,
+                            "rom_deg": 114.4,
+                            "duration": 3.03,
+                            "velocity": 81.4,
+                            "efficiency": 91.32
+                        },
+                        {
+                            "id": "bd7672ff-a335-4db9-8059-4efd1a907680",
+                            "rep_number": 7,
+                            "full_rom": true,
+                            "rom_deg": 115.3,
+                            "duration": 2.57,
+                            "velocity": 99.3,
+                            "efficiency": 98.19
+                        },
+                        {
+                            "id": "349a1c02-48c5-4ec4-bc41-ce2003f0ac31",
+                            "rep_number": 8,
+                            "full_rom": true,
+                            "rom_deg": 115.3,
+                            "duration": 2.5,
+                            "velocity": 104,
+                            "efficiency": 100
+                        },
+                        {
+                            "id": "062d3af4-15ce-4a48-9596-211d4931e177",
+                            "rep_number": 9,
+                            "full_rom": true,
+                            "rom_deg": 111.8,
+                            "duration": 2.6,
+                            "velocity": 97.7,
+                            "efficiency": 97.61
+                        },
+                        {
+                            "id": "e6950043-0fb7-449a-9e99-acfb71eed386",
+                            "rep_number": 10,
+                            "full_rom": true,
+                            "rom_deg": 114.5,
+                            "duration": 2.73,
+                            "velocity": 91.6,
+                            "efficiency": 95.23
+                        },
+                        {
+                            "id": "576a1e74-73dd-4be8-a6d9-f00fdf61be80",
+                            "rep_number": 11,
+                            "full_rom": true,
+                            "rom_deg": 114.3,
+                            "duration": 2.93,
+                            "velocity": 84.9,
+                            "efficiency": 92.66
+                        },
+                        {
+                            "id": "c223dd1a-c3be-4c01-9613-e8dc4a581a25",
+                            "rep_number": 12,
+                            "full_rom": true,
+                            "rom_deg": 109.2,
+                            "duration": 2.43,
+                            "velocity": 96.8,
+                            "efficiency": 97.22
+                        }
+                    ],
+                    "feedback": [
+                        {
+                            "rep_number": null,
+                            "text": "Velocidad consistente a lo largo de toda la serie",
+                            "error": false
+                        }
+                    ]
+                },
+                {
+                    "session_id": "9825ded5-2c56-496a-946e-7dbdc803408f",
+                    "video_url": "processed/user_e78c1d46-8e44-4131-ba22-6ee45289c9e3/session_9825ded5-2c56-496a-946e-7dbdc803408f.mp4",
+                    "uploaded_at": "2026-05-15T22:32:24.606379",
+                    "score": 87,
+                    "fatigue": 37.49,
+                    "efficiency_avg": 84.74,
+                    "total_reps": 11,
+                    "full_rom_reps": 11,
+                    "rom_avg_deg": 96.4,
+                    "rom_min_deg": 52.5,
+                    "rom_max_deg": 113.1,
+                    "duration_avg": 3.09,
+                    "velocity_avg": 78.5,
+                    "reps_detail": [
+                        {
+                            "id": "6455fce0-2084-4262-8e0c-53862a25ec9a",
+                            "rep_number": 1,
+                            "full_rom": true,
+                            "rom_deg": 109.3,
+                            "duration": 2.43,
+                            "velocity": 86,
+                            "efficiency": 95.17
+                        },
+                        {
+                            "id": "7a444f28-062c-46fe-965c-57268af9e5ec",
+                            "rep_number": 2,
+                            "full_rom": true,
+                            "rom_deg": 109.1,
+                            "duration": 2.63,
+                            "velocity": 87.7,
+                            "efficiency": 95.85
+                        },
+                        {
+                            "id": "4d581804-ce12-45d4-a766-913068e91942",
+                            "rep_number": 3,
+                            "full_rom": true,
+                            "rom_deg": 112.3,
+                            "duration": 2.53,
+                            "velocity": 97.9,
+                            "efficiency": 100
+                        },
+                        {
+                            "id": "cbda14bb-3f0d-435c-a841-a329a5d604ac",
+                            "rep_number": 4,
+                            "full_rom": true,
+                            "rom_deg": 113.1,
+                            "duration": 2.9,
+                            "velocity": 86,
+                            "efficiency": 95.14
+                        },
+                        {
+                            "id": "8fd0d2de-2d11-4689-857e-1486293819d8",
+                            "rep_number": 5,
+                            "full_rom": true,
+                            "rom_deg": 107.5,
+                            "duration": 2.9,
+                            "velocity": 86.7,
+                            "efficiency": 95.43
+                        },
+                        {
+                            "id": "61eed5ae-c87c-4a59-846d-24f61ce806ad",
+                            "rep_number": 6,
+                            "full_rom": true,
+                            "rom_deg": 111.8,
+                            "duration": 2.87,
+                            "velocity": 87,
+                            "efficiency": 95.58
+                        },
+                        {
+                            "id": "86c47a0c-2c10-4c72-bf25-4a41f8374965",
+                            "rep_number": 7,
+                            "full_rom": true,
+                            "rom_deg": 112.5,
+                            "duration": 2.8,
+                            "velocity": 93.7,
+                            "efficiency": 98.29
+                        },
+                        {
+                            "id": "a079877d-bbfb-4135-a61e-59921649ca1e",
+                            "rep_number": 8,
+                            "full_rom": true,
+                            "rom_deg": 104.9,
+                            "duration": 3.33,
+                            "velocity": 77.4,
+                            "efficiency": 90.21
+                        },
+                        {
+                            "id": "ccb65093-81b4-4be9-aacc-a3abbbcf90c2",
+                            "rep_number": 9,
+                            "full_rom": true,
+                            "rom_deg": 57.9,
+                            "duration": 2.43,
+                            "velocity": 60.9,
+                            "efficiency": 57.17
+                        },
+                        {
+                            "id": "19654818-4b56-4fd8-894b-44d836e9c78f",
+                            "rep_number": 10,
+                            "full_rom": true,
+                            "rom_deg": 69.7,
+                            "duration": 3.07,
+                            "velocity": 53.3,
+                            "efficiency": 60.67
+                        },
+                        {
+                            "id": "831f77f3-0337-4052-ab3a-c8255e6cc9e5",
+                            "rep_number": 11,
+                            "full_rom": true,
+                            "rom_deg": 52.5,
+                            "duration": 6.1,
+                            "velocity": 47.2,
+                            "efficiency": 48.6
+                        }
+                    ],
+                    "feedback": [
+                        {
+                            "rep_number": 9,
+                            "text": "Rango de movimiento incompleto",
+                            "error": true
+                        },
+                        {
+                            "rep_number": 10,
+                            "text": "Rango de movimiento incompleto",
+                            "error": true
+                        },
+                        {
+                            "rep_number": 11,
+                            "text": "Rango de movimiento incompleto",
+                            "error": true
+                        }
+                    ]
+                },
+                {
+                    "session_id": "0d8a2163-08c7-4620-b652-919bf019ac8e",
+                    "video_url": "processed/user_e78c1d46-8e44-4131-ba22-6ee45289c9e3/session_0d8a2163-08c7-4620-b652-919bf019ac8e.mp4",
+                    "uploaded_at": "2026-05-15T22:36:48.03504",
+                    "score": 87,
+                    "fatigue": 37.49,
+                    "efficiency_avg": 84.74,
+                    "total_reps": 11,
+                    "full_rom_reps": 11,
+                    "rom_avg_deg": 96.4,
+                    "rom_min_deg": 52.5,
+                    "rom_max_deg": 113.1,
+                    "duration_avg": 3.09,
+                    "velocity_avg": 78.5,
+                    "reps_detail": [
+                        {
+                            "id": "62e009a9-a4b9-4b59-a99c-cf26f4c2c780",
+                            "rep_number": 1,
+                            "full_rom": true,
+                            "rom_deg": 109.3,
+                            "duration": 2.43,
+                            "velocity": 86,
+                            "efficiency": 95.17
+                        },
+                        {
+                            "id": "89d49e77-6df2-443c-a3ca-d345a8ce43ed",
+                            "rep_number": 2,
+                            "full_rom": true,
+                            "rom_deg": 109.1,
+                            "duration": 2.63,
+                            "velocity": 87.7,
+                            "efficiency": 95.85
+                        },
+                        {
+                            "id": "71aee851-c397-481a-8fa3-d877e0851707",
+                            "rep_number": 3,
+                            "full_rom": true,
+                            "rom_deg": 112.3,
+                            "duration": 2.53,
+                            "velocity": 97.9,
+                            "efficiency": 100
+                        },
+                        {
+                            "id": "d16a54d2-e117-4ebc-9587-7e47b264f062",
+                            "rep_number": 4,
+                            "full_rom": true,
+                            "rom_deg": 113.1,
+                            "duration": 2.9,
+                            "velocity": 86,
+                            "efficiency": 95.14
+                        },
+                        {
+                            "id": "35866d3d-0d90-4209-b479-3c8edcdcf55f",
+                            "rep_number": 5,
+                            "full_rom": true,
+                            "rom_deg": 107.5,
+                            "duration": 2.9,
+                            "velocity": 86.7,
+                            "efficiency": 95.43
+                        },
+                        {
+                            "id": "78413c7c-fb44-4473-8d93-fba0ec38ea1c",
+                            "rep_number": 6,
+                            "full_rom": true,
+                            "rom_deg": 111.8,
+                            "duration": 2.87,
+                            "velocity": 87,
+                            "efficiency": 95.58
+                        },
+                        {
+                            "id": "85c8adb8-6fd0-4c7a-bd16-edea55d21ad4",
+                            "rep_number": 7,
+                            "full_rom": true,
+                            "rom_deg": 112.5,
+                            "duration": 2.8,
+                            "velocity": 93.7,
+                            "efficiency": 98.29
+                        },
+                        {
+                            "id": "9b55b656-2235-4f7b-bdbd-9ecb4a4831db",
+                            "rep_number": 8,
+                            "full_rom": true,
+                            "rom_deg": 104.9,
+                            "duration": 3.33,
+                            "velocity": 77.4,
+                            "efficiency": 90.21
+                        },
+                        {
+                            "id": "02b08533-1dda-4e3b-beb4-f01c2844babe",
+                            "rep_number": 9,
+                            "full_rom": true,
+                            "rom_deg": 57.9,
+                            "duration": 2.43,
+                            "velocity": 60.9,
+                            "efficiency": 57.17
+                        },
+                        {
+                            "id": "4ea55232-6de7-46cf-a31b-ebdc3fe86168",
+                            "rep_number": 10,
+                            "full_rom": true,
+                            "rom_deg": 69.7,
+                            "duration": 3.07,
+                            "velocity": 53.3,
+                            "efficiency": 60.67
+                        },
+                        {
+                            "id": "5416d3c8-0948-45fc-b5ec-f018ed25da19",
+                            "rep_number": 11,
+                            "full_rom": true,
+                            "rom_deg": 52.5,
+                            "duration": 6.1,
+                            "velocity": 47.2,
+                            "efficiency": 48.6
+                        }
+                    ],
+                    "feedback": [
+                        {
+                            "rep_number": 9,
+                            "text": "Rango de movimiento incompleto",
+                            "error": true
+                        },
+                        {
+                            "rep_number": 10,
+                            "text": "Rango de movimiento incompleto",
+                            "error": true
+                        },
+                        {
+                            "rep_number": 11,
+                            "text": "Rango de movimiento incompleto",
+                            "error": true
+                        }
+                    ]
+                }
+            ],
+            "avg_score": 87
+        },
+        {
+            "title": "lateral_rises",
+            "commercial_name": "Elevaciones Laterales",
+            "img": "https://liftmanual.com/wp-content/uploads/2023/04/dumbbell-seated-lateral-raise-1024x538.jpg",
+            "upper": true,
+            "guide_url": "https://liftmanual.com/dumbbell-seated-lateral-raise/",
+            "thresholds": {
+                "velocity": {
+                    "idealLow": 40,
+                    "idealHigh": 60
+                },
+                "rom": {
+                    "idealLow": 55,
+                    "idealHigh": 90
+                },
+                "duration": {
+                    "idealLow": 1.5,
+                    "idealHigh": 4
+                }
+            },
+            "sessions": [
+                {
+                    "session_id": "5164c3db-559e-41af-8083-5eab9fa5e121",
+                    "video_url": "processed/user_e78c1d46-8e44-4131-ba22-6ee45289c9e3/session_5164c3db-559e-41af-8083-5eab9fa5e121.mp4",
+                    "uploaded_at": "2026-05-10T19:43:32.763545",
+                    "score": 66,
+                    "fatigue": 9.16,
+                    "efficiency_avg": 22.63,
+                    "total_reps": 9,
+                    "full_rom_reps": 9,
+                    "rom_avg_deg": 70.3,
+                    "rom_min_deg": 59.7,
+                    "rom_max_deg": 81.6,
+                    "duration_avg": 3.14,
+                    "velocity_avg": 53.8,
+                    "reps_detail": [
+                        {
+                            "id": "019a3c2f-5e3e-4e08-8c62-36b26cf6f561",
+                            "rep_number": 1,
+                            "full_rom": true,
+                            "rom_deg": 81.6,
+                            "duration": 2.7,
+                            "velocity": 57.5,
+                            "efficiency": 30.23
+                        },
+                        {
+                            "id": "b5d22919-b562-44cc-99e1-1af2279ddb09",
+                            "rep_number": 2,
+                            "full_rom": true,
+                            "rom_deg": 76.5,
+                            "duration": 2.77,
+                            "velocity": 57.3,
+                            "efficiency": 27.63
+                        },
+                        {
+                            "id": "d54c5b7c-9afc-4438-b54f-402ba65d0f46",
+                            "rep_number": 3,
+                            "full_rom": true,
+                            "rom_deg": 59.7,
+                            "duration": 2.93,
+                            "velocity": 54,
+                            "efficiency": 20.34
+                        },
+                        {
+                            "id": "9d0f4b95-59e4-4c57-bfd4-74eb7003c968",
+                            "rep_number": 4,
+                            "full_rom": true,
+                            "rom_deg": 63.3,
+                            "duration": 3.17,
+                            "velocity": 52.3,
+                            "efficiency": 19.99
+                        },
+                        {
+                            "id": "73142b2b-bb35-4e1d-a925-6f9991727138",
+                            "rep_number": 5,
+                            "full_rom": true,
+                            "rom_deg": 66.3,
+                            "duration": 3.33,
+                            "velocity": 49.4,
+                            "efficiency": 19.89
+                        },
+                        {
+                            "id": "26f51697-1f25-4b4d-843a-739dc06b3beb",
+                            "rep_number": 6,
+                            "full_rom": true,
+                            "rom_deg": 72.3,
+                            "duration": 3.13,
+                            "velocity": 56.7,
+                            "efficiency": 23.08
+                        },
+                        {
+                            "id": "427c4119-d449-4163-9fcc-4433e6723bdd",
+                            "rep_number": 7,
+                            "full_rom": true,
+                            "rom_deg": 68.3,
+                            "duration": 3.6,
+                            "velocity": 49.5,
+                            "efficiency": 18.98
+                        },
+                        {
+                            "id": "43d23711-d43b-44ae-8310-6634342038cc",
+                            "rep_number": 8,
+                            "full_rom": true,
+                            "rom_deg": 70.8,
+                            "duration": 3.4,
+                            "velocity": 52,
+                            "efficiency": 20.82
+                        },
+                        {
+                            "id": "b0a246d9-6b24-4922-98c7-fe6fc9601082",
+                            "rep_number": 9,
+                            "full_rom": true,
+                            "rom_deg": 74.2,
+                            "duration": 3.27,
+                            "velocity": 55.1,
+                            "efficiency": 22.71
+                        }
+                    ],
+                    "feedback": [
+                        {
+                            "rep_number": 3,
+                            "text": "Rango de movimiento incompleto",
+                            "error": true
+                        },
+                        {
+                            "rep_number": null,
+                            "text": "Velocidad consistente a lo largo de toda la serie",
+                            "error": false
+                        }
+                    ]
+                },
+                {
+                    "session_id": "deb7ef54-e485-4ade-9e87-75aabdacece7",
+                    "video_url": "processed/user_e78c1d46-8e44-4131-ba22-6ee45289c9e3/session_deb7ef54-e485-4ade-9e87-75aabdacece7.mp4",
+                    "uploaded_at": "2026-05-10T19:44:04.82066",
+                    "score": 57,
+                    "fatigue": 32.4,
+                    "efficiency_avg": 20.32,
+                    "total_reps": 11,
+                    "full_rom_reps": 11,
+                    "rom_avg_deg": 65.1,
+                    "rom_min_deg": 48.6,
+                    "rom_max_deg": 82.9,
+                    "duration_avg": 3.32,
+                    "velocity_avg": 49.6,
+                    "reps_detail": [
+                        {
+                            "id": "b186d2e5-8430-4c6d-9038-6dccdd4f74a9",
+                            "rep_number": 1,
+                            "full_rom": true,
+                            "rom_deg": 72.7,
+                            "duration": 2.23,
+                            "velocity": 61.5,
+                            "efficiency": 32.57
+                        },
+                        {
+                            "id": "437fbce9-d003-4a41-845f-543bdcd3c576",
+                            "rep_number": 2,
+                            "full_rom": true,
+                            "rom_deg": 76.7,
+                            "duration": 3.4,
+                            "velocity": 54.6,
+                            "efficiency": 22.57
+                        },
+                        {
+                            "id": "43c2c93b-4fc7-4bd9-a54f-6617b31b7012",
+                            "rep_number": 3,
+                            "full_rom": true,
+                            "rom_deg": 73.8,
+                            "duration": 3.33,
+                            "velocity": 57.5,
+                            "efficiency": 22.13
+                        },
+                        {
+                            "id": "1ac60083-41cc-4e86-afb1-ef0654f5af21",
+                            "rep_number": 4,
+                            "full_rom": true,
+                            "rom_deg": 75,
+                            "duration": 3.37,
+                            "velocity": 57.7,
+                            "efficiency": 22.26
+                        },
+                        {
+                            "id": "496d67d4-5eb0-4067-a307-e8ce812a43dc",
+                            "rep_number": 5,
+                            "full_rom": true,
+                            "rom_deg": 82.9,
+                            "duration": 2.77,
+                            "velocity": 61.9,
+                            "efficiency": 29.97
+                        },
+                        {
+                            "id": "a8e50410-1cf3-4b8f-bf59-b7d43ade6fe5",
+                            "rep_number": 6,
+                            "full_rom": true,
+                            "rom_deg": 59.2,
+                            "duration": 3.77,
+                            "velocity": 43.7,
+                            "efficiency": 15.71
+                        },
+                        {
+                            "id": "e41779a3-2c72-4726-9921-f7992101a30d",
+                            "rep_number": 7,
+                            "full_rom": true,
+                            "rom_deg": 57.4,
+                            "duration": 3.47,
+                            "velocity": 42.2,
+                            "efficiency": 16.57
+                        },
+                        {
+                            "id": "1fe31627-d764-4503-85e2-ae644b022ed1",
+                            "rep_number": 8,
+                            "full_rom": true,
+                            "rom_deg": 60.3,
+                            "duration": 3.9,
+                            "velocity": 41.2,
+                            "efficiency": 15.47
+                        },
+                        {
+                            "id": "11a9fa42-7d07-4e41-9da7-7b99b27242a6",
+                            "rep_number": 9,
+                            "full_rom": true,
+                            "rom_deg": 52.9,
+                            "duration": 3.5,
+                            "velocity": 40.6,
+                            "efficiency": 15.12
+                        },
+                        {
+                            "id": "4dae376b-226b-4115-9a1d-6abd9c65cf5e",
+                            "rep_number": 10,
+                            "full_rom": true,
+                            "rom_deg": 57,
+                            "duration": 3.57,
+                            "velocity": 42.2,
+                            "efficiency": 15.99
+                        },
+                        {
+                            "id": "8665e58e-6a3f-4773-876b-48ec47688e00",
+                            "rep_number": 11,
+                            "full_rom": true,
+                            "rom_deg": 48.6,
+                            "duration": 3.2,
+                            "velocity": 42,
+                            "efficiency": 15.2
+                        }
+                    ],
+                    "feedback": [
+                        {
+                            "rep_number": 6,
+                            "text": "La mu\u00f1eca est\u00e1 subiendo demasiado por encima del codo",
+                            "error": true
+                        },
+                        {
+                            "rep_number": 7,
+                            "text": "La mu\u00f1eca est\u00e1 subiendo demasiado por encima del codo",
+                            "error": true
+                        },
+                        {
+                            "rep_number": 8,
+                            "text": "La mu\u00f1eca est\u00e1 subiendo demasiado por encima del codo",
+                            "error": true
+                        },
+                        {
+                            "rep_number": 9,
+                            "text": "La mu\u00f1eca est\u00e1 subiendo demasiado por encima del codo",
+                            "error": true
+                        },
+                        {
+                            "rep_number": 10,
+                            "text": "La mu\u00f1eca est\u00e1 subiendo demasiado por encima del codo",
+                            "error": true
+                        },
+                        {
+                            "rep_number": 11,
+                            "text": "La mu\u00f1eca est\u00e1 subiendo demasiado por encima del codo",
+                            "error": true
+                        },
+                        {
+                            "rep_number": 6,
+                            "text": "Rango de movimiento incompleto",
+                            "error": true
+                        },
+                        {
+                            "rep_number": 7,
+                            "text": "Rango de movimiento incompleto",
+                            "error": true
+                        },
+                        {
+                            "rep_number": 9,
+                            "text": "Rango de movimiento incompleto",
+                            "error": true
+                        },
+                        {
+                            "rep_number": 10,
+                            "text": "Rango de movimiento incompleto",
+                            "error": true
+                        },
+                        {
+                            "rep_number": 11,
+                            "text": "Rango de movimiento incompleto",
+                            "error": true
+                        },
+                        {
+                            "rep_number": null,
+                            "text": "Tendencia a elevar excesivamente la mu\u00f1eca en varias repeticiones",
+                            "error": true
+                        }
+                    ]
+                },
+                {
+                    "session_id": "52cf0af4-396a-4f5a-8c95-18bf25d74d24",
+                    "video_url": "processed/user_e78c1d46-8e44-4131-ba22-6ee45289c9e3/session_52cf0af4-396a-4f5a-8c95-18bf25d74d24.mp4",
+                    "uploaded_at": "2026-05-10T19:44:32.357618",
+                    "score": 62,
+                    "fatigue": 26.46,
+                    "efficiency_avg": 23.5,
+                    "total_reps": 7,
+                    "full_rom_reps": 7,
+                    "rom_avg_deg": 69.1,
+                    "rom_min_deg": 40.8,
+                    "rom_max_deg": 80.1,
+                    "duration_avg": 2.99,
+                    "velocity_avg": 55.8,
+                    "reps_detail": [
+                        {
+                            "id": "da14dc78-dd59-47ab-9183-aacbed8e1e1c",
+                            "rep_number": 1,
+                            "full_rom": true,
+                            "rom_deg": 80.1,
+                            "duration": 2.43,
+                            "velocity": 65,
+                            "efficiency": 32.93
+                        },
+                        {
+                            "id": "d3c15523-ecd7-4203-8e9a-1dbaaa0d4654",
+                            "rep_number": 2,
+                            "full_rom": true,
+                            "rom_deg": 79.4,
+                            "duration": 3.17,
+                            "velocity": 63.5,
+                            "efficiency": 25.07
+                        },
+                        {
+                            "id": "dacf0abc-4c27-4fff-b62f-cab02bd67376",
+                            "rep_number": 3,
+                            "full_rom": true,
+                            "rom_deg": 78.9,
+                            "duration": 2.93,
+                            "velocity": 65.3,
+                            "efficiency": 26.9
+                        },
+                        {
+                            "id": "90e94a92-3565-4a61-8c2f-e600bdb2bad1",
+                            "rep_number": 4,
+                            "full_rom": true,
+                            "rom_deg": 77.3,
+                            "duration": 3.57,
+                            "velocity": 53.6,
+                            "efficiency": 21.67
+                        },
+                        {
+                            "id": "57d30c5d-adff-4d8a-85ac-c0ccd109cf58",
+                            "rep_number": 5,
+                            "full_rom": true,
+                            "rom_deg": 71.1,
+                            "duration": 3.13,
+                            "velocity": 58.7,
+                            "efficiency": 22.68
+                        },
+                        {
+                            "id": "c5f24dd3-4b7d-4abf-953d-97053cb4bc25",
+                            "rep_number": 6,
+                            "full_rom": true,
+                            "rom_deg": 56.3,
+                            "duration": 2.53,
+                            "velocity": 45.2,
+                            "efficiency": 22.22
+                        },
+                        {
+                            "id": "10df2408-a9db-4abb-a2b2-7cb37eea2147",
+                            "rep_number": 7,
+                            "full_rom": true,
+                            "rom_deg": 40.8,
+                            "duration": 3.13,
+                            "velocity": 39.6,
+                            "efficiency": 13.03
+                        }
+                    ],
+                    "feedback": [
+                        {
+                            "rep_number": 2,
+                            "text": "La mu\u00f1eca est\u00e1 subiendo demasiado por encima del codo",
+                            "error": true
+                        },
+                        {
+                            "rep_number": 6,
+                            "text": "Rango de movimiento incompleto",
+                            "error": true
+                        },
+                        {
+                            "rep_number": 7,
+                            "text": "Rango de movimiento incompleto",
+                            "error": true
+                        },
+                        {
+                            "rep_number": null,
+                            "text": "Tendencia a elevar excesivamente la mu\u00f1eca en varias repeticiones",
+                            "error": true
+                        }
+                    ]
+                },
+                {
+                    "session_id": "b073c005-0231-47ef-8530-ce6236207c1b",
+                    "video_url": "processed/user_e78c1d46-8e44-4131-ba22-6ee45289c9e3/session_b073c005-0231-47ef-8530-ce6236207c1b.mp4",
+                    "uploaded_at": "2026-05-10T19:45:06.194035",
+                    "score": 61,
+                    "fatigue": 18.55,
+                    "efficiency_avg": 23.24,
+                    "total_reps": 5,
+                    "full_rom_reps": 5,
+                    "rom_avg_deg": 65.5,
+                    "rom_min_deg": 49.4,
+                    "rom_max_deg": 70.3,
+                    "duration_avg": 2.87,
+                    "velocity_avg": 56,
+                    "reps_detail": [
+                        {
+                            "id": "35771074-43c9-4ea8-a1dc-4b473380d304",
+                            "rep_number": 1,
+                            "full_rom": true,
+                            "rom_deg": 70.2,
+                            "duration": 2.5,
+                            "velocity": 65.1,
+                            "efficiency": 28.06
+                        },
+                        {
+                            "id": "8076a878-e5bb-486b-8f8d-de1053e88c2a",
+                            "rep_number": 2,
+                            "full_rom": true,
+                            "rom_deg": 70.3,
+                            "duration": 3.37,
+                            "velocity": 55.9,
+                            "efficiency": 20.88
+                        },
+                        {
+                            "id": "c71412d7-3756-485f-82b0-d2bcabec3507",
+                            "rep_number": 3,
+                            "full_rom": true,
+                            "rom_deg": 68.9,
+                            "duration": 3.07,
+                            "velocity": 60.1,
+                            "efficiency": 22.47
+                        },
+                        {
+                            "id": "55e91b68-9783-4af8-8856-9f15a50933e8",
+                            "rep_number": 4,
+                            "full_rom": true,
+                            "rom_deg": 68.9,
+                            "duration": 2.47,
+                            "velocity": 55.4,
+                            "efficiency": 27.93
+                        },
+                        {
+                            "id": "af0a4c6b-821c-449d-ab7d-0e5c7aac1cab",
+                            "rep_number": 5,
+                            "full_rom": true,
+                            "rom_deg": 49.4,
+                            "duration": 2.93,
+                            "velocity": 43.6,
+                            "efficiency": 16.85
+                        }
+                    ],
+                    "feedback": [
+                        {
+                            "rep_number": 5,
+                            "text": "Rango de movimiento incompleto",
+                            "error": true
+                        }
+                    ]
+                },
+                {
+                    "session_id": "db58e154-e56e-46af-839b-a0451cac3345",
+                    "video_url": "processed/user_e78c1d46-8e44-4131-ba22-6ee45289c9e3/session_db58e154-e56e-46af-839b-a0451cac3345.mp4",
+                    "uploaded_at": "2026-05-10T20:55:52.329819",
+                    "score": 97,
+                    "fatigue": 9.16,
+                    "efficiency_avg": 94.26,
+                    "total_reps": 9,
+                    "full_rom_reps": 9,
+                    "rom_avg_deg": 70.3,
+                    "rom_min_deg": 59.7,
+                    "rom_max_deg": 81.6,
+                    "duration_avg": 3.14,
+                    "velocity_avg": 53.8,
+                    "reps_detail": [
+                        {
+                            "id": "3c9aa26b-3da4-4dc6-b98b-490874edf3e5",
+                            "rep_number": 1,
+                            "full_rom": true,
+                            "rom_deg": 81.6,
+                            "duration": 2.7,
+                            "velocity": 57.5,
+                            "efficiency": 100
+                        },
+                        {
+                            "id": "33a05932-6a61-4e58-a921-fde961dcddfe",
+                            "rep_number": 2,
+                            "full_rom": true,
+                            "rom_deg": 76.5,
+                            "duration": 2.77,
+                            "velocity": 57.3,
+                            "efficiency": 99.91
+                        },
+                        {
+                            "id": "34a8bf89-942e-4aeb-bd17-b2b60ab173c1",
+                            "rep_number": 3,
+                            "full_rom": true,
+                            "rom_deg": 59.7,
+                            "duration": 2.93,
+                            "velocity": 54,
+                            "efficiency": 86.99
+                        },
+                        {
+                            "id": "6044fb71-e982-4bf2-b7ba-477238793c61",
+                            "rep_number": 4,
+                            "full_rom": true,
+                            "rom_deg": 63.3,
+                            "duration": 3.17,
+                            "velocity": 52.3,
+                            "efficiency": 88.76
+                        },
+                        {
+                            "id": "1a24d38c-116e-48be-be48-5600ff672835",
+                            "rep_number": 5,
+                            "full_rom": true,
+                            "rom_deg": 66.3,
+                            "duration": 3.33,
+                            "velocity": 49.4,
+                            "efficiency": 89.23
+                        },
+                        {
+                            "id": "65d1ea78-d837-4bd8-8cfd-81956a322ea6",
+                            "rep_number": 6,
+                            "full_rom": true,
+                            "rom_deg": 72.3,
+                            "duration": 3.13,
+                            "velocity": 56.7,
+                            "efficiency": 99.28
+                        },
+                        {
+                            "id": "2b4d77d6-a48a-4beb-bb83-468972869ff7",
+                            "rep_number": 7,
+                            "full_rom": true,
+                            "rom_deg": 68.3,
+                            "duration": 3.6,
+                            "velocity": 49.5,
+                            "efficiency": 90.98
+                        },
+                        {
+                            "id": "d500e32c-fd74-4f13-b817-17ec242dcf94",
+                            "rep_number": 8,
+                            "full_rom": true,
+                            "rom_deg": 70.8,
+                            "duration": 3.4,
+                            "velocity": 52,
+                            "efficiency": 94.8
+                        },
+                        {
+                            "id": "cecc9ca2-2bb0-46d7-a06b-fc129feda769",
+                            "rep_number": 9,
+                            "full_rom": true,
+                            "rom_deg": 74.2,
+                            "duration": 3.27,
+                            "velocity": 55.1,
+                            "efficiency": 98.34
+                        }
+                    ],
+                    "feedback": [
+                        {
+                            "rep_number": null,
+                            "text": "Velocidad consistente a lo largo de toda la serie",
+                            "error": false
+                        }
+                    ]
+                },
+                {
+                    "session_id": "1826df30-1fc4-4ac9-9957-9c52440a6bdd",
+                    "video_url": "processed/user_e78c1d46-8e44-4131-ba22-6ee45289c9e3/session_1826df30-1fc4-4ac9-9957-9c52440a6bdd.mp4",
+                    "uploaded_at": "2026-05-10T20:56:38.799127",
+                    "score": 88,
+                    "fatigue": 32.4,
+                    "efficiency_avg": 84.52,
+                    "total_reps": 11,
+                    "full_rom_reps": 11,
+                    "rom_avg_deg": 65.1,
+                    "rom_min_deg": 48.6,
+                    "rom_max_deg": 82.9,
+                    "duration_avg": 3.32,
+                    "velocity_avg": 49.6,
+                    "reps_detail": [
+                        {
+                            "id": "de71231f-0da4-4b81-bcb0-8fe92a3706d2",
+                            "rep_number": 1,
+                            "full_rom": true,
+                            "rom_deg": 72.7,
+                            "duration": 2.23,
+                            "velocity": 61.5,
+                            "efficiency": 99.73
+                        },
+                        {
+                            "id": "021fa06d-4b3a-4321-82ca-72ee77dc64ec",
+                            "rep_number": 2,
+                            "full_rom": true,
+                            "rom_deg": 76.7,
+                            "duration": 3.4,
+                            "velocity": 54.6,
+                            "efficiency": 95.27
+                        },
+                        {
+                            "id": "95245ff5-11c8-4d16-a5c0-a66c2891471b",
+                            "rep_number": 3,
+                            "full_rom": true,
+                            "rom_deg": 73.8,
+                            "duration": 3.33,
+                            "velocity": 57.5,
+                            "efficiency": 97.12
+                        },
+                        {
+                            "id": "bcae409f-5a16-4923-9d30-9d8d2998fe8e",
+                            "rep_number": 4,
+                            "full_rom": true,
+                            "rom_deg": 75,
+                            "duration": 3.37,
+                            "velocity": 57.7,
+                            "efficiency": 97.26
+                        },
+                        {
+                            "id": "2f4a0b01-939d-43f2-91e3-dd387b7b9958",
+                            "rep_number": 5,
+                            "full_rom": true,
+                            "rom_deg": 82.9,
+                            "duration": 2.77,
+                            "velocity": 61.9,
+                            "efficiency": 100
+                        },
+                        {
+                            "id": "11c119dc-6b09-46ea-983c-7f8240ba803d",
+                            "rep_number": 6,
+                            "full_rom": true,
+                            "rom_deg": 59.2,
+                            "duration": 3.77,
+                            "velocity": 43.7,
+                            "efficiency": 77.23
+                        },
+                        {
+                            "id": "f376509d-85bb-410d-9a2b-b84466197c33",
+                            "rep_number": 7,
+                            "full_rom": true,
+                            "rom_deg": 57.4,
+                            "duration": 3.47,
+                            "velocity": 42.2,
+                            "efficiency": 74.8
+                        },
+                        {
+                            "id": "719207cb-d8b3-4de1-928d-bfc93e6e9aea",
+                            "rep_number": 8,
+                            "full_rom": true,
+                            "rom_deg": 60.3,
+                            "duration": 3.9,
+                            "velocity": 41.2,
+                            "efficiency": 76.55
+                        },
+                        {
+                            "id": "cb158b16-4e74-4e7c-933d-cd2fc9a1c3d7",
+                            "rep_number": 9,
+                            "full_rom": true,
+                            "rom_deg": 52.9,
+                            "duration": 3.5,
+                            "velocity": 40.6,
+                            "efficiency": 69.97
+                        },
+                        {
+                            "id": "095535ef-55b2-4c9d-a19a-f800d32e4590",
+                            "rep_number": 10,
+                            "full_rom": true,
+                            "rom_deg": 57,
+                            "duration": 3.57,
+                            "velocity": 42.2,
+                            "efficiency": 74.45
+                        },
+                        {
+                            "id": "2376211f-15d9-48b7-be09-19ad6224227c",
+                            "rep_number": 11,
+                            "full_rom": true,
+                            "rom_deg": 48.6,
+                            "duration": 3.2,
+                            "velocity": 42,
+                            "efficiency": 67.36
+                        }
+                    ],
+                    "feedback": [
+                        {
+                            "rep_number": 6,
+                            "text": "La mu\u00f1eca est\u00e1 subiendo demasiado por encima del codo",
+                            "error": true
+                        },
+                        {
+                            "rep_number": 7,
+                            "text": "La mu\u00f1eca est\u00e1 subiendo demasiado por encima del codo",
+                            "error": true
+                        },
+                        {
+                            "rep_number": 8,
+                            "text": "La mu\u00f1eca est\u00e1 subiendo demasiado por encima del codo",
+                            "error": true
+                        },
+                        {
+                            "rep_number": 9,
+                            "text": "La mu\u00f1eca est\u00e1 subiendo demasiado por encima del codo",
+                            "error": true
+                        },
+                        {
+                            "rep_number": 10,
+                            "text": "La mu\u00f1eca est\u00e1 subiendo demasiado por encima del codo",
+                            "error": true
+                        },
+                        {
+                            "rep_number": 11,
+                            "text": "La mu\u00f1eca est\u00e1 subiendo demasiado por encima del codo",
+                            "error": true
+                        },
+                        {
+                            "rep_number": 9,
+                            "text": "Rango de movimiento incompleto",
+                            "error": true
+                        },
+                        {
+                            "rep_number": 11,
+                            "text": "Rango de movimiento incompleto",
+                            "error": true
+                        },
+                        {
+                            "rep_number": null,
+                            "text": "Tendencia a elevar excesivamente la mu\u00f1eca en varias repeticiones",
+                            "error": true
+                        }
+                    ]
+                },
+                {
+                    "session_id": "e6a0761e-4641-4434-a177-60d9c55badcb",
+                    "video_url": "processed/user_e78c1d46-8e44-4131-ba22-6ee45289c9e3/session_e6a0761e-4641-4434-a177-60d9c55badcb.mp4",
+                    "uploaded_at": "2026-05-10T20:57:15.313475",
+                    "score": 92,
+                    "fatigue": 26.46,
+                    "efficiency_avg": 88.36,
+                    "total_reps": 7,
+                    "full_rom_reps": 7,
+                    "rom_avg_deg": 69.1,
+                    "rom_min_deg": 40.8,
+                    "rom_max_deg": 80.1,
+                    "duration_avg": 2.99,
+                    "velocity_avg": 55.8,
+                    "reps_detail": [
+                        {
+                            "id": "568cf758-532c-4e29-9f54-e416abd71a66",
+                            "rep_number": 1,
+                            "full_rom": true,
+                            "rom_deg": 80.1,
+                            "duration": 2.43,
+                            "velocity": 65,
+                            "efficiency": 99.82
+                        },
+                        {
+                            "id": "bad1ea78-95ff-4c93-b87a-8f23d106f1c1",
+                            "rep_number": 2,
+                            "full_rom": true,
+                            "rom_deg": 79.4,
+                            "duration": 3.17,
+                            "velocity": 63.5,
+                            "efficiency": 98.86
+                        },
+                        {
+                            "id": "c5f1c0b4-8fe2-4d6c-bac4-e80bffab93c2",
+                            "rep_number": 3,
+                            "full_rom": true,
+                            "rom_deg": 78.9,
+                            "duration": 2.93,
+                            "velocity": 65.3,
+                            "efficiency": 100
+                        },
+                        {
+                            "id": "3231f177-1424-426c-ae46-0904c353fb54",
+                            "rep_number": 4,
+                            "full_rom": true,
+                            "rom_deg": 77.3,
+                            "duration": 3.57,
+                            "velocity": 53.6,
+                            "efficiency": 92.81
+                        },
+                        {
+                            "id": "5fc5fae3-7d6d-42b5-a5fb-b22aa9462fff",
+                            "rep_number": 5,
+                            "full_rom": true,
+                            "rom_deg": 71.1,
+                            "duration": 3.13,
+                            "velocity": 58.7,
+                            "efficiency": 94.77
+                        },
+                        {
+                            "id": "30660ef7-9ab5-491d-a6ea-17ce09e2cd49",
+                            "rep_number": 6,
+                            "full_rom": true,
+                            "rom_deg": 56.3,
+                            "duration": 2.53,
+                            "velocity": 45.2,
+                            "efficiency": 74.24
+                        },
+                        {
+                            "id": "d260d31f-34ca-4cfa-8180-bffca3121103",
+                            "rep_number": 7,
+                            "full_rom": true,
+                            "rom_deg": 40.8,
+                            "duration": 3.13,
+                            "velocity": 39.6,
+                            "efficiency": 58.05
+                        }
+                    ],
+                    "feedback": [
+                        {
+                            "rep_number": 2,
+                            "text": "La mu\u00f1eca est\u00e1 subiendo demasiado por encima del codo",
+                            "error": true
+                        },
+                        {
+                            "rep_number": 7,
+                            "text": "Rango de movimiento incompleto",
+                            "error": true
+                        },
+                        {
+                            "rep_number": null,
+                            "text": "Tendencia a elevar excesivamente la mu\u00f1eca en varias repeticiones",
+                            "error": true
+                        }
+                    ]
+                }
+            ],
+            "avg_score": 75
+        },
+        {
+            "title": "squat",
+            "commercial_name": "Sentadilla",
+            "img": "https://liftmanual.com/wp-content/uploads/2023/04/barbell-squat.jpg",
+            "upper": false,
+            "guide_url": "https://liftmanual.com/barbell-squat/",
+            "thresholds": {
+                "velocity": {
+                    "idealLow": 80,
+                    "idealHigh": 110
+                },
+                "rom": {
+                    "idealLow": 80,
+                    "idealHigh": 115
+                },
+                "duration": {
+                    "idealLow": 1.5,
+                    "idealHigh": 3.5
+                }
+            },
+            "sessions": [
+                {
+                    "session_id": "aaa08632-39ed-4416-8851-1e5ba6933346",
+                    "video_url": "processed/user_e78c1d46-8e44-4131-ba22-6ee45289c9e3/session_aaa08632-39ed-4416-8851-1e5ba6933346.mp4",
+                    "uploaded_at": "2026-05-10T20:27:45.891896",
+                    "score": 83,
+                    "fatigue": 5.59,
+                    "efficiency_avg": 38.32,
+                    "total_reps": 7,
+                    "full_rom_reps": 7,
+                    "rom_avg_deg": 111.7,
+                    "rom_min_deg": 105.8,
+                    "rom_max_deg": 116.2,
+                    "duration_avg": 2.92,
+                    "velocity_avg": 95.2,
+                    "reps_detail": [
+                        {
+                            "id": "cf2870a7-b504-4734-910b-f5fd1a7dbe2e",
+                            "rep_number": 1,
+                            "full_rom": true,
+                            "rom_deg": 105.8,
+                            "duration": 2.67,
+                            "velocity": 98.3,
+                            "efficiency": 39.69
+                        },
+                        {
+                            "id": "27c3a776-5dcf-4222-bb31-9c385c896022",
+                            "rep_number": 2,
+                            "full_rom": true,
+                            "rom_deg": 114.6,
+                            "duration": 3.07,
+                            "velocity": 95.6,
+                            "efficiency": 37.37
+                        },
+                        {
+                            "id": "dabd7e94-dd02-4295-b70b-f196e5d71996",
+                            "rep_number": 3,
+                            "full_rom": true,
+                            "rom_deg": 116.2,
+                            "duration": 2.83,
+                            "velocity": 96.3,
+                            "efficiency": 41.03
+                        },
+                        {
+                            "id": "252de31b-cb88-4f41-a95e-e92d3329627a",
+                            "rep_number": 4,
+                            "full_rom": true,
+                            "rom_deg": 113.6,
+                            "duration": 2.87,
+                            "velocity": 98,
+                            "efficiency": 39.63
+                        },
+                        {
+                            "id": "96f75090-eace-4210-8f66-246d5aeb329a",
+                            "rep_number": 5,
+                            "full_rom": true,
+                            "rom_deg": 108.5,
+                            "duration": 3,
+                            "velocity": 95.3,
+                            "efficiency": 36.17
+                        },
+                        {
+                            "id": "fadbd7cc-430c-46d7-b6a1-b2a3242643b6",
+                            "rep_number": 6,
+                            "full_rom": true,
+                            "rom_deg": 110.5,
+                            "duration": 2.97,
+                            "velocity": 94.2,
+                            "efficiency": 37.26
+                        },
+                        {
+                            "id": "e4bb7e2b-24ae-4437-a1f7-fd8326a9cc16",
+                            "rep_number": 7,
+                            "full_rom": true,
+                            "rom_deg": 112.5,
+                            "duration": 3.03,
+                            "velocity": 89,
+                            "efficiency": 37.07
+                        }
+                    ],
+                    "feedback": [
+                        {
+                            "rep_number": 3,
+                            "text": "Rango de movimiento excesivo",
+                            "error": true
+                        },
+                        {
+                            "rep_number": null,
+                            "text": "Velocidad consistente a lo largo de toda la serie",
+                            "error": false
+                        }
+                    ]
+                },
+                {
+                    "session_id": "340739b5-4a49-447a-8e8c-f4c5761c7a00",
+                    "video_url": "processed/user_e78c1d46-8e44-4131-ba22-6ee45289c9e3/session_340739b5-4a49-447a-8e8c-f4c5761c7a00.mp4",
+                    "uploaded_at": "2026-05-10T20:28:06.520317",
+                    "score": 63,
+                    "fatigue": 5.56,
+                    "efficiency_avg": 24.41,
+                    "total_reps": 5,
+                    "full_rom_reps": 5,
+                    "rom_avg_deg": 70.7,
+                    "rom_min_deg": 64.8,
+                    "rom_max_deg": 75.1,
+                    "duration_avg": 2.91,
+                    "velocity_avg": 73.6,
+                    "reps_detail": [
+                        {
+                            "id": "c6558a05-841e-470a-bbbe-752bbe5cf403",
+                            "rep_number": 1,
+                            "full_rom": true,
+                            "rom_deg": 72.9,
+                            "duration": 2.7,
+                            "velocity": 77.9,
+                            "efficiency": 27
+                        },
+                        {
+                            "id": "a91c8743-cb56-4d18-b6d8-653894243f33",
+                            "rep_number": 2,
+                            "full_rom": true,
+                            "rom_deg": 75.1,
+                            "duration": 3,
+                            "velocity": 69.4,
+                            "efficiency": 25.03
+                        },
+                        {
+                            "id": "abca4076-b91f-41e8-a2b3-a194ef2a8ea5",
+                            "rep_number": 3,
+                            "full_rom": true,
+                            "rom_deg": 73.7,
+                            "duration": 2.83,
+                            "velocity": 69.9,
+                            "efficiency": 26.03
+                        },
+                        {
+                            "id": "33276d5d-b706-4bdd-a8c4-2bbba4f2c2cd",
+                            "rep_number": 4,
+                            "full_rom": true,
+                            "rom_deg": 64.8,
+                            "duration": 3.03,
+                            "velocity": 77.4,
+                            "efficiency": 21.36
+                        },
+                        {
+                            "id": "1b3cbedc-6665-47ac-ac10-369748686dbb",
+                            "rep_number": 5,
+                            "full_rom": true,
+                            "rom_deg": 67.1,
+                            "duration": 2.97,
+                            "velocity": 73.4,
+                            "efficiency": 22.63
+                        }
+                    ],
+                    "feedback": [
+                        {
+                            "rep_number": 1,
+                            "text": "Inclinas el torso demasiado hacia adelante",
+                            "error": true
+                        },
+                        {
+                            "rep_number": 2,
+                            "text": "Inclinas el torso demasiado hacia adelante",
+                            "error": true
+                        },
+                        {
+                            "rep_number": 3,
+                            "text": "Inclinas el torso demasiado hacia adelante",
+                            "error": true
+                        },
+                        {
+                            "rep_number": 4,
+                            "text": "Inclinas el torso demasiado hacia adelante",
+                            "error": true
+                        },
+                        {
+                            "rep_number": 5,
+                            "text": "Inclinas el torso demasiado hacia adelante",
+                            "error": true
+                        },
+                        {
+                            "rep_number": 1,
+                            "text": "Rango de movimiento incompleto",
+                            "error": true
+                        },
+                        {
+                            "rep_number": 2,
+                            "text": "Rango de movimiento incompleto",
+                            "error": true
+                        },
+                        {
+                            "rep_number": 3,
+                            "text": "Rango de movimiento incompleto",
+                            "error": true
+                        },
+                        {
+                            "rep_number": 4,
+                            "text": "Rango de movimiento incompleto",
+                            "error": true
+                        },
+                        {
+                            "rep_number": 5,
+                            "text": "Rango de movimiento incompleto",
+                            "error": true
+                        },
+                        {
+                            "rep_number": null,
+                            "text": "Velocidad consistente a lo largo de toda la serie",
+                            "error": false
+                        },
+                        {
+                            "rep_number": 5,
+                            "text": "Rango de movimiento demasiado bajo",
+                            "error": true
+                        },
+                        {
+                            "rep_number": null,
+                            "text": "Tendencia recurrente a inclinar excesivamente el torso",
+                            "error": true
+                        }
+                    ]
+                },
+                {
+                    "session_id": "7514e136-2a4f-4b93-ba04-3bfd254543f4",
+                    "video_url": "processed/user_e78c1d46-8e44-4131-ba22-6ee45289c9e3/session_7514e136-2a4f-4b93-ba04-3bfd254543f4.mp4",
+                    "uploaded_at": "2026-05-10T20:28:26.141153",
+                    "score": 66,
+                    "fatigue": 26.03,
+                    "efficiency_avg": 38.5,
+                    "total_reps": 7,
+                    "full_rom_reps": 7,
+                    "rom_avg_deg": 75.6,
+                    "rom_min_deg": 62.5,
+                    "rom_max_deg": 88.4,
+                    "duration_avg": 2.01,
+                    "velocity_avg": 89.8,
+                    "reps_detail": [
+                        {
+                            "id": "d33c4243-8026-420b-aa29-98c7a3c7fe40",
+                            "rep_number": 1,
+                            "full_rom": true,
+                            "rom_deg": 62.5,
+                            "duration": 1.2,
+                            "velocity": 108.1,
+                            "efficiency": 52.05
+                        },
+                        {
+                            "id": "82bbd658-00e7-475d-9044-0a2b75136c26",
+                            "rep_number": 2,
+                            "full_rom": true,
+                            "rom_deg": 88.4,
+                            "duration": 2.07,
+                            "velocity": 103,
+                            "efficiency": 42.8
+                        },
+                        {
+                            "id": "2115ec04-f2da-4df2-b5b4-84889416fdbe",
+                            "rep_number": 3,
+                            "full_rom": true,
+                            "rom_deg": 70,
+                            "duration": 2.07,
+                            "velocity": 94,
+                            "efficiency": 33.89
+                        },
+                        {
+                            "id": "c5eb1fb0-7eea-4d52-8bae-ed9ab6c382d2",
+                            "rep_number": 4,
+                            "full_rom": true,
+                            "rom_deg": 79.1,
+                            "duration": 2.2,
+                            "velocity": 83.8,
+                            "efficiency": 35.96
+                        },
+                        {
+                            "id": "1476ad26-a3bf-41ca-bb35-cec7293c5a8c",
+                            "rep_number": 5,
+                            "full_rom": true,
+                            "rom_deg": 76.2,
+                            "duration": 2.1,
+                            "velocity": 79.7,
+                            "efficiency": 36.27
+                        },
+                        {
+                            "id": "e2e21c89-532c-4432-b1de-e0a046ddf2cf",
+                            "rep_number": 6,
+                            "full_rom": true,
+                            "rom_deg": 79.3,
+                            "duration": 2.27,
+                            "velocity": 80.3,
+                            "efficiency": 35.01
+                        },
+                        {
+                            "id": "3694d69b-2c89-4ecc-8385-7d07484c3098",
+                            "rep_number": 7,
+                            "full_rom": true,
+                            "rom_deg": 73.7,
+                            "duration": 2.2,
+                            "velocity": 80,
+                            "efficiency": 33.52
+                        }
+                    ],
+                    "feedback": [
+                        {
+                            "rep_number": 1,
+                            "text": "Rango de movimiento incompleto",
+                            "error": true
+                        },
+                        {
+                            "rep_number": 2,
+                            "text": "Rango de movimiento incompleto",
+                            "error": true
+                        },
+                        {
+                            "rep_number": 3,
+                            "text": "Rango de movimiento incompleto",
+                            "error": true
+                        },
+                        {
+                            "rep_number": 4,
+                            "text": "Rango de movimiento incompleto",
+                            "error": true
+                        },
+                        {
+                            "rep_number": 5,
+                            "text": "Rango de movimiento incompleto",
+                            "error": true
+                        },
+                        {
+                            "rep_number": 6,
+                            "text": "Rango de movimiento incompleto",
+                            "error": true
+                        },
+                        {
+                            "rep_number": 7,
+                            "text": "Rango de movimiento incompleto",
+                            "error": true
+                        },
+                        {
+                            "rep_number": 7,
+                            "text": "Rango de movimiento demasiado bajo",
+                            "error": true
+                        }
+                    ]
+                },
+                {
+                    "session_id": "b0f0643e-26ab-4e03-a728-04730524c1f5",
+                    "video_url": "processed/user_e78c1d46-8e44-4131-ba22-6ee45289c9e3/session_b0f0643e-26ab-4e03-a728-04730524c1f5.mp4",
+                    "uploaded_at": "2026-05-10T20:29:39.95249",
+                    "score": 79,
+                    "fatigue": 8.5,
+                    "efficiency_avg": 44.91,
+                    "total_reps": 10,
+                    "full_rom_reps": 10,
+                    "rom_avg_deg": 90.6,
+                    "rom_min_deg": 80.9,
+                    "rom_max_deg": 94.4,
+                    "duration_avg": 2.02,
+                    "velocity_avg": 93,
+                    "reps_detail": [
+                        {
+                            "id": "f3e131f6-dd93-4a2e-8805-f9bb21fb4e69",
+                            "rep_number": 1,
+                            "full_rom": true,
+                            "rom_deg": 80.9,
+                            "duration": 1.63,
+                            "velocity": 95.5,
+                            "efficiency": 49.52
+                        },
+                        {
+                            "id": "a6a7bedc-8bb1-40a3-b391-3aff421c7a46",
+                            "rep_number": 2,
+                            "full_rom": true,
+                            "rom_deg": 89.7,
+                            "duration": 2.03,
+                            "velocity": 92.4,
+                            "efficiency": 44.11
+                        },
+                        {
+                            "id": "031f306d-515b-4136-85ae-8fb011697087",
+                            "rep_number": 3,
+                            "full_rom": true,
+                            "rom_deg": 90.4,
+                            "duration": 2.1,
+                            "velocity": 101.4,
+                            "efficiency": 43.06
+                        },
+                        {
+                            "id": "a4ae4d2e-5ed4-4d37-b0cf-515063a50ee8",
+                            "rep_number": 4,
+                            "full_rom": true,
+                            "rom_deg": 91.4,
+                            "duration": 1.93,
+                            "velocity": 98.3,
+                            "efficiency": 47.3
+                        },
+                        {
+                            "id": "c18ca5f1-ae88-45ea-9b4b-2631a8a0b47d",
+                            "rep_number": 5,
+                            "full_rom": true,
+                            "rom_deg": 94.4,
+                            "duration": 2,
+                            "velocity": 97.1,
+                            "efficiency": 47.18
+                        },
+                        {
+                            "id": "c7ecc2a8-c478-4832-87e6-31270ab79e99",
+                            "rep_number": 6,
+                            "full_rom": true,
+                            "rom_deg": 91.5,
+                            "duration": 2.07,
+                            "velocity": 88.8,
+                            "efficiency": 44.26
+                        },
+                        {
+                            "id": "3da27a42-db1b-4f67-abc4-704a5f19fb74",
+                            "rep_number": 7,
+                            "full_rom": true,
+                            "rom_deg": 92.1,
+                            "duration": 2.03,
+                            "velocity": 94.6,
+                            "efficiency": 45.3
+                        },
+                        {
+                            "id": "3ef203e9-3405-4dae-bc7c-7b032f5538d5",
+                            "rep_number": 8,
+                            "full_rom": true,
+                            "rom_deg": 92.3,
+                            "duration": 2.07,
+                            "velocity": 89.4,
+                            "efficiency": 44.65
+                        },
+                        {
+                            "id": "40c7af0c-a882-45c6-acb4-e735d0a0c6a7",
+                            "rep_number": 9,
+                            "full_rom": true,
+                            "rom_deg": 91.2,
+                            "duration": 2.17,
+                            "velocity": 87.9,
+                            "efficiency": 42.09
+                        },
+                        {
+                            "id": "ca826820-c98f-40b0-9b32-59e120f63cfb",
+                            "rep_number": 10,
+                            "full_rom": true,
+                            "rom_deg": 91.7,
+                            "duration": 2.2,
+                            "velocity": 85,
+                            "efficiency": 41.7
+                        }
+                    ],
+                    "feedback": [
+                        {
+                            "rep_number": 1,
+                            "text": "Inclinas el torso demasiado hacia adelante",
+                            "error": true
+                        },
+                        {
+                            "rep_number": 2,
+                            "text": "Inclinas el torso demasiado hacia adelante",
+                            "error": true
+                        },
+                        {
+                            "rep_number": 3,
+                            "text": "Inclinas el torso demasiado hacia adelante",
+                            "error": true
+                        },
+                        {
+                            "rep_number": 4,
+                            "text": "Inclinas el torso demasiado hacia adelante",
+                            "error": true
+                        },
+                        {
+                            "rep_number": 5,
+                            "text": "Inclinas el torso demasiado hacia adelante",
+                            "error": true
+                        },
+                        {
+                            "rep_number": 6,
+                            "text": "Inclinas el torso demasiado hacia adelante",
+                            "error": true
+                        },
+                        {
+                            "rep_number": 7,
+                            "text": "Inclinas el torso demasiado hacia adelante",
+                            "error": true
+                        },
+                        {
+                            "rep_number": 8,
+                            "text": "Inclinas el torso demasiado hacia adelante",
+                            "error": true
+                        },
+                        {
+                            "rep_number": 9,
+                            "text": "Inclinas el torso demasiado hacia adelante",
+                            "error": true
+                        },
+                        {
+                            "rep_number": 10,
+                            "text": "Inclinas el torso demasiado hacia adelante",
+                            "error": true
+                        },
+                        {
+                            "rep_number": 1,
+                            "text": "Rango de movimiento incompleto",
+                            "error": true
+                        },
+                        {
+                            "rep_number": 2,
+                            "text": "Rango de movimiento incompleto",
+                            "error": true
+                        },
+                        {
+                            "rep_number": null,
+                            "text": "Velocidad consistente a lo largo de toda la serie",
+                            "error": false
+                        },
+                        {
+                            "rep_number": null,
+                            "text": "Tendencia recurrente a inclinar excesivamente el torso",
+                            "error": true
+                        }
+                    ]
+                },
+                {
+                    "session_id": "dce0ed3b-ce6b-4b0e-b153-d261dc15e201",
+                    "video_url": "processed/user_e78c1d46-8e44-4131-ba22-6ee45289c9e3/session_dce0ed3b-ce6b-4b0e-b153-d261dc15e201.mp4",
+                    "uploaded_at": "2026-05-10T20:30:10.953466",
+                    "score": 68,
+                    "fatigue": 8.72,
+                    "efficiency_avg": 32.25,
+                    "total_reps": 8,
+                    "full_rom_reps": 8,
+                    "rom_avg_deg": 77,
+                    "rom_min_deg": 57.5,
+                    "rom_max_deg": 88.8,
+                    "duration_avg": 2.38,
+                    "velocity_avg": 71.7,
+                    "reps_detail": [
+                        {
+                            "id": "45728fa6-f22e-4921-843f-cb1a8a4ad0d4",
+                            "rep_number": 1,
+                            "full_rom": true,
+                            "rom_deg": 85.5,
+                            "duration": 2.77,
+                            "velocity": 66.9,
+                            "efficiency": 30.91
+                        },
+                        {
+                            "id": "b99eb4f2-b63c-4233-ae54-cef8f079ec47",
+                            "rep_number": 2,
+                            "full_rom": true,
+                            "rom_deg": 88.8,
+                            "duration": 2.33,
+                            "velocity": 86.2,
+                            "efficiency": 38.05
+                        },
+                        {
+                            "id": "d988ce1b-8b85-4e86-9807-5e816dcb05fc",
+                            "rep_number": 3,
+                            "full_rom": true,
+                            "rom_deg": 85.3,
+                            "duration": 2.47,
+                            "velocity": 79.6,
+                            "efficiency": 34.58
+                        },
+                        {
+                            "id": "536c013e-237b-4c70-a7eb-c3302fe94a66",
+                            "rep_number": 4,
+                            "full_rom": true,
+                            "rom_deg": 85.5,
+                            "duration": 2.47,
+                            "velocity": 76,
+                            "efficiency": 34.67
+                        },
+                        {
+                            "id": "85ab4648-20b8-49cd-b4ae-4afedf733694",
+                            "rep_number": 5,
+                            "full_rom": true,
+                            "rom_deg": 88.7,
+                            "duration": 2.33,
+                            "velocity": 81.9,
+                            "efficiency": 38
+                        },
+                        {
+                            "id": "13b3b900-539b-4d1e-8423-63ac13f37dd7",
+                            "rep_number": 6,
+                            "full_rom": true,
+                            "rom_deg": 61.6,
+                            "duration": 2.07,
+                            "velocity": 66.3,
+                            "efficiency": 29.8
+                        },
+                        {
+                            "id": "d89b436a-f902-4d5b-8419-a4b1e6c17fe9",
+                            "rep_number": 7,
+                            "full_rom": true,
+                            "rom_deg": 62.9,
+                            "duration": 2.33,
+                            "velocity": 61.2,
+                            "efficiency": 26.96
+                        },
+                        {
+                            "id": "8743fc9f-98bb-49b8-9848-e80f894cb4e2",
+                            "rep_number": 8,
+                            "full_rom": true,
+                            "rom_deg": 57.5,
+                            "duration": 2.3,
+                            "velocity": 55.7,
+                            "efficiency": 25
+                        }
+                    ],
+                    "feedback": [
+                        {
+                            "rep_number": 1,
+                            "text": "Inclinas el torso demasiado hacia adelante",
+                            "error": true
+                        },
+                        {
+                            "rep_number": 2,
+                            "text": "Inclinas el torso demasiado hacia adelante",
+                            "error": true
+                        },
+                        {
+                            "rep_number": 3,
+                            "text": "Inclinas el torso demasiado hacia adelante",
+                            "error": true
+                        },
+                        {
+                            "rep_number": 4,
+                            "text": "Inclinas el torso demasiado hacia adelante",
+                            "error": true
+                        },
+                        {
+                            "rep_number": 5,
+                            "text": "Inclinas el torso demasiado hacia adelante",
+                            "error": true
+                        },
+                        {
+                            "rep_number": 6,
+                            "text": "Inclinas el torso demasiado hacia adelante",
+                            "error": true
+                        },
+                        {
+                            "rep_number": 7,
+                            "text": "Inclinas el torso demasiado hacia adelante",
+                            "error": true
+                        },
+                        {
+                            "rep_number": 8,
+                            "text": "Inclinas el torso demasiado hacia adelante",
+                            "error": true
+                        },
+                        {
+                            "rep_number": 1,
+                            "text": "Rango de movimiento incompleto",
+                            "error": true
+                        },
+                        {
+                            "rep_number": 2,
+                            "text": "Rango de movimiento incompleto",
+                            "error": true
+                        },
+                        {
+                            "rep_number": 3,
+                            "text": "Rango de movimiento incompleto",
+                            "error": true
+                        },
+                        {
+                            "rep_number": 4,
+                            "text": "Rango de movimiento incompleto",
+                            "error": true
+                        },
+                        {
+                            "rep_number": 5,
+                            "text": "Rango de movimiento incompleto",
+                            "error": true
+                        },
+                        {
+                            "rep_number": 6,
+                            "text": "Rango de movimiento incompleto",
+                            "error": true
+                        },
+                        {
+                            "rep_number": 7,
+                            "text": "Rango de movimiento incompleto",
+                            "error": true
+                        },
+                        {
+                            "rep_number": 8,
+                            "text": "Rango de movimiento incompleto",
+                            "error": true
+                        },
+                        {
+                            "rep_number": null,
+                            "text": "Velocidad consistente a lo largo de toda la serie",
+                            "error": false
+                        },
+                        {
+                            "rep_number": 8,
+                            "text": "Rango de movimiento demasiado bajo",
+                            "error": true
+                        },
+                        {
+                            "rep_number": null,
+                            "text": "Tendencia recurrente a inclinar excesivamente el torso",
+                            "error": true
+                        }
+                    ]
+                },
+                {
+                    "session_id": "d7c16f06-f5d0-4ac8-a4f0-7e15ecd08b57",
+                    "video_url": "processed/user_e78c1d46-8e44-4131-ba22-6ee45289c9e3/session_d7c16f06-f5d0-4ac8-a4f0-7e15ecd08b57.mp4",
+                    "uploaded_at": "2026-05-15T09:34:36.604549",
+                    "score": 100,
+                    "fatigue": 0,
+                    "efficiency_avg": 100,
+                    "total_reps": 1,
+                    "full_rom_reps": 1,
+                    "rom_avg_deg": 103.1,
+                    "rom_min_deg": 103.1,
+                    "rom_max_deg": 103.1,
+                    "duration_avg": 2.2,
+                    "velocity_avg": 90.6,
+                    "reps_detail": [
+                        {
+                            "id": "9a1fe24c-ef26-4bc1-a163-31ecad8acde2",
+                            "rep_number": 1,
+                            "full_rom": true,
+                            "rom_deg": 103.1,
+                            "duration": 2.2,
+                            "velocity": 90.6,
+                            "efficiency": 100
+                        }
+                    ],
+                    "feedback": [
+                        {
+                            "rep_number": null,
+                            "text": "Velocidad consistente a lo largo de toda la serie",
+                            "error": false
+                        }
+                    ]
+                }
+            ],
+            "avg_score": 76
+        }
+    ]
+}

@@ -1,0 +1,41 @@
+# Python cache
+**pycache**/
+*.py[cod]
+*$py.class
+
+# Virtual envs
+venv/
+.env/
+.venv/
+
+# Env files
+.env
+.env.*
+
+# Logs
+*.log
+
+# Tests / coverage
+.coverage
+htmlcov/
+.pytest_cache/
+
+# Build artifacts
+dist/
+build/
+*.egg-info/
+
+# Git
+.git
+.gitignore
+
+# OS
+.DS_Store
+
+# Editor
+.vscode
+.idea
+
+# Docker
+Dockerfile
+.dockerignore

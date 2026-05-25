@@ -1,33 +1,19 @@
-# Usar imagen base más ligera
 FROM python:3.10-slim
 
-# Variables de entorno
-ENV DEBIAN_FRONTEND=noninteractive
-ENV LANG=C.UTF-8 LC_ALL=C.UTF-8
 ENV PYTHONDONTWRITEBYTECODE=1
 ENV PYTHONUNBUFFERED=1
 
-# Instalar dependencias del sistema en una sola capa
-RUN apt-get update && apt-get install -y --no-install-recommends \
-    ffmpeg \
-    libgl1 \
-    libglib2.0-0 \
-    && apt-get clean \
-    && rm -rf /var/lib/apt/lists/*
-
-# Crear symlink
-RUN ln -s /usr/bin/python3.10 /usr/bin/python
-
+# Dependencias del sistema
+RUN apt-get update && apt-get install -y --no-install-recommends ffmpeg libgl1 libglib2.0-0 && rm -rf /var/lib/apt/lists/*
 WORKDIR /app
 
-# Copiar requirements
-COPY requirements.txt requirements.txt
-
-# Instalar dependencias Python
-RUN pip install --upgrade pip
+# Instalar deps primero (cacheable)
+COPY requirements.txt .
 RUN pip install --no-cache-dir -r requirements.txt
 
-# Copiar código (en layer separado para aprovechar cache)
+# Copiar código
 COPY . .
 
-CMD ["python3.10", "app.py"]
+ENV PORT=8080
+
+CMD ["python", "app.py"]

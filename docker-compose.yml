@@ -1,10 +1,12 @@
 services:
   # Frontend service
   frontend: 
-    build: ./frontend
+    build:
+      context: ./frontend
+      dockerfile: Dockerfile.dev
     container_name: frontend_container
     env_file:
-      - ./frontend/.env
+      - ./frontend/.env.development
     volumes:
       - ./frontend:/app
       - /app/node_modules
@@ -13,7 +15,9 @@ services:
 
   # API service
   api: 
-    build: ./api
+    build:
+      context: ./api
+      dockerfile: Dockerfile.dev
     container_name: api_container
     env_file:
       - ./api/.env
@@ -22,12 +26,11 @@ services:
 
  # Worker service
   worker: 
-    build: ./worker
+    build:
+      context: ./worker
+      dockerfile: Dockerfile.dev
     container_name: worker_container
     env_file:
       - ./worker/.env
     ports:
       - "5001:5001"
-
-
-

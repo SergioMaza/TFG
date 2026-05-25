@@ -11,8 +11,8 @@ node_modules
 dist
 dist-ssr
 *.local
-api/.env
-frontend/.env
+.env
+.env*
 
 # Editor directories and files
 .vscode/*
@@ -28,3 +28,4 @@ worker/videos/*
 
 # htmls
 htmls/*
+worker/.env

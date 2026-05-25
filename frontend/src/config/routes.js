@@ -5,11 +5,8 @@ export const ROUTES = {
   results: "/results/:id",
   guides: "/guides",
 
-  // LandingPage
-  landingPage: "/",
-
   // Auth
-  auth: "/auth",
+  auth: "/",
 
   // Legal
   terms: "/terms",

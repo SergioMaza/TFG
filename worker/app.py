@@ -1,5 +1,6 @@
 from flask import Flask, jsonify, request
 from worker import process_video
+import os
 
 app = Flask(__name__)
 
@@ -23,8 +24,9 @@ def process():
     result = process_video(
         user_id, session_id, upload_path, exercise_name, side, rom_ideal_low, rom_ideal_high
     )
-
+    
     return jsonify(result)
 
 if __name__ == "__main__":
-    app.run(host="0.0.0.0", port=5001)
+    port = int(os.environ.get("PORT", 5001))
+    app.run(host="0.0.0.0", port=port)

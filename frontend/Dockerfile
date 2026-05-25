@@ -1,20 +1,19 @@
-# Imagen base de Node
-FROM node:20
-
-# Directorio de trabajo dentro del contenedor
+# Build
+FROM node:20 AS builder
 WORKDIR /app
-
-# Copiamos los archivos del package (dependencias)
 COPY package*.json ./
-
-# Instalamos las dependencias
 RUN npm install
-
-# Copiamos todo el resto del código
 COPY . .
+RUN npm run build
 
-# Exponemos el puerto que Vite usa por defecto
-EXPOSE 5173
+# Serve estático
 
-# Comando por defecto al iniciar el contenedor
-CMD ["npm", "run", "dev"]
+FROM nginx:stable-alpine
+
+# Copiar build
+COPY --from=builder /app/dist /usr/share/nginx/html
+COPY nginx.conf /etc/nginx/conf.d/default.conf
+EXPOSE 8080
+
+# Config nginx para puerto 8080
+CMD ["nginx", "-g", "daemon off;"]

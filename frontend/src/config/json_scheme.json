@@ -1,0 +1,93 @@
+{
+    "metrics": {
+        "sessions_this_month": 23,
+        "sessions_this_week": 4,
+        "most_trained_muscle": "biceps_curl",
+        "upper_percentage": 74,
+        "lower_percentage": 26,
+        "avg_score": 80,
+        "score_change_weekly": 16
+    },
+    "exercises": [
+        {
+            "title": "biceps_curl",
+            "commercial_name": "Curl de B\u00edceps",
+            "img": "https://liftmanual.com/wp-content/uploads/2023/04/dumbbell-incline-biceps-curl.jpg",
+            "upper": true,
+            "guide_url": "https://liftmanual.com/dumbbell-biceps-curl/",
+            "avg_score": 87,
+            "thresholds": {
+                "velocity": {
+                    "idealLow": 50,
+                    "idealHigh": 100
+                },
+                "rom": {
+                    "idealLow": 90,
+                    "idealHigh": 125
+                },
+                "duration": {
+                    "idealLow": 1.5,
+                    "idealHigh": 3.5
+                }
+            },
+            "sessions": [
+                {
+                    "session_id": "3589bc5b-d740-4f46-a7d9-b3bc9b4b7f45",
+                    "video_url": "processed/user_e78c1d46-8e44-4131-ba22-6ee45289c9e3/session_3589bc5b-d740-4f46-a7d9-b3bc9b4b7f45.mp4",
+                    "uploaded_at": "2026-05-10T19:31:06.00372",
+                    "score": 81,
+                    "fatigue": 0.56,
+                    "efficiency_avg": 33.21,
+                    "total_reps": 5,
+                    "full_rom_reps": 5,
+                    "rom_avg_deg": 104.7,
+                    "rom_min_deg": 73.6,
+                    "rom_max_deg": 120.5,
+                    "duration_avg": 3.68,
+                    "velocity_avg": 81.3,
+                    "reps_detail": [
+                        {
+                            "id": "5f5a0572-3011-4d1e-8b1e-01563ee87372",
+                            "rep_number": 1,
+                            "full_rom": true,
+                            "rom_deg": 114.2,
+                            "duration": 3.43,
+                            "velocity": 79,
+                            "efficiency": 33.26
+                        },
+                        {
+                            "id": "cf25be19-f0c8-4465-96fc-09d667883de5",
+                            "rep_number": 2,
+                            "full_rom": true,
+                            "rom_deg": 120.5,
+                            "duration": 3.17,
+                            "velocity": 91.7,
+                            "efficiency": 38.04
+                        },
+                        {
+                            "id": "4f5d4f96-4a9b-43b4-b601-60d7e41ccf5b",
+                            "rep_number": 3,
+                            "full_rom": true,
+                            "rom_deg": 73.6,
+                            "duration": 1.87,
+                            "velocity": 80,
+                            "efficiency": 39.41
+                        }
+                    ],
+                    "feedback": [
+                        {
+                            "rep_number": 3,
+                            "text": "Rango de movimiento incompleto",
+                            "error": true
+                        },
+                        {
+                            "rep_number": null,
+                            "text": "Velocidad consistente a lo largo de toda la serie",
+                            "error": false
+                        }
+                    ]
+                }
+            ]
+        }
+    ]
+}
