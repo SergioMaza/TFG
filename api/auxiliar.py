@@ -29,7 +29,7 @@ def _calculate_global_metrics(exercises: list) -> dict:
     exercise_counts = {}
 
     for ex in exercises:
-        exercise_counts[ex["title"]] = exercise_counts.get(ex["title"], 0) + len(
+        exercise_counts[ex["commercial_name"]] = exercise_counts.get(ex["commercial_name"], 0) + len(
             ex["sessions"]
         )
 

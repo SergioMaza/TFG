@@ -3,7 +3,6 @@ import { Activity, CalendarDays, Dumbbell, Scale } from "lucide-react";
 export default function MetricsGrid({ data }) {
   return (
     <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-6 mb-16">
-      {/* Media del score del */}
       <Metric
         title="Volumen mensual"
         value={data.metrics.sessions_this_month}
@@ -11,7 +10,6 @@ export default function MetricsGrid({ data }) {
         icon={<CalendarDays size={20} />}
       />
 
-      {/* Calcualda en base a rom duration y velocity */}
       <Metric
         title="Volumen semanal"
         value={data.metrics.sessions_this_week}
@@ -19,14 +17,12 @@ export default function MetricsGrid({ data }) {
         icon={<Activity size={20} />}
       />
 
-      {/* (first_rep_velocity - last_rep_velocity) / first_rep_velocity */}
       <Metric
         title="Más entrenado"
         value={data.metrics.most_trained_muscle}
         icon={<Dumbbell size={20} />}
       />
 
-      {/* efficiency = rom_avg / avg_duration */}
       <DistributionMetric
         title="Distribución"
         icon={<Scale size={20} />}

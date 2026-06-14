@@ -20,7 +20,7 @@ export default function Footer() {
               href="mailto:soporte@tusitio.com"
               className="ml-1 text-(--color-primary) hover:underline"
             >
-              support@yoursite.com
+              support@gmail.com
             </a>
           </p>
         </div>

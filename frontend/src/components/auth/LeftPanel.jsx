@@ -30,13 +30,6 @@ export default function LeftPanel() {
         <p className="text-(--gray) text-lg max-w-90">
           Impulsa tu rendimiento con análisis de movimiento de alta precisión.
         </p>
-
-        {/* STATS */}
-        <div className="flex gap-8 mt-12 border-l border-(--primary)/50 pl-8">
-          <Stat value="98%" label="Accuracy" />
-          <Stat value="2.4ms" label="Latency" />
-          <Stat value="120+" label="Metrics" />
-        </div>
       </div>
     </section>
   );
