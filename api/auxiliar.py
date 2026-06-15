@@ -18,7 +18,8 @@ def _calculate_global_metrics(exercises: list) -> dict:
     Calcula las métricas globales del dashboard a partir de todos los ejercicios.
     """
     now = datetime.now(timezone.utc)
-    week_start = now - timedelta(days=now.weekday())
+    week_start = (now - timedelta(days=now.weekday())).replace(
+        hour=0, minute=0, second=0, microsecond=0)
     month_start = now.replace(day=1, hour=0, minute=0, second=0, microsecond=0)
 
     all_sessions = [s for ex in exercises for s in ex["sessions"]]
